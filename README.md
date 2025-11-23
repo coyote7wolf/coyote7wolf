@@ -18,18 +18,18 @@
 
 ### Homepage
 
-Layout: pattern
-Component:
+- Layout: pattern
+- Component:
 
 ### Product Listing Page
 
-Layout: pattern
-Component:
+- Layout: pattern
+- Component:
 
 ### Design System
 
-Tools: Storybook
-Component:
+- Tools: Storybook
+- Component:
 
 ## Full-Stack Highlights
 
