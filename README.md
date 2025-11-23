@@ -54,8 +54,6 @@
 - State: Stateless
 - Token Type: JWT
 
-### Full-Stack Request Lifecycle
-
 ### AI Productization Flow
 
 ---
