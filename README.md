@@ -42,6 +42,8 @@
 
 ### Password Cookie Session Flow
 
+![Password Cookie Session Flow](img/fullstack/Password-Cookie-Session-Flow.drawio.png)
+
 - State: Stateful
 - Token Type: Session ID
 
