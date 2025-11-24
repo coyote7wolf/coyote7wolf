@@ -64,7 +64,7 @@ sequenceDiagram
 
 ---
 
-### 🛠️ Tech Stack Highlight
+### ✨ Tech Stack Highlight
 
 - **Language:** Java 21
 - **Framework:** Spring Boot 3
