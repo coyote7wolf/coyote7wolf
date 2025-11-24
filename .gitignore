@@ -110,5 +110,9 @@ publish/
 # Azure Functions localsettings
 local.settings.json
 
-# node (if used later for frontend)
-node_modules/
+# node 
+node_modules
+coverage
+.env
+.DS_Store
+*.log
