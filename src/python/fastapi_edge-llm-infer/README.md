@@ -37,7 +37,6 @@ sequenceDiagram
     participant L as Loader
     participant M as LLM Model
     participant E as Embedding
-    participant S as Script
     participant D as Vector DB
 
     U->>A: Send API - chat, completion, embedding
@@ -48,7 +47,6 @@ sequenceDiagram
     A-->>U: Respond with output
     A->>E: If embedding, generate embedding
     E-->>A: Return embedding
-    S->>M: Download model file
     A->>D: query vector DB
     D-->>A: Return search results
 ```
