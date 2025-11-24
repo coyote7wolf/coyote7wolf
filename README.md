@@ -64,6 +64,8 @@
 
 ## Python
 
+- [FastAPI Edge LLM Inference](src/python/fastapi_edge-llm-infer/)
+
 ## C#
 
 - [C# .NET User Service](src/csharp/csharp-dotnet_user-service/)
