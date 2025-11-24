@@ -77,3 +77,5 @@
 - [Java Spring Boot User Service](src/java/java-spring-boot_user-service/)
 
 ## JavaScript
+
+- [Express.js User Service](src/javascript/node-express_user-service/)
