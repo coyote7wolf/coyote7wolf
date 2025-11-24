@@ -1,115 +1,116 @@
+
 # ==============================================
-# 專案 Makefile  (使用 Gradle Wrapper)
-# 使用方式：在專案根目錄直接輸入 `make <目標>`
-# 例如：`make run-mock` 啟動 Mock Profile 服務
+# Project Makefile (using Gradle Wrapper)
+# Usage: Run `make <target>` in the project root directory
+# Example: `make run-mock` to start the service with the mock profile
 # ==============================================
 
-# 允許在命令列覆寫，例如: make run PORT=9090
+# Allow override from command line, e.g.: make run PORT=9090
 PORT ?= 8083
 PROFILE ?= default
-JAR_FILE := build/libs/kotlin-spring-boot_skeleton-0.0.1-SNAPSHOT.jar
+JAR_FILE := build/libs/kotlin-spring-boot_user-service-0.0.1-SNAPSHOT.jar
 GRADLE := ./gradlew
 
 .PHONY: help build clean test coverage lint format detekt run run-mock run-mock-bg jar run-jar run-jar-mock run-jar-mock-bg verify ci health health-wait coverage-badge stop pid
 
-help: ## 顯示可用目標說明
-	@echo "可用目標："
+help: ## Show available targets and descriptions
+	@echo "Available targets:"
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## ' Makefile | sed 's/:.*## /\t - /'
 
-clean: ## 清理建置輸出
+clean: ## Clean build outputs
 	$(GRADLE) clean
 
-build: ## 編譯 + 單元測試 + 產出報告 (等同於 check)
+build: ## Build, unit test, and generate reports (same as check)
 	$(GRADLE) clean build
 
-jar: ## 只建置可執行 JAR
+jar: ## Build executable JAR only
 	$(GRADLE) bootJar
 
-run: ## 使用預設 Profile 啟動開發 (可能載入 devtools)
+run: ## Start development with default profile (may load devtools)
 	$(GRADLE) bootRun --args='--server.port=$(PORT) --spring.profiles.active=$(PROFILE)'
 
-run-mock: ## 使用 mock Profile 前景啟動 (記憶體內部實作)
+run-mock: ## Start with mock profile in foreground (in-memory implementation)
 	$(GRADLE) bootRun --args='--server.port=$(PORT) --spring.profiles.active=mock'
 
-run-mock-bg: ## 背景啟動 mock Profile (輸出 -> run.log, PID: app.pid)
-	@echo "背景啟動 bootRun (mock) ..."
+run-mock-bg: ## Start mock profile in background (output -> run.log, PID: app.pid)
+	@echo "Starting bootRun (mock) in background ..."
 	@nohup $(GRADLE) bootRun --args='--server.port=$(PORT) --spring.profiles.active=mock' > run.log 2>&1 & echo $$! > app.pid
-	@echo "PID 儲存於 app.pid，日志檔：run.log"
+	@echo "PID saved to app.pid, log file: run.log"
 
-run-jar: jar ## 以 JAR 啟動 (PROFILE=$(PROFILE))
+run-jar: jar ## Start with JAR (PROFILE=$(PROFILE))
 	java -jar $(JAR_FILE) --server.port=$(PORT) --spring.profiles.active=$(PROFILE)
 
-run-jar-mock: jar ## 以 JAR 前景啟動 mock Profile
+run-jar-mock: jar ## Start JAR in foreground with mock profile
 	java -jar $(JAR_FILE) --server.port=$(PORT) --spring.profiles.active=mock
 
-run-jar-mock-bg: jar ## 以 JAR 背景啟動 mock Profile (log: run.log, PID: app.pid)
-	@echo "背景啟動 jar (mock) ..."
+run-jar-mock-bg: jar ## Start JAR with mock profile in background (log: run.log, PID: app.pid)
+	@echo "Starting jar (mock) in background ..."
 	@nohup java -jar $(JAR_FILE) --server.port=$(PORT) --spring.profiles.active=mock > run.log 2>&1 & echo $$! > app.pid
-	@echo "PID 儲存於 app.pid，日志檔：run.log"
+	@echo "PID saved to app.pid, log file: run.log"
 
-test: ## 執行單元測試
+test: ## Run unit tests
 	$(GRADLE) test
 
-coverage: test ## 產出 Jacoco 覆蓋率報告 (build/reports/jacoco/test)
-	@echo "Jacoco 報告已產出：build/reports/jacoco/test/index.html"
+coverage: test ## Generate Jacoco coverage report (build/reports/jacoco/test)
+	@echo "Jacoco report generated: build/reports/jacoco/test/index.html"
 
-lint: ## 執行 ktlint (檢查)
+lint: ## Run ktlint (check)
 	$(GRADLE) ktlintCheck
 
-format: ## 嘗試自動格式化 Kotlin 程式碼
+format: ## Try to auto-format Kotlin code
 	$(GRADLE) ktlintFormat
 
-detekt: ## 執行 detekt 靜態分析
+detekt: ## Run detekt static analysis
 	$(GRADLE) detekt
 
-verify: ## 快速驗證：格式 + 靜態分析 + 測試 + 覆蓋率閾值
+verify: ## Quick verify: format + static analysis + test + coverage threshold
 	$(GRADLE) ktlintCheck detekt test jacocoCoverageVerification
 
-ci: ## CI 流程建議：乾淨建置 + 驗證
+ci: ## CI flow suggestion: clean build + verify
 	$(GRADLE) clean ktlintCheck detekt test jacocoCoverageVerification bootJar
 
-health: ## 呼叫 /actuator/health 顯示狀態 (需先啟動服務)
-	@echo "檢查健康狀態 http://localhost:$(PORT)/actuator/health"
+health: ## Call /actuator/health to show status (service must be running)
+	@echo "Checking health status http://localhost:$(PORT)/actuator/health"
 	@curl -s -o /tmp/health.json -w '%{http_code}\n' http://localhost:$(PORT)/actuator/health > /tmp/health.code || true
 	@CODE=$$(cat /tmp/health.code); BODY=$$(cat /tmp/health.json); \
-	 echo "HTTP 狀態碼: $$CODE"; \
+	 echo "HTTP status code: $$CODE"; \
 	 echo "Body: $$BODY"; \
-	 if [ "$$CODE" != "200" ]; then echo "⚠️ 服務健康檢查非 200，可能有未啟動的依賴 (例如 Redis/Rabbit/DB)。"; fi
+	 if [ "$$CODE" != "200" ]; then echo "⚠️ Health check not 200, some dependencies may not be running (e.g. Redis/Rabbit/DB)."; fi
 
-stop: ## 停止背景啟動的應用 (使用 app.pid 或名稱匹配)
-	@if [ -f app.pid ]; then \
-	  PID=$$(cat app.pid); \
-	  if kill -0 $$PID 2>/dev/null; then \
-	    echo "終止 PID $$PID"; kill $$PID; else echo "PID $$PID 不存在"; fi; \
-	  rm -f app.pid; \
-	else \
-	  echo "找不到 app.pid，改用名稱匹配嘗試停止"; pkill -f 'kotlin-spring-boot_skeleton' || true; \
-	fi
-	@echo "停止指令已執行"
+stop: ## Stop background application (using app.pid or name match)
+		@if [ -f app.pid ]; then \
+			PID=$$(cat app.pid); \
+			if kill -0 $$PID 2>/dev/null; then \
+				echo "Killing PID $$PID"; kill $$PID; else echo "PID $$PID does not exist"; fi; \
+			rm -f app.pid; \
+		else \
+			echo "app.pid not found, try to stop by name match"; pkill -f 'kotlin-spring-boot_user-service' || true; \
+		fi
+		@echo "Stop command executed"
 
-pid: ## 顯示目前背景 PID (若存在)
-	@if [ -f app.pid ]; then echo "背景 PID: $$(cat app.pid)"; else echo "無 app.pid"; fi
+pid: ## Show current background PID (if exists)
+	@if [ -f app.pid ]; then echo "Background PID: $$(cat app.pid)"; else echo "No app.pid"; fi
 
-coverage-badge: test ## 產生 (或更新) coverage badge (使用 Jacoco 最終 LINE summary)
+coverage-badge: test ## Generate (or update) coverage badge (using Jacoco final LINE summary)
 	@XML=build/reports/jacoco/test/jacocoTestReport.xml; \
-	 if [ ! -f $$XML ]; then echo "未找到 $$XML"; exit 1; fi; \
+	 if [ ! -f $$XML ]; then echo "Not found: $$XML"; exit 1; fi; \
 	 last=$$(grep 'counter type="LINE"' $$XML | tail -n 1); \
 	 missed=$$(echo $$last | sed -E 's/.*missed="([0-9]+)".*/\1/'); \
 	 covered=$$(echo $$last | sed -E 's/.*covered="([0-9]+)".*/\1/'); \
-	 if [ -z "$$covered" ] || [ -z "$$missed" ]; then echo "解析失敗: $$last"; exit 1; fi; \
+	 if [ -z "$$covered" ] || [ -z "$$missed" ]; then echo "Parse failed: $$last"; exit 1; fi; \
 	 total=$$((covered + missed)); pct=0; if [ $$total -gt 0 ]; then pct=$$((covered * 100 / total)); fi; \
 	 mkdir -p badges; echo "{\"coverageLinePercent\": $$pct}" > badges/coverage.json; \
-	 echo "行覆蓋率: $$pct% (covered=$$covered missed=$$missed total=$$total)"; \
-	 echo "輸出: badges/coverage.json"
+	 echo "Line coverage: $$pct% (covered=$$covered missed=$$missed total=$$total)"; \
+	 echo "Output: badges/coverage.json"
 
-health-wait: ## 輪詢健康 (最多 30 秒)；成功返回 0，失敗返回 1
-	@echo "輪詢健康檢查 http://localhost:$(PORT)/actuator/health (timeout 30s)"; \
-	 for i in $$(seq 1 30); do \
-	   CODE=$$(curl -s -o /dev/null -w '%{http_code}' http://localhost:$(PORT)/actuator/health || true); \
-	   if [ "$$CODE" = "200" ]; then echo "健康檢查成功 (i=$$i)"; exit 0; fi; \
-	   sleep 1; \
-	 done; echo "健康檢查逾時"; exit 1
+health-wait: ## Poll health (up to 30 seconds); returns 0 on success, 1 on failure
+		@echo "Polling health check http://localhost:$(PORT)/actuator/health (timeout 30s)"; \
+		 for i in $$(seq 1 30); do \
+			 CODE=$$(curl -s -o /dev/null -w '%{http_code}' http://localhost:$(PORT)/actuator/health || true); \
+			 if [ "$$CODE" = "200" ]; then echo "Health check succeeded (i=$$i)"; exit 0; fi; \
+			 sleep 1; \
+		 done; echo "Health check timed out"; exit 1
 
-# 範例：
+# Example:
 # make run-mock PORT=9095
 # make run PROFILE=mock
