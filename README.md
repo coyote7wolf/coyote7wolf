@@ -42,6 +42,7 @@
 ### Data Flow
 
 ```mermaid
+%%{init: {"theme":"neutral"}}%%
 flowchart TD
     subgraph SSR[SSR]
         A[Page Request] --> B[Server Fetch Data using API]
