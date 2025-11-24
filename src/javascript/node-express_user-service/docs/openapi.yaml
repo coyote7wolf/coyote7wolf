@@ -1,0 +1,99 @@
+openapi: 3.0.3
+info:
+  title: User Management API
+  version: 1.0.0
+  description: RESTful User CRUD with versioned path /api/v1
+servers:
+- url: http://localhost:3000/api/v1
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+  /users:
+    get:
+      summary: List users
+      parameters:
+      - in: query
+        name: offset
+        schema:
+          type: integer
+      - in: query
+        name: limit
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Success
+    post:
+      summary: Create user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUser'
+      responses:
+        '201':
+          description: Created
+  /users/{id}:
+    get:
+      summary: Get user by id
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200': { description: OK }
+        '404': { description: Not Found }
+    put:
+      summary: Update user
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUser'
+      responses:
+        '200': { description: Updated }
+    delete:
+      summary: Delete user
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '204': { description: Deleted }
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        email: { type: string }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+    CreateUser:
+      type: object
+      required: [ name, email ]
+      properties:
+        name: { type: string }
+        email: { type: string, format: email }
+    UpdateUser:
+      type: object
+      properties:
+        name: { type: string }
+        email: { type: string, format: email }
