@@ -21,6 +21,7 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
+autonumber
   participant Client
   participant Controller as UserController
   participant Service as UserService
