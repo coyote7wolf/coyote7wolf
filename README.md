@@ -68,8 +68,10 @@
 
 ## Kotlin
 
-- [Spring Boot User Service](src/kotlin/kotlin-spring-boot_user-service/)
+- [Kotlin Spring Boot User Service](src/kotlin/kotlin-spring-boot_user-service/)
 
 ## Java
+
+- [Java Spring Boot User Service](src/java/java-spring-boot_user-service/)
 
 ## JavaScript
