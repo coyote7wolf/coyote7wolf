@@ -5,7 +5,7 @@ A modern Kotlin and Spring Boot 3.x backend service with mockable infrastructure
 ## 🗂️ Architecture Diagram
 
 ```mermaid
-%%{init: {"theme":"dark"}}%%
+%%{init: {"theme":"neutral"}}%%
 flowchart TD
   A[UserController] --> B[UserService]
   B --> C[KeyValueStore]
