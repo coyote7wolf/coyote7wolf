@@ -16,20 +16,54 @@
 
 ## Frontend Highlights
 
-### Homepage
+### Page Layouts
+
+#### Homepage
 
 - Layout: pattern
 - Component:
 
-### Product Listing Page
+#### Login / Signup Page
+
+- Layout: pattern
+- Component:
+
+#### Product Listing Page
 
 - Layout: pattern
 - Component:
 
 ### Design System
 
-- Tools: Storybook
-- Component:
+#### Component
+
+#### Token
+
+### Data Flow
+
+```mermaid
+flowchart TD
+    subgraph SSR[SSR]
+        A[Page Request] --> B[Server Fetch Data using API]
+        B --> C[Render HTML]
+    end
+
+    subgraph CSR[CSR]
+        C --> D[Client Hydration]
+        D --> E[UI Component Mount]
+    end
+
+    subgraph DataFetch[Data Fetch]
+        D --> F[Fetch Data using axios or fetch or React Query or SWR]
+        F --> G[Update Client Cache]
+    end
+
+    subgraph State[Client State Management]
+        G --> H[Update Zustand or Redux Store]
+        H --> E
+    end
+
+```
 
 ## Full-Stack Highlights
 
