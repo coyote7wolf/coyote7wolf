@@ -21,7 +21,7 @@ flowchart TD
 ## 🔄 Data Flow Diagram
 
 ```mermaid
-%%{init: {"theme":"dark"}}%%
+%%{init: {"theme":"neutral"}}%%
 sequenceDiagram
 autonumber
   participant Client
