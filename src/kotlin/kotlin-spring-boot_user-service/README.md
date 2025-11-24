@@ -39,7 +39,7 @@ autonumber
 
 ---
 
-## 🛠️ Tech Stack Highlight
+## ✨ Tech Stack Highlight
 
 - **Language:** Kotlin (JVM, JDK 21)
 - **Framework:** Spring Boot 3.x
