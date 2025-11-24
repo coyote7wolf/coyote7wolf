@@ -5,6 +5,7 @@ Spring Boot 3 user management API featuring clean architecture, OpenAPI document
 ## 🗂️ Architecture Diagram
 
 ```mermaid
+%%{init: {"theme":"dark"}}%%
 flowchart TD
   subgraph API[REST API Layer]
     userController[UserController]
@@ -38,6 +39,7 @@ flowchart TD
 ## 🔄 Data Flow Sequence Diagram
 
 ```mermaid
+%%{init: {"theme":"dark"}}%%
 sequenceDiagram
   autonumber
   participant Client
