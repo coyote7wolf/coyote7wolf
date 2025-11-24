@@ -1,4 +1,4 @@
-# Makefile for java-spring-boot_skeleton
+# Makefile for java-spring-boot_user-service
 # Each target has a short description after '##' for help aggregation.
 
 MVNW=./mvnw
@@ -10,7 +10,7 @@ CURL_BIN?=curl
 JQ?=jq
 
 # Internal function to find running java process (simplistic: matching jar/main class)
-JAVA_CMD?=JavaSpringBootSkeletonApplication
+JAVA_CMD?=JavaSpringBootUserserviceApplication
 
 .PHONY: help run run-dev stop test coverage format verify clean curl-create curl-get curl-list curl-update curl-delete curl-health curl-openapi
 
