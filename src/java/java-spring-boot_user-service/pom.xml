@@ -8,7 +8,7 @@
 		<version>3.4.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.skeleton</groupId>
+	<groupId>com.userservice</groupId>
 	<artifactId>java-spring-boot_user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>java-spring-boot_user-service</name>
