@@ -50,6 +50,8 @@
 - Layout: pattern
 - Component:
 
+#### Homepage RTL i18n
+
 #### Login / Signup Page
 
 - Layout: pattern
