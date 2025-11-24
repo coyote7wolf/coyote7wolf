@@ -1,5 +1,32 @@
 # Code Portfolio
 
+## Full-Stack Highlights
+
+### OAuth 2.0 Flow
+
+![OAuth 2.0 Flow](img/fullstack/OAuth2-Flow.drawio.png)
+
+- State: Stateless
+- Token Type: Access Token (JWT/Opaque/session ID)
+
+### Password Cookie Session Flow
+
+![Password Cookie Session Flow](img/fullstack/Password-Cookie-Session-Flow.drawio.png)
+
+- State: Stateful
+- Token Type: Session ID
+
+### JWT Token Flow
+
+![JWT Token Flow](img/fullstack/JWT-Token-Flow.drawio.png)
+
+- State: Stateless
+- Token Type: JWT
+
+### AI Productization Flow
+
+![AI Productization Flow](img/fullstack/AI-Productization-Flow.drawio.png)
+
 ## Backend Highlights
 
 ### Serverless Lambda API Architecture
@@ -65,31 +92,6 @@ flowchart TD
     end
 
 ```
-
-## Full-Stack Highlights
-
-### OAuth 2.0 Flow
-
-![OAuth 2.0 Flow](img/fullstack/OAuth2-Flow.drawio.png)
-
-- State: Stateless
-- Token Type: Access Token (JWT/Opaque/session ID)
-
-### Password Cookie Session Flow
-
-![Password Cookie Session Flow](img/fullstack/Password-Cookie-Session-Flow.drawio.png)
-
-- State: Stateful
-- Token Type: Session ID
-
-### JWT Token Flow
-
-![JWT Token Flow](img/fullstack/JWT-Token-Flow.drawio.png)
-
-- State: Stateless
-- Token Type: JWT
-
-### AI Productization Flow
 
 ---
 
