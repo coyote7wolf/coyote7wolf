@@ -129,6 +129,7 @@ flowchart TD
 ## Typescript
 
 - [React.js Tailwind CSS Design System](src/typescript/react-tailwind_design-system/)
+- [Nest.js Vector Memory Service](src/typescript/vector-memory-service/)
 
 ## Go
 
