@@ -1,0 +1,196 @@
+# Elasticsearch 同義詞配置檔 (Synonyms)
+# 格式: term1,term2,term3 => preferred_term
+# 或: term1,term2,term3 (互為同義詞)
+
+# AI 相關同義詞
+AI,人工智能,artificial intelligence,a.i.,ai
+NLP,自然語言處理,natural language processing,nlp,text processing,linguistic analysis
+ML,機器學習,machine learning,ml,automated learning
+DL,深度學習,deep learning,dl,neural network learning
+LLM,大型語言模型,large language model,llm,foundation model,base model,pretrained model
+NMT,神經機械翻譯,neural machine translation,machine translation
+RL,強化學習,reinforcement learning,reward learning
+SL,監督學習,supervised learning,labeled learning
+
+# Embedding 相關
+embedding,向量嵌入,向量化,embeddings,embed,dense vector,semantic embedding,text embedding
+vector,向量,矢量,vectors,numeric representation,vector representation
+dense_vector,稠密向量,dense vectors,embedding vector
+sparse_vector,稀疏向量,sparse embedding
+word_embedding,詞向量,word vector,word representation,word2vec,glove,fasttext
+contextual_embedding,上下文向量,contextualized embedding,dynamic embedding,elmo
+cross_lingual_embedding,跨語言向量,multilingual embedding,translation-based
+
+# 模型相關
+model,模型,預訓練模型,预训练,neural model,language model,fine-tuned model
+BERT,伯特,bert,bidirectional encoder representations from transformers
+GPT,生成式預訓練,gpt,generative pre-trained transformer,causal language model
+RoBERTa,roberta,robustly optimized bert pretraining approach
+T5,t5,text to text transfer transformer,sequence-to-sequence model
+XLNet,xlnet,xl-net,autoregressive transformer
+ELECTRA,electra,efficiently learning an encoder that classifies token replacements
+transformer,轉換器,transformers,attention-based model,self-attention model
+attention,注意力,self-attention,multi-head attention,attention mechanism
+CNN,卷積神經網路,convolutional neural network,convolutional layer,convolution
+RNN,遞迴神經網路,recurrent neural network,recurrent model,sequence model
+LSTM,長短期記憶,lstm,long-short term memory,bidirectional lstm,sequence model
+GRU,gated recurrent unit,gru,gating mechanism
+GAN,生成對抗網絡,generative adversarial network,adversarial learning,adversarial training
+VAE,變分自動編碼,variational autoencoder,probabilistic model,latent variable model
+autoencoder,自動編碼器,encoder,decoder,autoencoding,unsupervised learning
+
+# 搜尋相關
+search,搜尋,搜索,查詢,檢索,retrieval,find,information retrieval
+vector_search,向量搜尋,向量搜索,similarity search,semantic search,vector similarity
+knn,k nearest neighbors,k-nearest neighbors,nearest neighbor search,approximate nearest neighbor,ann
+fulltext_search,全文搜尋,全文搜索,text search,keyword search,bm25,tf-idf,term frequency
+hybrid_search,混合搜尋,混合搜索,combined search,vector and text search
+phrase_search,短語搜尋,exact phrase matching,phrase matching,collocation
+prefix_search,前綴搜尋,前缀搜索,prefix matching,wildcard search
+faceted_search,面向搜尋,faceted navigation,drill-down search
+cross_lingual_search,跨語言搜尋,multilingual search,cross-lingual retrieval
+
+# 動作相關
+create,建立,新增,創建,建造,add,make,initialization
+delete,刪除,移除,刪掉,remove,drop,removal,cleanup
+update,更新,修改,改變,change,modify,refresh
+index,索引,建立索引,indexing,indexed,document indexing
+reindex,重建索引,reindexing,data migration,re-indexing
+bulk_index,批量索引,bulk indexing,batch indexing
+insert,插入,insert,add document
+ingest,攝取,data ingestion,data loading,document loading
+
+# 評估指標相關
+metric,指標,度量,metrics,measurement,evaluation metric
+accuracy,準確度,正確率,acc,classification accuracy
+precision,精確度,準確率,positive predictive value
+recall,召回率,回召,sensitivity,true positive rate
+f1,f1-score,f1 score,harmonic mean,f-measure
+roc,receiver operating characteristic,auc,area under curve,auroc
+map,mean average precision,average precision,ap
+ndcg,normalized discounted cumulative gain,ranking metric
+mrr,mean reciprocal rank,reciprocal rank
+hit_rate,命中率,hit ratio
+coverage,覆蓋度,coverage rate,item coverage
+diversity,多樣性,recommendation diversity
+serendipity,偶然性,recommendation serendipity
+score,分數,評分,ranking score,similarity score
+
+# 參數相關
+dimension,維度,維數,dims,embedding dimension,vector dimension
+similarity,相似度,相似性,similarity score,similarity metric
+distance,距離,distnace,metric distance,euclidean distance,cosine distance,manhattan distance
+threshold,閾值,臨界值,cutoff,threshold value
+similarity_threshold,相似度閾值,similarity cutoff
+k,number of results,top-k,k parameter,neighbors
+batch_size,批大小,batch size,batch length
+epoch,迭代,iteration epoch,training epoch
+learning_rate,學習率,学习率,lr,learning rate decay
+weight_decay,權重衰減,l2 regularization,regularization
+dropout,隨機刪除,dropout rate,regularization
+temperature,溫度,temperature parameter,softmax temperature
+
+# 數據相關
+document,文檔,文件,doc,record,corpus document
+corpus,語料庫,語料,corpora,text corpus,training corpus
+dataset,數據集,資料集,data collection,benchmark dataset
+training_data,訓練數據,training dataset,training corpus
+validation_set,驗證集,validation data
+test_set,測試集,test data,held-out test set
+labeled_data,標記數據,labeled dataset,annotated data
+unlabeled_data,未標記數據,unlabeled dataset,unannotated data
+feature,特徵,特征,feature vector,feature extraction
+label,標籤,label,ground truth,annotation
+annotation,標註,annotation,manual labeling,data labeling
+
+# 語言相關
+chinese,中文,簡體中文,traditional chinese,simplified chinese,zh
+english,英文,英語,en,american english,british english
+multilingual,多語言,跨語言,cross-lingual,bilingual
+language,語言,language model,language processing
+word_segmentation,分詞,word segmentation,tokenization,word tokenization
+pos_tagging,詞性標註,part-of-speech tagging,pos tagging
+named_entity,命名實體,named entity recognition,ner,entity extraction,entity identification
+coreference,共指消解,coreference resolution,pronoun resolution
+
+# 層級相關
+layer,層,圖層,layers,network layer
+hidden_layer,隱層,隱藏層,hidden units
+output_layer,輸出層,輸出
+input_layer,輸入層,輸入
+embedding_layer,嵌入層,embedding layer
+dense_layer,全連接層,fully connected layer,fc layer
+convolutional_layer,卷積層,conv layer
+pooling_layer,池化層,pooling,max pooling,average pooling
+
+# 優化相關
+optimization,最佳化,優化,optimize,optimization algorithm
+gradient,梯度,gradient computation
+backpropagation,反向傳播,反向传播,gradient backpropagation
+sgd,stochastic gradient descent,mini-batch gradient descent
+adam,adaptive moment estimation,adam optimizer
+optimizer,優化器,optimiser,adam,sgd,rmsprop
+convergence,收斂,convergence criterion,convergence rate
+
+# 任務相關
+classification,分類,分类,classify,text classification,document classification,multi-label classification
+regression,迴歸,回归,linear regression,logistic regression
+clustering,聚類,聚类,document clustering,topic clustering
+ranking,排序,排名,ranking algorithm,ranking model,learning to rank
+generation,生成,text generation,conditional generation,language generation
+translation,翻譯,machine translation,sequence to sequence
+summarization,摘要,text summarization,automatic summarization,extractive summarization,abstractive summarization
+qa,question answering,question-answering,reading comprehension,machine comprehension
+dialogue,對話,conversation,dialogue generation,dialogue system,chatbot
+sentiment,情感,sentiment analysis,emotion detection,sentiment classification
+intent,意圖,intent detection,intent classification
+
+# 性能相關
+performance,性能,表現,performance metrics,model performance
+latency,延遲,延迟,latency ms,response time,query latency
+throughput,吞吐量,吞吐率,queries per second,requests per second
+qps,query per second,queries per second,qps,rps
+memory,記憶體,memory usage,memory consumption,ram,gpu memory
+cpu,中央處理器,cpu utilization,cpu usage
+gpu,圖形處理器,gpu utilization,gpu usage,cuda
+inference_time,推理時間,inference latency,model inference time
+training_time,訓練時間,training duration,training speed
+
+# 高級技術相關
+fine_tuning,微調,fine-tuning,transfer learning,domain adaptation,task-specific training
+transfer_learning,遷移學習,transfer learning,pre-training
+knowledge_distillation,知識蒸餾,model distillation,knowledge transfer
+model_compression,模型壓縮,model compression,pruning,quantization,network pruning
+adversarial_robustness,對抗魯棒性,adversarial robustness,adversarial training,robustness
+explainability,可解釋性,explainability,interpretability,model explanation,attention visualization
+federated_learning,聯邦學習,federated learning,distributed learning,privacy preserving
+active_learning,主動學習,active learning,data annotation,label efficient learning
+few_shot,少量示例,few-shot learning,few-shot,one-shot,zero-shot learning
+meta_learning,元學習,meta-learning,learning to learn
+continual_learning,持續學習,continual learning,lifelong learning,incremental learning
+
+# 知識圖表相關
+knowledge_graph,知識圖譜,knowledge graph,semantic network,knowledge base,knowledge representation
+entity_linking,實體鏈接,entity linking,entity disambiguation,entity resolution
+relation_extraction,關係抽取,relation extraction,relationship extraction
+semantic_role,語義角色,semantic role labeling,srl,predicate argument
+ontology,本体,ontology,semantic hierarchy,class hierarchy
+
+# 推薦系統相關
+recommendation,推薦,recommendation system,recommender,recommendation engine,recommendation algorithm
+collaborative_filtering,協同過濾,collaborative filtering,user-based,item-based
+content_based,基於內容,content-based filtering,content recommendation
+matrix_factorization,矩陣分解,matrix factorization,nmf,svd,pmf
+rating,評分,rating,user rating,explicit feedback
+implicit_feedback,隱反饋,implicit feedback,user behavior,interaction
+personalization,個人化,personalization,user preference,user modeling
+cold_start,冷啟動,cold-start problem,new item,new user
+
+# 其他高級概念
+graph_neural_network,圖神經網絡,gnn,graph learning,graph convolution,graph attention
+multi_modal,多模態,multi-modal,vision-language,image-text
+temporal,時間序列,temporal,time series,sequence,sequential
+attention_visualization,注意力可視化,saliency map,feature importance
+uncertainty,不確定性,uncertainty estimation,confidence,probability calibration
+semi_supervised,半監督,semi-supervised learning,pseudo-labeling,self-training
+
