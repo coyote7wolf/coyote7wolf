@@ -1,36 +1,5 @@
 # Code Portfolio
 
-## Backend Highlights
-
-### Serverless Lambda API Architecture
-
-![Serverless Lambda API Architecture](img/backend/Serverless-API.png)
-
-### ECS & EKS API with Redis Cache Architecture
-
-![ECS & EKS API with Redis Cache Architecture](img/backend/ECS-EKS-Redis-Cache.drawio.png)
-
-### EDA with Saga and CRDT on SQS
-
-![EDA with Saga and CRDT on SQS](img/backend/EDA-Saga-CRDT-SQS.drawio.png)
-
-## Frontend Highlights
-
-### Homepage
-
-- Layout: pattern
-- Component:
-
-### Product Listing Page
-
-- Layout: pattern
-- Component:
-
-### Design System
-
-- Tools: Storybook
-- Component:
-
 ## Full-Stack Highlights
 
 ### OAuth 2.0 Flow
@@ -55,6 +24,76 @@
 - Token Type: JWT
 
 ### AI Productization Flow
+
+![AI Productization Flow](img/fullstack/AI-Productization-Flow.drawio.png)
+
+## Backend Highlights
+
+### Serverless Lambda API Architecture
+
+![Serverless Lambda API Architecture](img/backend/Serverless-API.png)
+
+### ECS & EKS API with Redis Cache Architecture
+
+![ECS & EKS API with Redis Cache Architecture](img/backend/ECS-EKS-Redis-Cache.drawio.png)
+
+### EDA with Saga and CRDT on SQS
+
+![EDA with Saga and CRDT on SQS](img/backend/EDA-Saga-CRDT-SQS.drawio.png)
+
+## Frontend Highlights
+
+### Page Layouts
+
+#### Homepage
+
+- Layout: pattern
+- Component:
+
+#### Homepage RTL i18n
+
+#### Login / Signup Page
+
+- Layout: pattern
+- Component:
+
+#### Product Listing Page
+
+- Layout: pattern
+- Component:
+
+### Design System
+
+#### Component
+
+#### Token
+
+### Data Flow
+
+```mermaid
+%%{init: {"theme":"neutral"}}%%
+flowchart TD
+    subgraph SSR[SSR]
+        A[Page Request] --> B[Server Fetch Data using API]
+        B --> C[Render HTML]
+    end
+
+    subgraph CSR[CSR]
+        C --> D[Client Hydration]
+        D --> E[UI Component Mount]
+    end
+
+    subgraph DataFetch[Data Fetch]
+        D --> F[Fetch Data using axios or fetch or React Query or SWR]
+        F --> G[Update Client Cache]
+    end
+
+    subgraph State[Client State Management]
+        G --> H[Update Zustand or Redux Store]
+        H --> E
+    end
+
+```
 
 ---
 
