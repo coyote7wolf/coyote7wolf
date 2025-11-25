@@ -68,6 +68,8 @@
 
 #### Token
 
+![tailwind-design-token](img/frontend/tailwind-design-token.png)
+
 ### Data Flow
 
 ```mermaid
@@ -98,6 +100,8 @@ flowchart TD
 ---
 
 ## Typescript
+
+- [React.js Tailwind CSS Design System](src/typescript/react-tailwind_design-system/)
 
 ## Go
 
