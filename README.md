@@ -91,25 +91,27 @@
 ```mermaid
 %%{init: {"theme":"neutral"}}%%
 flowchart TD
-    subgraph SSR[SSR]
-        A[Page Request] --> B[Server Fetch Data using API]
-        B --> C[Render HTML]
-    end
+  subgraph SSR[SSR]
+    A[1 Browser → Server: Page Request]
+    A --> B[2 Server: Call API to get data]
+    B --> C[3 Server: Render HTML]
+  end
 
-    subgraph CSR[CSR]
-        C --> D[Client Hydration]
-        D --> E[UI Component Mount]
-    end
+  subgraph CSR[CSR]
+    C --> D[4 Browser: Attach JS, enable interactivity]
+    D --> E1[5 Browser: Render component in DOM]
+  end
 
-    subgraph DataFetch[Data Fetch]
-        D --> F[Fetch Data using axios or fetch or React Query or SWR]
-        F --> G[Update Client Cache]
-    end
+  subgraph DataFetch[Data Fetch]
+    D --> F[6 Browser: Fetch Data via axios/fetch/React Query/SWR]
+    F --> G[7 Browser: Store fetched data in Cache]
+  end
 
-    subgraph State[Client State Management]
-        G --> H[Update Zustand or Redux Store]
-        H --> E
-    end
+  subgraph State[State Management]
+    G --> H[8 Browser: Update Zustand/Redux Store]
+    H --> E2[9 Browser: UI re-render - component in DOM]
+  end
+```
 
 ```
 
@@ -140,3 +142,4 @@ flowchart TD
 ## JavaScript
 
 - [Express.js User Service](src/javascript/node-express_user-service/)
+```
