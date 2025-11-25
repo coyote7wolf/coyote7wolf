@@ -66,6 +66,15 @@
 
 #### Component
 
+- Button
+  ![tailwind-design-button](img/frontend/tailwind-design-button.png)
+
+- Alert
+  ![tailwind-design-alert](img/frontend/tailwind-design-alert.png)
+
+- Breadcrumb
+  ![tailwind-design-breadcrumb](img/frontend/tailwind-design-breadcrumb.png)
+
 #### Token
 
 ![tailwind-design-token](img/frontend/tailwind-design-token.png)
