@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  email     String   @unique
+  name      String?
+  documents Document[]
+}
+
+model Document {
+  id          Int         @id @default(autoincrement())
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  title       String
+  content     String
+  source      String?
+  metadata    String?     // JSON string for flexible metadata
+  userId      Int
+  user        User        @relation(fields: [userId], references: [id])
+  embeddings  Embedding[]
+}
+
+model Embedding {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  vector      String   // JSON string to store embedding vector
+  pooling     String   @default("mean") // mean, first, sum, max, weighted_mean
+  similarity  String   @default("cosine") // cosine, euclidean, dot_product
+  documentId  Int
+  document    Document @relation(fields: [documentId], references: [id])
+}
