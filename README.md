@@ -151,7 +151,3 @@ flowchart TD
 ## JavaScript
 
 - [Express.js User Service](src/javascript/node-express_user-service/)
-
-```
-
-```
