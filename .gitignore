@@ -336,3 +336,38 @@ models/**/*.safetensors
 !models/.keep
 
 # If you later adopt Git LFS, remove these lines or narrow patterns accordingly.
+
+node_modules
+
+*storybook.log
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+
+# Cache/Temp
+.turbo/
+.next/
+.cache/
+.vite/
+.parcel-cache/
+.eslintcache
+
+# Test coverage
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Package manager lock files (依實際情況選擇)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
