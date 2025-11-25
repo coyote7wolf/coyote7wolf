@@ -3,6 +3,7 @@
 ## 🗂️ Architecture Diagram
 
 ```mermaid
+%%{init: {"theme":"neutral"}}%%
 flowchart TD
   A[Client Web/App] --> B[Gateway Service]
   B --> C[Memory Service]
@@ -18,6 +19,7 @@ flowchart TD
 ## 🔄 Data Flow Sequence Diagram
 
 ```mermaid
+%%{init: {"theme":"neutral"}}%%
 sequenceDiagram
   autoNumber
   participant Client as Client Web/App
