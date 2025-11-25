@@ -1,5 +1,16 @@
 # Code Portfolio
 
+- [Full-Stack Highlights](#full-stack-highlights)
+- [Backend Highlights](#backend-highlights)
+- [Frontend Highlights](#frontend-highlights)
+- [Typescript](#typescript)
+- [Go](#go)
+- [Python](#python)
+- [C#](#c)
+- [Kotlin](#kotlin)
+- [Java](#java)
+- [JavaScript](#javascript)
+
 ## Full-Stack Highlights
 
 ### OAuth 2.0 Flow
