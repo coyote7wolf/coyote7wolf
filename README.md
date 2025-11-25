@@ -47,20 +47,27 @@
 
 #### Homepage
 
-- Layout: pattern
-- Component:
+- Component: Header, Hero, Card, Footer
+- Features: LTR, English, Light Theme
+  ![Homepage LTR](img/frontend/homepage-ltr.png)
 
 #### Homepage RTL i18n
 
-#### Login / Signup Page
+- Component: Header, Hero, Card, Footer
+- Features: RTL, Arabic, Light Theme
+  ![Homepage RTL i18n](img/frontend/homepage-rtl-i18n.png)
 
-- Layout: pattern
-- Component:
+#### Signup Page
+
+- Component: Header, Toolbar, Card, Footer
+- Features: LTR, Chinese, Dark Theme
+  ![Signup Page Dark Theme](img/frontend/signup-page-dark-theme.png)
 
 #### Product Listing Page
 
-- Layout: pattern
-- Component:
+- Component: Header, Toolbar, Sidebar, Product card, Pagination, Footer
+- Features: LTR, Japanese, High Contrast Theme
+  ![Product Listing Page High Contrast Theme](img/frontend/product-listing-page-high-contrast-theme.png)
 
 ### Design System
 
