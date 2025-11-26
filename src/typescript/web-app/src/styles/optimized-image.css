@@ -1,0 +1,12 @@
+/**
+ * Optimized Image Styles
+ * CSS classes for OptimizedImage component
+ */
+
+.image-placeholder {
+  aspect-ratio: 16/9;
+}
+
+.image-error-fallback {
+  aspect-ratio: 16/9;
+}

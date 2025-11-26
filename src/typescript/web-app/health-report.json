@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-11-09T10:16:08.161Z",
+  "overall": "error",
+  "checks": [
+    {
+      "name": "Mock Database",
+      "status": "healthy",
+      "stats": {
+        "users": 3,
+        "documents": 8,
+        "workspaces": 1,
+        "templates": 2,
+        "activities": 3
+      }
+    },
+    {
+      "name": "Environment",
+      "status": "healthy",
+      "variables": {
+        "NODE_ENV": {
+          "status": "default"
+        },
+        "MODE": {
+          "status": "default"
+        },
+        "PORT": {
+          "status": "default"
+        },
+        "NEXT_PUBLIC_API_URL": {
+          "status": "default"
+        }
+      }
+    },
+    {
+      "name": "Dependencies",
+      "status": "healthy",
+      "nodeVersion": "v23.10.0",
+      "packageManager": "pnpm@8.15.0"
+    },
+    {
+      "name": "Mock Server",
+      "status": "error",
+      "error": ""
+    },
+    {
+      "name": "API Endpoints",
+      "status": "skipped",
+      "message": "Mock server not available"
+    },
+    {
+      "name": "Next.js Server",
+      "status": "optional",
+      "error": "",
+      "message": "Not running (this is normal if you haven't started the dev server)"
+    }
+  ]
+}

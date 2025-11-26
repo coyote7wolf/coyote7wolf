@@ -1,0 +1,15 @@
+{
+  "/api/auth/login": "/auth/users",
+  "/api/auth/me": "/auth/users",
+  "/api/dashboard/overview": "/dashboard/overview",
+  "/api/dashboard/kpis": "/dashboard/overview/kpis",
+  "/api/collaboration/heatmap": "/collaboration/heatmapData",
+  "/api/collaboration/conflicts": "/collaboration/conflictStats",
+  "/api/collaboration/users": "/collaboration/activeUsers",
+  "/api/ai/llm-usage": "/ai/llmUsage",
+  "/api/ai/context-flow": "/ai/contextFlow",
+  "/api/ai/recommendations": "/ai/teamRecommendations",
+  "/api/performance/websocket": "/performance/websocket",
+  "/api/performance/redis": "/performance/redis",
+  "/api/performance/services": "/performance/services"
+}

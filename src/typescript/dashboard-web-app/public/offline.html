@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>離線模式 - SyncCore AI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+      }
+
+      .offline-container {
+        text-align: center;
+        max-width: 500px;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .offline-icon {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 2rem;
+        fill: #667eea;
+      }
+
+      .offline-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #2d3748;
+      }
+
+      .offline-message {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      .retry-button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+        margin-right: 1rem;
+      }
+
+      .retry-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+      }
+
+      .home-button {
+        background: transparent;
+        color: #667eea;
+        border: 2px solid #667eea;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .home-button:hover {
+        background: #667eea;
+        color: white;
+      }
+
+      .features {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e2e8f0;
+        text-align: left;
+      }
+
+      .features h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #2d3748;
+      }
+
+      .features ul {
+        list-style: none;
+      }
+
+      .features li {
+        padding: 0.5rem 0;
+        color: #666;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #48bb78;
+        font-weight: bold;
+      }
+
+      .status-indicator {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: #f7fafc;
+        border-radius: 8px;
+        font-size: 0.9rem;
+      }
+
+      .status-online {
+        background: #f0fff4;
+        color: #22543d;
+        border-left: 4px solid #48bb78;
+      }
+
+      .status-offline {
+        background: #fffaf0;
+        color: #744210;
+        border-left: 4px solid #ed8936;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .loading {
+        animation: pulse 2s infinite;
+      }
+
+      @media (max-width: 640px) {
+        .offline-container {
+          margin: 1rem;
+          padding: 1.5rem;
+        }
+
+        .offline-title {
+          font-size: 1.5rem;
+        }
+
+        .offline-message {
+          font-size: 1rem;
+        }
+
+        .retry-button,
+        .home-button {
+          display: block;
+          width: 100%;
+          margin: 0.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="offline-container">
+      <!-- 離線圖標 -->
+      <svg
+        class="offline-icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+        <path
+          d="M23 12h-2c0-4.97-4.03-9-9-9v-2c6.08 0 11 4.92 11 11z"
+          opacity="0.3"
+        />
+        <path
+          d="M20 12h-2c0-3.31-2.69-6-6-6V4c4.42 0 8 3.58 8 8z"
+          opacity="0.6"
+        />
+      </svg>
+
+      <h1 class="offline-title">目前處於離線狀態</h1>
+
+      <p class="offline-message">
+        您的網路連線似乎有問題。不過別擔心，SyncCore AI
+        的某些功能仍可在離線狀態下使用。
+      </p>
+
+      <div>
+        <button class="retry-button" onclick="retryConnection()">
+          <span id="retry-text">重新連線</span>
+        </button>
+        <a href="/" class="home-button">返回首頁</a>
+      </div>
+
+      <!-- 連線狀態指示器 -->
+      <div id="status-indicator" class="status-indicator status-offline">
+        <strong>🔴 離線狀態</strong> - 正在嘗試重新連線...
+      </div>
+
+      <!-- 離線功能說明 -->
+      <div class="features">
+        <h3>離線可用功能：</h3>
+        <ul>
+          <li>查看已快取的儀表板數據</li>
+          <li>瀏覽歷史協作記錄</li>
+          <li>編輯個人設定</li>
+          <li>查看離線說明文件</li>
+          <li>儲存離線變更（連線後自動同步）</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // 檢查網路狀態
+      function updateConnectionStatus() {
+        const statusIndicator = document.getElementById("status-indicator");
+
+        if (navigator.onLine) {
+          statusIndicator.className = "status-indicator status-online";
+          statusIndicator.innerHTML =
+            "<strong>🟢 已連線</strong> - 網路連線正常";
+
+          // 延遲後自動重新導向
+          setTimeout(() => {
+            window.location.href = "/";
+          }, 2000);
+        } else {
+          statusIndicator.className = "status-indicator status-offline";
+          statusIndicator.innerHTML =
+            "<strong>🔴 離線狀態</strong> - 正在嘗試重新連線...";
+        }
+      }
+
+      // 重試連線
+      function retryConnection() {
+        const retryButton = document.querySelector(".retry-button");
+        const retryText = document.getElementById("retry-text");
+
+        retryButton.classList.add("loading");
+        retryText.textContent = "檢查中...";
+
+        // 嘗試載入一個小的資源來測試連線
+        fetch("/favicon.ico", {
+          method: "HEAD",
+          cache: "no-cache",
+        })
+          .then(() => {
+            retryText.textContent = "連線成功！";
+            setTimeout(() => {
+              window.location.href = "/";
+            }, 1000);
+          })
+          .catch(() => {
+            retryText.textContent = "重新連線";
+            retryButton.classList.remove("loading");
+
+            // 顯示錯誤提示
+            const errorMsg = document.createElement("div");
+            errorMsg.textContent = "連線失敗，請檢查您的網路設定";
+            errorMsg.style.cssText =
+              "color: #e53e3e; margin-top: 1rem; font-size: 0.9rem;";
+
+            const container = document.querySelector(".offline-container");
+            const existingError = container.querySelector(".error-message");
+            if (existingError) {
+              existingError.remove();
+            }
+
+            errorMsg.className = "error-message";
+            container.appendChild(errorMsg);
+
+            setTimeout(() => {
+              errorMsg.remove();
+            }, 3000);
+          });
+      }
+
+      // 監聽網路狀態變化
+      window.addEventListener("online", updateConnectionStatus);
+      window.addEventListener("offline", updateConnectionStatus);
+
+      // 初始狀態檢查
+      updateConnectionStatus();
+
+      // 定期檢查連線狀態
+      setInterval(() => {
+        if (!navigator.onLine) {
+          // 嘗試 ping 服務器
+          fetch("/ping", {
+            method: "HEAD",
+            cache: "no-cache",
+            mode: "no-cors",
+          })
+            .then(() => {
+              if (!navigator.onLine) {
+                // 手動觸發 online 事件
+                window.dispatchEvent(new Event("online"));
+              }
+            })
+            .catch(() => {
+              // 連線仍然失敗
+            });
+        }
+      }, 5000);
+
+      // Service Worker 消息監聽
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.addEventListener("message", (event) => {
+          if (event.data.type === "sync-complete") {
+            const statusIndicator = document.getElementById("status-indicator");
+            statusIndicator.innerHTML =
+              "<strong>🟢 同步完成</strong> - 離線數據已成功同步";
+            statusIndicator.className = "status-indicator status-online";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

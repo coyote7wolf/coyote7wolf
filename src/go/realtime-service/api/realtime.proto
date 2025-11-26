@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package realtime;
+
+option go_package = "./api/realtimepb";
+
+service RealtimeService {
+  // 連線驗證與 Presence 狀態註冊
+  rpc Connect(ConnectRequest) returns (ConnectResponse);
+  // 廣播 Presence 狀態（上線/離線/活躍）
+  rpc BroadcastPresence(PresenceEvent) returns (PresenceAck);
+  // 訂閱房間事件（支援 stream）
+  rpc SubscribeRoom(RoomSubscribeRequest) returns (stream RoomEvent);
+  // 推播事件給房間
+  rpc PushRoomEvent(RoomEvent) returns (EventAck);
+}
+
+message ConnectRequest {
+  string token = 1; // JWT/Session token
+  string device_id = 2;
+}
+
+message ConnectResponse {
+  string user_id = 1;
+  string role = 2;
+  bool success = 3;
+  string message = 4;
+}
+
+message PresenceEvent {
+  string user_id = 1;
+  string status = 2; // online/offline/active/idle
+  string room_id = 3;
+  string device_id = 4;
+}
+
+message PresenceAck {
+  bool success = 1;
+  string message = 2;
+}
+
+message RoomSubscribeRequest {
+  string token = 1;
+  string room_id = 2;
+}
+
+message RoomEvent {
+  string room_id = 1;
+  string user_id = 2;
+  string event_type = 3; // message/cursor/presence/custom
+  string payload = 4;
+  string timestamp = 5;
+}
+
+message EventAck {
+  bool success = 1;
+  string message = 2;
+}

@@ -1,0 +1,176 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "🚀SyncCoreAI" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e6]:
+        - link "Sign In" [ref=e7] [cursor=pointer]:
+          - /url: /login/
+          - button "Sign In" [ref=e8]:
+            - generic [ref=e9]: Sign In
+        - link "Get Started" [ref=e10] [cursor=pointer]:
+          - /url: /register/
+          - button "Get Started" [ref=e11]:
+            - generic [ref=e12]: Get Started
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - complementary [ref=e15]:
+        - generic [ref=e18]: S
+        - navigation [ref=e20]:
+          - link "🏠" [ref=e21] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e22]: 🏠
+          - link "🔐" [ref=e23] [cursor=pointer]:
+            - /url: /login/
+            - generic [ref=e24]: 🔐
+          - link "📝" [ref=e25] [cursor=pointer]:
+            - /url: /register/
+            - generic [ref=e26]: 📝
+          - link "📄" [ref=e27] [cursor=pointer]:
+            - /url: /file-upload-demo/
+            - generic [ref=e28]: 📄
+          - link "📄" [ref=e29] [cursor=pointer]:
+            - /url: /image-editor-demo/
+            - generic [ref=e30]: 📄
+          - link "📄" [ref=e31] [cursor=pointer]:
+            - /url: /demos/media-player/
+            - generic [ref=e32]: 📄
+          - link "📄" [ref=e33] [cursor=pointer]:
+            - /url: /touch-demo/
+            - generic [ref=e34]: 📄
+          - link "📄" [ref=e35] [cursor=pointer]:
+            - /url: /performance-pwa-demo/
+            - generic [ref=e36]: 📄
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - heading "Collaborative Document Editing Powered by AI" [level=1] [ref=e42]:
+            - text: Collaborative Document Editing
+            - generic [ref=e43]: Powered by AI
+          - paragraph [ref=e44]: Create, edit, and collaborate on documents in real-time with intelligent AI suggestions, advanced conflict resolution, and seamless synchronization across all your devices.
+          - generic [ref=e45]:
+            - link "Start Free Trial" [ref=e46] [cursor=pointer]:
+              - /url: /register/
+              - button "Start Free Trial" [ref=e47]:
+                - generic [ref=e48]: Start Free Trial
+            - link "Watch Demo" [ref=e49] [cursor=pointer]:
+              - /url: /demos/media-player/
+              - button "Watch Demo" [ref=e50]:
+                - generic [ref=e51]: Watch Demo
+          - generic [ref=e52]:
+            - heading "🚀 Quick Access - Explore Our Features" [level=3] [ref=e53]
+            - generic [ref=e54]:
+              - link "📊 Dashboard Main Hub" [ref=e55] [cursor=pointer]:
+                - /url: /dashboard/
+                - generic [ref=e58]:
+                  - generic [ref=e59]: 📊
+                  - heading "Dashboard" [level=4] [ref=e60]
+                  - paragraph [ref=e61]: Main Hub
+              - link "📝 Documents Edit & Manage" [ref=e62] [cursor=pointer]:
+                - /url: /documents/
+                - generic [ref=e65]:
+                  - generic [ref=e66]: 📝
+                  - heading "Documents" [level=4] [ref=e67]
+                  - paragraph [ref=e68]: Edit & Manage
+              - link "🎬 Media Player Demo" [ref=e69] [cursor=pointer]:
+                - /url: /demos/media-player/
+                - generic [ref=e72]:
+                  - generic [ref=e73]: 🎬
+                  - heading "Media Player" [level=4] [ref=e74]
+                  - paragraph [ref=e75]: Demo
+              - link "🎨 Design System Components" [ref=e76] [cursor=pointer]:
+                - /url: /design-system/
+                - generic [ref=e79]:
+                  - generic [ref=e80]: 🎨
+                  - heading "Design System" [level=4] [ref=e81]
+                  - paragraph [ref=e82]: Components
+            - generic [ref=e83]:
+              - heading "🛠️ Development & Testing" [level=4] [ref=e84]
+              - generic [ref=e85]:
+                - link "📁 File Upload" [ref=e86] [cursor=pointer]:
+                  - /url: /file-upload-demo/
+                  - generic [ref=e87]:
+                    - generic [ref=e88]: 📁
+                    - text: File Upload
+                - link "🖼️ Image Editor" [ref=e89] [cursor=pointer]:
+                  - /url: /image-editor-demo/
+                  - generic [ref=e90]:
+                    - generic [ref=e91]: 🖼️
+                    - text: Image Editor
+                - link "👆 Touch Demo" [ref=e92] [cursor=pointer]:
+                  - /url: /touch-demo/
+                  - generic [ref=e93]:
+                    - generic [ref=e94]: 👆
+                    - text: Touch Demo
+                - link "🧪 Testing" [ref=e95] [cursor=pointer]:
+                  - /url: /test/
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: 🧪
+                    - text: Testing
+                - link "🗺️ Route Status" [ref=e98] [cursor=pointer]:
+                  - /url: /routes/
+                  - generic [ref=e99]:
+                    - generic [ref=e100]: 🗺️
+                    - text: Route Status
+        - generic [ref=e102]:
+          - heading "Why Choose SyncCoreAI?" [level=2] [ref=e103]
+          - generic [ref=e104]:
+            - generic [ref=e107]:
+              - img [ref=e109]
+              - heading "Real-time Collaboration" [level=3] [ref=e111]
+              - paragraph [ref=e112]: Work together seamlessly with your team. See changes instantly, leave comments, and maintain perfect sync across all devices.
+            - generic [ref=e115]:
+              - img [ref=e117]
+              - heading "AI-Powered Suggestions" [level=3] [ref=e119]
+              - paragraph [ref=e120]: Get intelligent writing suggestions, grammar corrections, and content improvements powered by advanced AI technology.
+            - generic [ref=e123]:
+              - img [ref=e125]
+              - heading "Smart Conflict Resolution" [level=3] [ref=e127]
+              - paragraph [ref=e128]: Never lose your work again. Our CRDT technology automatically resolves conflicts and maintains document integrity.
+        - generic [ref=e130]:
+          - heading "Ready to Transform Your Workflow?" [level=2] [ref=e131]
+          - paragraph [ref=e132]: Join thousands of teams already using SyncCoreAI to create better documents faster.
+          - generic [ref=e133]:
+            - link "Start Your Free Trial" [ref=e134] [cursor=pointer]:
+              - /url: /register/
+              - button "Start Your Free Trial" [ref=e135]:
+                - generic [ref=e136]: Start Your Free Trial
+            - button "Contact Sales" [ref=e137] [cursor=pointer]:
+              - generic [ref=e138]: Contact Sales
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - heading "SyncCoreAI" [level=4] [ref=e143]
+              - paragraph [ref=e144]: The future of collaborative document editing, powered by AI.
+            - generic [ref=e145]:
+              - heading "Product" [level=5] [ref=e146]
+              - list [ref=e147]:
+                - listitem [ref=e148]: Features
+                - listitem [ref=e149]: Pricing
+                - listitem [ref=e150]: Security
+                - listitem [ref=e151]: API
+            - generic [ref=e152]:
+              - heading "Company" [level=5] [ref=e153]
+              - list [ref=e154]:
+                - listitem [ref=e155]: About
+                - listitem [ref=e156]: Blog
+                - listitem [ref=e157]: Careers
+                - listitem [ref=e158]: Contact
+            - generic [ref=e159]:
+              - heading "Support" [level=5] [ref=e160]
+              - list [ref=e161]:
+                - listitem [ref=e162]:
+                  - link "Help Center" [ref=e163] [cursor=pointer]:
+                    - /url: /help/
+                - listitem [ref=e164]: Documentation
+                - listitem [ref=e165]: Community
+                - listitem [ref=e166]: Status
+          - paragraph [ref=e168]: © 2024 SyncCoreAI. All rights reserved.
+  - generic [ref=e170]:
+    - button "🚀" [ref=e171] [cursor=pointer]:
+      - generic [ref=e172]: 🚀
+    - generic: Quick Navigation
+  - alert [ref=e173]
+```

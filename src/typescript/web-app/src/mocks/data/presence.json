@@ -1,0 +1,144 @@
+[
+  {
+    "id": "presence-001",
+    "documentId": "doc-001",
+    "userId": "user-002",
+    "status": "online",
+    "cursor": {
+      "position": 245,
+      "selection": {
+        "start": 245,
+        "end": 260
+      }
+    },
+    "isTyping": false,
+    "currentSection": "技術架構",
+    "viewportPosition": 180,
+    "lastActiveAt": "2024-01-20T15:45:00.000Z",
+    "sessionId": "session-active-001",
+    "userInfo": {
+      "name": "測試用戶",
+      "avatar": "https://ui-avatars.com/api/?name=User&background=10B981&color=ffffff",
+      "role": "editor"
+    },
+    "device": {
+      "type": "desktop",
+      "browser": "Chrome",
+      "os": "macOS"
+    },
+    "permissions": ["read", "write", "comment"],
+    "joinedAt": "2024-01-20T15:30:00.000Z"
+  },
+  {
+    "id": "presence-002",
+    "documentId": "doc-001",
+    "userId": "user-003",
+    "status": "online",
+    "cursor": {
+      "position": 180,
+      "selection": null
+    },
+    "isTyping": true,
+    "currentSection": "專案目標",
+    "viewportPosition": 120,
+    "lastActiveAt": "2024-01-20T15:50:00.000Z",
+    "sessionId": "session-active-002",
+    "userInfo": {
+      "name": "文檔編輯者",
+      "avatar": "https://ui-avatars.com/api/?name=Editor&background=F59E0B&color=ffffff",
+      "role": "editor"
+    },
+    "device": {
+      "type": "desktop",
+      "browser": "Firefox",
+      "os": "Windows"
+    },
+    "permissions": ["read", "write", "comment", "review"],
+    "joinedAt": "2024-01-20T15:20:00.000Z"
+  },
+  {
+    "id": "presence-003",
+    "documentId": "doc-002",
+    "userId": "user-001",
+    "status": "away",
+    "cursor": {
+      "position": 95,
+      "selection": null
+    },
+    "isTyping": false,
+    "currentSection": "URL 設計",
+    "viewportPosition": 50,
+    "lastActiveAt": "2024-01-20T15:25:00.000Z",
+    "sessionId": "session-active-003",
+    "userInfo": {
+      "name": "系統管理員",
+      "avatar": "https://ui-avatars.com/api/?name=Admin&background=3B82F6&color=ffffff",
+      "role": "admin"
+    },
+    "device": {
+      "type": "tablet",
+      "browser": "Safari",
+      "os": "iPadOS"
+    },
+    "permissions": ["read", "write", "comment", "admin"],
+    "joinedAt": "2024-01-20T14:45:00.000Z"
+  },
+  {
+    "id": "presence-004",
+    "documentId": "doc-003",
+    "userId": "user-002",
+    "status": "online",
+    "cursor": {
+      "position": 420,
+      "selection": {
+        "start": 415,
+        "end": 430
+      }
+    },
+    "isTyping": false,
+    "currentSection": "主要功能",
+    "viewportPosition": 380,
+    "lastActiveAt": "2024-01-20T15:52:00.000Z",
+    "sessionId": "session-active-004",
+    "userInfo": {
+      "name": "測試用戶",
+      "avatar": "https://ui-avatars.com/api/?name=User&background=10B981&color=ffffff",
+      "role": "editor"
+    },
+    "device": {
+      "type": "mobile",
+      "browser": "Chrome Mobile",
+      "os": "Android"
+    },
+    "permissions": ["read", "write", "comment"],
+    "joinedAt": "2024-01-20T15:40:00.000Z"
+  },
+  {
+    "id": "presence-005",
+    "documentId": "doc-001",
+    "userId": "user-004",
+    "status": "offline",
+    "cursor": {
+      "position": 650,
+      "selection": null
+    },
+    "isTyping": false,
+    "currentSection": "專案時程",
+    "viewportPosition": 600,
+    "lastActiveAt": "2024-01-20T14:15:00.000Z",
+    "sessionId": "session-inactive-001",
+    "userInfo": {
+      "name": "協作者A",
+      "avatar": "https://ui-avatars.com/api/?name=ColA&background=EF4444&color=ffffff",
+      "role": "viewer"
+    },
+    "device": {
+      "type": "desktop",
+      "browser": "Edge",
+      "os": "Windows"
+    },
+    "permissions": ["read", "comment"],
+    "joinedAt": "2024-01-20T13:30:00.000Z",
+    "leftAt": "2024-01-20T14:15:00.000Z"
+  }
+]

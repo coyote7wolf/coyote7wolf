@@ -1,0 +1,171 @@
+[
+  {
+    "id": "comment-001",
+    "documentId": "doc-001",
+    "userId": "user-001",
+    "content": "這個專案規劃很詳細，建議增加更多技術細節，特別是關於微服務架構的部分。我們需要考慮服務間的通信協議和資料一致性問題。",
+    "position": {
+      "start": 150,
+      "end": 200,
+      "section": "技術架構",
+      "paragraph": 2,
+      "line": 8
+    },
+    "thread": [
+      {
+        "id": "reply-001",
+        "userId": "user-002",
+        "content": "同意！我會補充更多關於微服務架構的內容，包括 API Gateway、服務發現和負載均衡的設計。",
+        "createdAt": "2024-01-16T10:00:00.000Z",
+        "reactions": [
+          { "userId": "user-001", "type": "like" },
+          { "userId": "user-003", "type": "like" }
+        ]
+      },
+      {
+        "id": "reply-002",
+        "userId": "user-003",
+        "content": "建議也加入容器化部署策略，Docker 和 Kubernetes 的配置會很重要。",
+        "createdAt": "2024-01-16T14:30:00.000Z",
+        "reactions": [{ "userId": "user-002", "type": "heart" }]
+      },
+      {
+        "id": "reply-003",
+        "userId": "user-001",
+        "content": "好建議！我會在下個版本中加入完整的 DevOps 流程說明。",
+        "createdAt": "2024-01-17T09:15:00.000Z",
+        "reactions": []
+      }
+    ],
+    "resolved": false,
+    "mentions": ["user-002", "user-003"],
+    "tags": ["技術", "架構", "微服務"],
+    "priority": "high",
+    "assignee": "user-002",
+    "dueDate": "2024-01-25T00:00:00.000Z",
+    "reactions": [
+      { "userId": "user-002", "type": "like" },
+      { "userId": "user-003", "type": "thumbs_up" }
+    ],
+    "createdAt": "2024-01-15T16:30:00.000Z",
+    "updatedAt": "2024-01-17T09:15:00.000Z"
+  },
+  {
+    "id": "comment-002",
+    "documentId": "doc-002",
+    "userId": "user-002",
+    "content": "API 版本控制策略需要再討論。建議採用語義化版本控制（Semantic Versioning），並考慮向後兼容性。",
+    "position": {
+      "start": 75,
+      "end": 125,
+      "section": "URL 設計",
+      "paragraph": 1,
+      "line": 5
+    },
+    "thread": [
+      {
+        "id": "reply-004",
+        "userId": "user-001",
+        "content": "同意使用語義化版本控制。我們也需要定義 API 廢棄政策和遷移指南。",
+        "createdAt": "2024-01-12T09:45:00.000Z",
+        "reactions": [{ "userId": "user-002", "type": "like" }]
+      }
+    ],
+    "resolved": true,
+    "mentions": ["user-001"],
+    "tags": ["API", "版本控制"],
+    "priority": "medium",
+    "assignee": "user-001",
+    "resolvedBy": "user-001",
+    "resolvedAt": "2024-01-12T16:20:00.000Z",
+    "reactions": [{ "userId": "user-001", "type": "check" }],
+    "createdAt": "2024-01-11T15:20:00.000Z",
+    "updatedAt": "2024-01-12T16:20:00.000Z"
+  },
+  {
+    "id": "comment-003",
+    "documentId": "doc-003",
+    "userId": "user-003",
+    "content": "用戶手冊的語言需要更加通俗易懂，建議添加更多截圖和步驟說明。",
+    "position": {
+      "start": 200,
+      "end": 250,
+      "section": "快速開始",
+      "paragraph": 3,
+      "line": 12
+    },
+    "thread": [
+      {
+        "id": "reply-005",
+        "userId": "user-002",
+        "content": "我來協助添加截圖，會準備完整的操作流程圖。",
+        "createdAt": "2024-01-19T11:30:00.000Z",
+        "reactions": [
+          { "userId": "user-003", "type": "heart" },
+          { "userId": "user-001", "type": "like" }
+        ]
+      }
+    ],
+    "resolved": false,
+    "mentions": ["user-002"],
+    "tags": ["文檔", "用戶體驗"],
+    "priority": "medium",
+    "assignee": "user-002",
+    "dueDate": "2024-01-30T00:00:00.000Z",
+    "reactions": [{ "userId": "user-002", "type": "thumbs_up" }],
+    "createdAt": "2024-01-18T14:45:00.000Z",
+    "updatedAt": "2024-01-19T11:30:00.000Z"
+  },
+  {
+    "id": "comment-004",
+    "documentId": "doc-001",
+    "userId": "user-004",
+    "content": "專案時程看起來很緊湊，建議預留更多緩衝時間處理意外情況。",
+    "position": {
+      "start": 400,
+      "end": 450,
+      "section": "專案時程",
+      "paragraph": 1,
+      "line": 20
+    },
+    "thread": [],
+    "resolved": false,
+    "mentions": ["user-001"],
+    "tags": ["專案管理", "時程"],
+    "priority": "low",
+    "reactions": [{ "userId": "user-001", "type": "thinking" }],
+    "createdAt": "2024-01-20T10:15:00.000Z",
+    "updatedAt": "2024-01-20T10:15:00.000Z"
+  },
+  {
+    "id": "comment-005",
+    "documentId": "doc-002",
+    "userId": "user-003",
+    "content": "錯誤處理章節需要補充，特別是針對 4xx 和 5xx 錯誤的詳細說明。",
+    "position": {
+      "start": 600,
+      "end": 650,
+      "section": "狀態碼",
+      "paragraph": 4,
+      "line": 30
+    },
+    "thread": [
+      {
+        "id": "reply-006",
+        "userId": "user-002",
+        "content": "已經在準備錯誤處理的完整文檔，會包含常見錯誤和解決方案。",
+        "createdAt": "2024-01-20T16:45:00.000Z",
+        "reactions": []
+      }
+    ],
+    "resolved": false,
+    "mentions": ["user-002"],
+    "tags": ["API", "錯誤處理"],
+    "priority": "high",
+    "assignee": "user-002",
+    "dueDate": "2024-01-28T00:00:00.000Z",
+    "reactions": [{ "userId": "user-002", "type": "like" }],
+    "createdAt": "2024-01-20T15:30:00.000Z",
+    "updatedAt": "2024-01-20T16:45:00.000Z"
+  }
+]

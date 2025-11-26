@@ -1,0 +1,257 @@
+{
+  "auth": {
+    "users": [
+      {
+        "id": "admin-001",
+        "email": "admin@synccoreai.com",
+        "name": "Admin User",
+        "role": "System Administrator",
+        "loginTime": "2024-01-15T10:30:25Z",
+        "lastActive": "2024-01-15T14:22:18Z",
+        "permissions": ["dashboard:read", "analytics:write", "system:admin"],
+        "avatar": "/avatars/admin.jpg",
+        "preferences": {
+          "theme": "dark",
+          "language": "zh-TW"
+        }
+      },
+      {
+        "id": "demo-001",
+        "email": "demo@synccoreai.com",
+        "name": "Demo User",
+        "role": "Editor",
+        "loginTime": "2024-01-15T09:15:30Z",
+        "lastActive": "2024-01-15T14:20:45Z",
+        "permissions": ["dashboard:read", "collaboration:write"],
+        "avatar": "/avatars/demo.jpg",
+        "preferences": {
+          "theme": "light",
+          "language": "en"
+        }
+      },
+      {
+        "id": "viewer-001",
+        "email": "viewer@synccoreai.com",
+        "name": "Read-only Viewer",
+        "role": "Viewer",
+        "loginTime": "2024-01-15T08:45:15Z",
+        "lastActive": "2024-01-15T14:18:30Z",
+        "permissions": ["dashboard:read"],
+        "avatar": "/avatars/viewer.jpg",
+        "preferences": {
+          "theme": "auto",
+          "language": "zh-TW"
+        }
+      }
+    ]
+  },
+  "dashboard": {
+    "overview": {
+      "systemHealth": {
+        "status": "healthy",
+        "uptime": "99.9%",
+        "lastIncident": "2024-01-10T03:20:00Z"
+      },
+      "kpis": {
+        "activeUsers": 1247,
+        "collaborationSessions": 89,
+        "resolvedConflicts": 245,
+        "aiSuggestionRate": 73.2
+      },
+      "realtimeMetrics": {
+        "cpuUsage": 45.2,
+        "memoryUsage": 67.8,
+        "networkLatency": 127,
+        "diskUsage": 34.1
+      }
+    }
+  },
+  "collaboration": {
+    "heatmapData": [
+      {
+        "userId": "user-001",
+        "userName": "Alice Chen",
+        "fileId": "doc-001",
+        "fileName": "產品規劃.md",
+        "editCount": 45,
+        "timestamp": "2024-01-15T14:00:00Z",
+        "x": 120,
+        "y": 340,
+        "intensity": 0.8
+      },
+      {
+        "userId": "user-002",
+        "userName": "Bob Wang",
+        "fileId": "doc-001",
+        "fileName": "產品規劃.md",
+        "editCount": 32,
+        "timestamp": "2024-01-15T14:05:00Z",
+        "x": 150,
+        "y": 380,
+        "intensity": 0.6
+      },
+      {
+        "userId": "user-003",
+        "userName": "Carol Liu",
+        "fileId": "doc-002",
+        "fileName": "技術架構.md",
+        "editCount": 28,
+        "timestamp": "2024-01-15T14:10:00Z",
+        "x": 200,
+        "y": 220,
+        "intensity": 0.5
+      }
+    ],
+    "conflictStats": {
+      "total": 257,
+      "resolved": 245,
+      "pending": 12,
+      "autoResolved": 198,
+      "manualResolved": 47,
+      "types": {
+        "textConflict": 156,
+        "formatConflict": 89,
+        "structuralConflict": 12
+      },
+      "resolutionTimes": {
+        "average": 1.8,
+        "median": 1.2,
+        "p95": 4.5
+      }
+    },
+    "activeUsers": [
+      {
+        "id": "user-001",
+        "name": "Alice Chen",
+        "avatar": "/avatars/alice.jpg",
+        "status": "editing",
+        "currentFile": "產品規劃.md",
+        "lastActivity": "2024-01-15T14:22:00Z",
+        "cursor": { "x": 125, "y": 345 }
+      },
+      {
+        "id": "user-002",
+        "name": "Bob Wang",
+        "avatar": "/avatars/bob.jpg",
+        "status": "viewing",
+        "currentFile": "產品規劃.md",
+        "lastActivity": "2024-01-15T14:21:30Z",
+        "cursor": { "x": 155, "y": 385 }
+      },
+      {
+        "id": "user-003",
+        "name": "Carol Liu",
+        "avatar": "/avatars/carol.jpg",
+        "status": "editing",
+        "currentFile": "技術架構.md",
+        "lastActivity": "2024-01-15T14:22:15Z",
+        "cursor": { "x": 205, "y": 225 }
+      }
+    ]
+  },
+  "ai": {
+    "llmUsage": {
+      "totalTokens": 1247893,
+      "costThisMonth": 234.56,
+      "avgTokensPerRequest": 1543,
+      "topModels": [
+        { "name": "GPT-4", "usage": 45.2, "cost": 156.78 },
+        { "name": "Claude-3", "usage": 32.1, "cost": 89.45 },
+        { "name": "Gemini-Pro", "usage": 22.7, "cost": 67.33 }
+      ],
+      "suggestionAcceptRate": 73.2,
+      "dailyUsage": [
+        { "date": "2024-01-09", "tokens": 45623, "requests": 234 },
+        { "date": "2024-01-10", "tokens": 52341, "requests": 267 },
+        { "date": "2024-01-11", "tokens": 48905, "requests": 245 },
+        { "date": "2024-01-12", "tokens": 61234, "requests": 298 },
+        { "date": "2024-01-13", "tokens": 58769, "requests": 312 },
+        { "date": "2024-01-14", "tokens": 67123, "requests": 334 },
+        { "date": "2024-01-15", "tokens": 72456, "requests": 356 }
+      ]
+    },
+    "contextFlow": {
+      "nodes": [
+        {
+          "id": "context-001",
+          "type": "document",
+          "label": "產品規劃",
+          "connections": ["context-002", "context-003"],
+          "semanticScore": 0.89,
+          "position": { "x": 0, "y": 0, "z": 0 }
+        },
+        {
+          "id": "context-002",
+          "type": "code",
+          "label": "API 設計",
+          "connections": ["context-001", "context-004"],
+          "semanticScore": 0.76,
+          "position": { "x": 100, "y": 50, "z": 20 }
+        },
+        {
+          "id": "context-003",
+          "type": "discussion",
+          "label": "團隊討論",
+          "connections": ["context-001", "context-005"],
+          "semanticScore": 0.82,
+          "position": { "x": -50, "y": 80, "z": -10 }
+        }
+      ]
+    },
+    "teamRecommendations": [
+      {
+        "type": "collaboration",
+        "title": "最佳協作時段建議",
+        "description": "根據歷史數據，下午 2-4 點是團隊協作效率最高的時段",
+        "confidence": 0.85,
+        "actionable": true
+      },
+      {
+        "type": "pairing",
+        "title": "團隊配對建議",
+        "description": "Alice 和 Bob 的協作模式最有效率，建議安排重要項目",
+        "confidence": 0.78,
+        "actionable": true
+      }
+    ]
+  },
+  "performance": {
+    "websocket": {
+      "connections": 89,
+      "averageLatency": 127,
+      "uptime": 99.8,
+      "messagesPerSecond": 342,
+      "errorRate": 0.02
+    },
+    "redis": {
+      "hitRate": 94.7,
+      "memoryUsage": 67.8,
+      "keyCount": 15634,
+      "expiredKeys": 2341,
+      "evictedKeys": 89
+    },
+    "services": [
+      {
+        "name": "ai-agent-service",
+        "status": "healthy",
+        "responseTime": 145,
+        "uptime": 99.9,
+        "requestsPerMinute": 234
+      },
+      {
+        "name": "auth-service",
+        "status": "healthy",
+        "responseTime": 89,
+        "uptime": 99.8,
+        "requestsPerMinute": 156
+      },
+      {
+        "name": "sync-service",
+        "status": "warning",
+        "responseTime": 234,
+        "uptime": 98.9,
+        "requestsPerMinute": 445
+      }
+    ]
+  }
+}

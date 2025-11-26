@@ -1,0 +1,44 @@
+{
+  "name": "synccoreai-ai-memory-service",
+  "version": "0.1.0",
+  "description": "AI Memory Service for SyncCoreAI",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "test": "jest",
+    "test:smoke": "jest --testPathPattern=test/smoke.test.ts",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "migrate": "prisma migrate dev",
+    "studio": "prisma studio",
+    "prisma:init": "prisma init",
+    "prisma:generate": "prisma generate",
+    "prisma:reset": "prisma migrate reset"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.11.0",
+    "@nestjs/cache-manager": "^2.1.1",
+    "@nestjs/common": "^11.1.8",
+    "@nestjs/core": "^11.1.8",
+    "@nestjs/microservices": "^11.1.8",
+    "@nestjs/platform-express": "^11.1.8",
+    "@prisma/client": "^5.0.0",
+    "cache-manager": "^5.3.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "ioredis": "^5.0.0",
+    "langfuse": "^2.0.0",
+    "pgvector": "^0.2.0"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^11.1.8",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.0",
+    "jest": "^29.0.0",
+    "prisma": "^5.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  }
+}

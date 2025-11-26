@@ -1,0 +1,30 @@
+/**
+ * Lazy Loading Styles
+ * CSS classes for lazy loading components
+ */
+
+/* Dynamic sizing utilities */
+.lazy-container {
+  position: relative;
+}
+
+.lazy-skeleton-video {
+  background-color: #f3f4f6;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazy-skeleton-iframe {
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazy-list-item {
+  min-height: var(--item-height, 60px);
+}

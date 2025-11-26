@@ -1,0 +1,255 @@
+[
+  {
+    "id": "suggestion-001",
+    "documentId": "doc-001",
+    "userId": "user-001",
+    "type": "grammar",
+    "position": 120,
+    "original": "這個專案將會很成功",
+    "suggestions": [
+      {
+        "text": "這個專案有望成功",
+        "confidence": 0.85,
+        "reason": "更正式的表達方式"
+      },
+      {
+        "text": "此專案具有成功潛力",
+        "confidence": 0.78,
+        "reason": "商業文檔常用語"
+      },
+      {
+        "text": "該專案預期將取得成功",
+        "confidence": 0.72,
+        "reason": "更客觀的描述"
+      }
+    ],
+    "rule": "formal_language",
+    "category": "style",
+    "status": "accepted",
+    "appliedSuggestion": "這個專案有望成功",
+    "feedback": {
+      "helpful": true,
+      "accuracy": 4,
+      "comment": "建議很實用，改善了文檔的專業度"
+    },
+    "createdAt": "2024-01-20T15:20:00.000Z",
+    "appliedAt": "2024-01-20T16:00:00.000Z"
+  },
+  {
+    "id": "suggestion-002",
+    "documentId": "doc-002",
+    "userId": "user-003",
+    "type": "completion",
+    "position": 180,
+    "original": "API 設計應該遵循",
+    "suggestions": [
+      {
+        "text": "API 設計應該遵循 RESTful 原則",
+        "confidence": 0.92,
+        "reason": "基於上下文的最佳匹配"
+      },
+      {
+        "text": "API 設計應該遵循業界標準",
+        "confidence": 0.87,
+        "reason": "通用性建議"
+      },
+      {
+        "text": "API 設計應該遵循一致性原則",
+        "confidence": 0.81,
+        "reason": "設計原則建議"
+      }
+    ],
+    "rule": "context_completion",
+    "category": "content",
+    "status": "accepted",
+    "appliedSuggestion": "API 設計應該遵循 RESTful 原則",
+    "feedback": {
+      "helpful": true,
+      "accuracy": 5,
+      "comment": "完美的自動完成建議"
+    },
+    "createdAt": "2024-01-11T14:15:00.000Z",
+    "appliedAt": "2024-01-11T14:20:00.000Z"
+  },
+  {
+    "id": "suggestion-003",
+    "documentId": "doc-001",
+    "userId": "user-002",
+    "type": "translation",
+    "position": 300,
+    "original": "real-time collaboration",
+    "suggestions": [
+      {
+        "text": "即時協作",
+        "confidence": 0.95,
+        "reason": "標準技術術語翻譯"
+      },
+      {
+        "text": "實時協作",
+        "confidence": 0.88,
+        "reason": "另一種常見翻譯"
+      },
+      {
+        "text": "同步協作",
+        "confidence": 0.75,
+        "reason": "意思相近的表達"
+      }
+    ],
+    "rule": "technical_translation",
+    "category": "translation",
+    "status": "pending",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-TW",
+    "createdAt": "2024-01-18T10:30:00.000Z"
+  },
+  {
+    "id": "suggestion-004",
+    "documentId": "doc-003",
+    "userId": "user-002",
+    "type": "clarity",
+    "position": 250,
+    "original": "點擊這個按鈕來做這件事",
+    "suggestions": [
+      {
+        "text": "點擊「新建文檔」按鈕開始創建文檔",
+        "confidence": 0.89,
+        "reason": "更具體明確的指示"
+      },
+      {
+        "text": "選擇對應的功能按鈕執行操作",
+        "confidence": 0.76,
+        "reason": "通用性描述"
+      }
+    ],
+    "rule": "clarity_improvement",
+    "category": "usability",
+    "status": "rejected",
+    "rejectionReason": "用戶偏好原始表達方式",
+    "feedback": {
+      "helpful": false,
+      "accuracy": 3,
+      "comment": "建議太具體，不適合概述性說明"
+    },
+    "createdAt": "2024-01-19T16:45:00.000Z",
+    "rejectedAt": "2024-01-19T17:00:00.000Z"
+  },
+  {
+    "id": "suggestion-005",
+    "documentId": "doc-002",
+    "userId": "user-001",
+    "type": "tone",
+    "position": 450,
+    "original": "你必須這樣做",
+    "suggestions": [
+      {
+        "text": "建議採用這種方式",
+        "confidence": 0.84,
+        "reason": "更友善的語調"
+      },
+      {
+        "text": "推薦使用此方法",
+        "confidence": 0.8,
+        "reason": "專業且溫和的表達"
+      },
+      {
+        "text": "可以考慮這個做法",
+        "confidence": 0.72,
+        "reason": "給予選擇空間的表達"
+      }
+    ],
+    "rule": "tone_adjustment",
+    "category": "tone",
+    "status": "pending",
+    "targetTone": "professional_friendly",
+    "currentTone": "authoritative",
+    "createdAt": "2024-01-20T11:15:00.000Z"
+  },
+  {
+    "id": "suggestion-006",
+    "documentId": "doc-001",
+    "userId": "user-003",
+    "type": "structure",
+    "position": 500,
+    "original": "專案包含很多功能，有文檔編輯、協作、AI等",
+    "suggestions": [
+      {
+        "text": "專案包含以下主要功能：\n- 文檔編輯\n- 即時協作\n- AI 輔助功能",
+        "confidence": 0.91,
+        "reason": "改善可讀性的結構化列表"
+      },
+      {
+        "text": "專案的核心功能包括文檔編輯、協作和 AI 輔助三大模塊",
+        "confidence": 0.83,
+        "reason": "更簡潔的總結表達"
+      }
+    ],
+    "rule": "structure_improvement",
+    "category": "readability",
+    "status": "accepted",
+    "appliedSuggestion": "專案包含以下主要功能：\n- 文檔編輯\n- 即時協作\n- AI 輔助功能",
+    "feedback": {
+      "helpful": true,
+      "accuracy": 4,
+      "comment": "列表格式大大提高了可讀性"
+    },
+    "createdAt": "2024-01-17T14:20:00.000Z",
+    "appliedAt": "2024-01-17T14:25:00.000Z"
+  },
+  {
+    "id": "suggestion-007",
+    "documentId": "doc-002",
+    "userId": "user-002",
+    "type": "consistency",
+    "position": 320,
+    "original": "使用者",
+    "suggestions": [
+      {
+        "text": "用戶",
+        "confidence": 0.88,
+        "reason": "與文檔其他部分保持一致"
+      }
+    ],
+    "rule": "terminology_consistency",
+    "category": "consistency",
+    "status": "accepted",
+    "appliedSuggestion": "用戶",
+    "consistencyContext": {
+      "termVariations": ["使用者", "用戶", "用户"],
+      "recommendedTerm": "用戶",
+      "occurrences": 15,
+      "documentStandard": "tech_simplified_chinese"
+    },
+    "createdAt": "2024-01-16T09:40:00.000Z",
+    "appliedAt": "2024-01-16T09:45:00.000Z"
+  },
+  {
+    "id": "suggestion-008",
+    "documentId": "doc-003",
+    "userId": "user-001",
+    "type": "seo",
+    "position": 80,
+    "original": "使用說明",
+    "suggestions": [
+      {
+        "text": "SyncCoreAI 使用說明 - 完整教學指南",
+        "confidence": 0.79,
+        "reason": "包含關鍵詞，提升搜尋排名"
+      },
+      {
+        "text": "智慧文檔協作平台使用說明",
+        "confidence": 0.74,
+        "reason": "描述性標題，有利於 SEO"
+      }
+    ],
+    "rule": "seo_optimization",
+    "category": "seo",
+    "status": "pending",
+    "seoMetrics": {
+      "keywordDensity": 0.05,
+      "recommendedKeywords": ["文檔協作", "智慧編輯", "即時同步"],
+      "currentScore": 65,
+      "targetScore": 80
+    },
+    "createdAt": "2024-01-20T13:30:00.000Z"
+  }
+]

@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package conflict;
+
+option go_package = "./api;conflictpb";
+
+service ConflictService {
+  rpc ResolveConflict (ResolveConflictRequest) returns (ResolveConflictResponse);
+  rpc GetConflictStatus (GetConflictStatusRequest) returns (GetConflictStatusResponse);
+  rpc ListConflicts (ListConflictsRequest) returns (ListConflictsResponse);
+}
+
+message ResolveConflictRequest {
+  string user_id = 1;
+  string doc_id = 2;
+  string section = 3; // 段落/欄位
+  string delta = 4;
+  string version = 5;
+}
+
+message ResolveConflictResponse {
+  bool resolved = 1;
+  string merged_content = 2;
+  string conflict_id = 3;
+  string message = 4;
+}
+
+message GetConflictStatusRequest {
+  string user_id = 1;
+  string doc_id = 2;
+  string section = 3;
+}
+
+message GetConflictStatusResponse {
+  bool has_conflict = 1;
+  string conflict_id = 2;
+  string status = 3;
+  string message = 4;
+}
+
+message ListConflictsRequest {
+  string user_id = 1;
+  string doc_id = 2;
+}
+
+message ListConflictsResponse {
+  repeated ConflictInfo conflicts = 1;
+}
+
+message ConflictInfo {
+  string conflict_id = 1;
+  string doc_id = 2;
+  string section = 3;
+  string status = 4;
+  string created_at = 5;
+}

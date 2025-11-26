@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSW 登入測試</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+      <h1 class="text-2xl font-bold mb-4">MSW 登入測試</h1>
+
+      <div class="space-y-4">
+        <button
+          id="testMSW"
+          class="w-full py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700"
+        >
+          測試 MSW 連接
+        </button>
+
+        <button
+          id="testLogin"
+          class="w-full py-2 px-4 bg-green-600 text-white rounded hover:bg-green-700"
+        >
+          測試登入 API
+        </button>
+
+        <div id="result" class="p-4 bg-gray-100 rounded text-sm">
+          等待測試...
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 等待頁面載入完成
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("頁面載入完成");
+
+        document
+          .getElementById("testMSW")
+          .addEventListener("click", async () => {
+            const result = document.getElementById("result");
+            result.textContent = "測試 MSW 中...";
+
+            try {
+              const response = await fetch("/api/dashboard/overview");
+              const data = await response.json();
+              result.textContent = `MSW 測試成功！狀態: ${response.status}\n數據: ${JSON.stringify(data, null, 2)}`;
+            } catch (error) {
+              result.textContent = `MSW 測試失敗: ${error.message}`;
+            }
+          });
+
+        document
+          .getElementById("testLogin")
+          .addEventListener("click", async () => {
+            const result = document.getElementById("result");
+            result.textContent = "測試登入中...";
+
+            try {
+              const response = await fetch("/api/auth/login", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  email: "admin@synccoreai.com",
+                  password: "admin123",
+                }),
+              });
+
+              const data = await response.json();
+              result.textContent = `登入測試結果！狀態: ${response.status}\n數據: ${JSON.stringify(data, null, 2)}`;
+            } catch (error) {
+              result.textContent = `登入測試失敗: ${error.message}`;
+            }
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "notifications": [
+    {
+      "id": "notif-001",
+      "userId": "user-001",
+      "type": "document_shared",
+      "title": "文檔已分享",
+      "message": "用戶 '測試用戶' 與您分享了文檔 'API 設計規範'",
+      "read": false,
+      "createdAt": "2024-01-20T10:15:00.000Z",
+      "data": {
+        "documentId": "doc-002",
+        "fromUserId": "user-002",
+        "action": "share"
+      }
+    },
+    {
+      "id": "notif-002",
+      "userId": "user-002",
+      "type": "document_comment",
+      "title": "新評論",
+      "message": "系統管理員 在文檔 'SyncCoreAI 專案規劃' 中添加了評論",
+      "read": true,
+      "createdAt": "2024-01-19T16:30:00.000Z",
+      "data": {
+        "documentId": "doc-001",
+        "fromUserId": "user-001",
+        "commentId": "comment-001"
+      }
+    },
+    {
+      "id": "notif-003",
+      "userId": "user-003",
+      "type": "system_update",
+      "title": "系統更新",
+      "message": "SyncCoreAI 已更新至 v1.2.0，新增了 AI 輔助寫作功能",
+      "read": false,
+      "createdAt": "2024-01-18T09:00:00.000Z",
+      "data": {
+        "version": "1.2.0",
+        "features": ["AI 輔助寫作", "改進的協作體驗"]
+      }
+    }
+  ]
+}

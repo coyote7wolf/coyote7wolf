@@ -1,0 +1,600 @@
+/**
+ * 無障礙功能專用 CSS 樣式
+ * 
+ * 提供符合 WCAG 2.1 AA 標準的樣式
+ */
+
+/* Screen Reader Only - 只有螢幕閱讀器可見 */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Screen Reader Only but Focusable - 獲得焦點時可見 */
+.sr-only-focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  font-weight: bold !important;
+  z-index: 10000 !important;
+}
+
+/* Skip Links - 跳過連結 */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  z-index: 1000;
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 6px;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Focus Indicators - 焦點指示器 */
+.focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.focus-visible:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode Support - 高對比度模式支援 */
+@media (prefers-contrast: high) {
+  .button {
+    border: 2px solid;
+  }
+
+  .card {
+    border: 1px solid;
+  }
+
+  .link {
+    text-decoration: underline;
+  }
+}
+
+/* Dark Mode Accessibility - 深色模式無障礙 */
+@media (prefers-color-scheme: dark) {
+  .high-contrast-text {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .focus-visible {
+    outline-color: #66b3ff;
+  }
+}
+
+/* Reduced Motion - 減少動畫 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Large Text Support - 大文字支援 */
+@media (min-resolution: 2dppx) {
+  .large-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+}
+
+/* Keyboard Navigation - 鍵盤導航 */
+.keyboard-focusable:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.keyboard-nav-visible .keyboard-focusable:focus {
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.3);
+}
+
+/* Touch Target Size - 觸摸目標大小 */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Color Contrast Helpers - 顏色對比度輔助 */
+.contrast-aa {
+  /* 確保至少 4.5:1 的對比度 */
+  color: #212121;
+  background-color: #ffffff;
+}
+
+.contrast-aaa {
+  /* 確保至少 7:1 的對比度 */
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.contrast-aa-dark {
+  color: #ffffff;
+  background-color: #212121;
+}
+
+.contrast-aaa-dark {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Error States - 錯誤狀態 */
+.error-message {
+  color: #d73027;
+  background-color: #fdf2f2;
+  border: 1px solid #f5b2b2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.error-input {
+  border-color: #d73027;
+  box-shadow: 0 0 0 2px rgba(215, 48, 39, 0.2);
+}
+
+/* Success States - 成功狀態 */
+.success-message {
+  color: #2d7d32;
+  background-color: #f1f8e9;
+  border: 1px solid #a5d6a7;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.success-input {
+  border-color: #2d7d32;
+  box-shadow: 0 0 0 2px rgba(45, 125, 50, 0.2);
+}
+
+/* Warning States - 警告狀態 */
+.warning-message {
+  color: #ef6c00;
+  background-color: #fff8e1;
+  border: 1px solid #ffb74d;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.warning-input {
+  border-color: #ef6c00;
+  box-shadow: 0 0 0 2px rgba(239, 108, 0, 0.2);
+}
+
+/* Loading States - 載入狀態 */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-spinner {
+    animation: none;
+  }
+
+  .loading-spinner::after {
+    content: 'Loading...';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form Accessibility - 表單無障礙 */
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #212121;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* 防止 iOS 縮放 */
+}
+
+.form-input:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  border-color: #0066cc;
+}
+
+.form-input:invalid {
+  border-color: #d73027;
+}
+
+.form-help-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.form-error-text {
+  font-size: 14px;
+  color: #d73027;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-error-icon {
+  margin-right: 0.25rem;
+  flex-shrink: 0;
+}
+
+/* Required Field Indicator - 必填欄位指示器 */
+.required::after {
+  content: ' *';
+  color: #d73027;
+  font-weight: bold;
+}
+
+/* Button Accessibility - 按鈕無障礙 */
+.accessible-button {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.accessible-button:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.accessible-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.accessible-button-primary {
+  background-color: #0066cc;
+  color: #ffffff;
+  border-color: #0066cc;
+}
+
+.accessible-button-primary:hover:not(:disabled) {
+  background-color: #0052a3;
+  border-color: #0052a3;
+}
+
+.accessible-button-secondary {
+  background-color: transparent;
+  color: #0066cc;
+  border-color: #0066cc;
+}
+
+.accessible-button-secondary:hover:not(:disabled) {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+
+/* Table Accessibility - 表格無障礙 */
+.accessible-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.accessible-table th,
+.accessible-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.accessible-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #212121;
+}
+
+.accessible-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.accessible-table caption {
+  caption-side: top;
+  padding: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Modal Accessibility - 模態視窗無障礙 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  position: relative;
+}
+
+.modal-content:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: -2px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  color: #666;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+/* Tooltip Accessibility - 工具提示無障礙 */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  position: absolute;
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip:hover .tooltip-content,
+.tooltip:focus-within .tooltip-content,
+.tooltip-content[aria-expanded='true'],
+.tooltip-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tooltip-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+
+.tooltip-left {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5px;
+}
+
+.tooltip-right {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5px;
+}
+
+/* Progress Bar Accessibility - 進度條無障礙 */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+.progress-bar-fill[data-width='0'] {
+  width: 0%;
+}
+.progress-bar-fill[data-width='1'] {
+  width: 1%;
+}
+.progress-bar-fill[data-width='2'] {
+  width: 2%;
+}
+.progress-bar-fill[data-width='3'] {
+  width: 3%;
+}
+.progress-bar-fill[data-width='4'] {
+  width: 4%;
+}
+.progress-bar-fill[data-width='5'] {
+  width: 5%;
+}
+/* 可以根據需要添加更多，或使用 CSS 變數 */
+
+.progress-bar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Breadcrumb Accessibility - 麵包屑導航無障礙 */
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: '/';
+  margin: 0 0.5rem;
+  color: #666;
+}
+
+.breadcrumb-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #666;
+  font-weight: 500;
+}
+
+/* Utility Classes - 工具類別 */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.not-focusable {
+  outline: none !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.focusable-only {
+  pointer-events: none;
+}
+
+.focusable-only:focus {
+  pointer-events: auto;
+}
+
+/* Print Styles - 列印樣式 */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  a[href]::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    color: #666;
+  }
+}

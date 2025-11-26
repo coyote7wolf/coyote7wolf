@@ -1,0 +1,764 @@
+/**
+ * Media Player Styles
+ * 
+ * Comprehensive styling for media player components with:
+ * - Video/Audio player layouts
+ * - Custom controls styling
+ * - Progress bars and sliders
+ * - Playlist interface
+ * - Subtitle display
+ * - Touch-optimized controls
+ * - Dark/light theme support
+ */
+
+/* Media Player Container */
+.media-player {
+  --primary-color: #007acc;
+  --secondary-color: #ffffff;
+  --background-color: #000000;
+  --control-background: rgba(0, 0, 0, 0.8);
+  --text-color: #ffffff;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+
+  position: relative;
+  max-width: 100%;
+  background: var(--background-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Video Player Specific */
+.video-player {
+  aspect-ratio: 16/9;
+  min-height: 300px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.video-player .media-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Audio Player Specific */
+.audio-player {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.audio-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex: 1;
+}
+
+.audio-player .media-element {
+  display: none;
+}
+
+.audio-artwork {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.audio-artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Loading and Error States */
+.loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(220, 53, 69, 0.9);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+/* Track Info */
+.track-info {
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.track-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+.track-artist {
+  font-size: 1rem;
+  opacity: 0.8;
+  color: var(--text-color);
+}
+
+.audio-player .track-info {
+  flex: 1;
+}
+
+/* Media Controls */
+.media-controls {
+  background: var(--control-background);
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-player .media-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: var(--transition);
+}
+
+.video-player:hover .media-controls,
+.video-player.show-controls .media-controls {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Progress Section */
+.progress-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.time-current,
+.time-duration {
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Progress Bar */
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-track {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-buffered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  width: var(--buffered-width, 0%);
+  transition: width 0.2s ease;
+}
+
+.progress-buffered[data-width] {
+  width: attr(data-width);
+}
+
+.progress-played {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 3px;
+  width: var(--played-width, 0%);
+  transition: width 0.1s ease;
+}
+
+.progress-played[data-width] {
+  width: attr(data-width);
+}
+
+.progress-handle {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background: var(--primary-color);
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  opacity: 0;
+  transition: var(--transition);
+  left: var(--handle-left, 0%);
+}
+
+.progress-handle[data-left] {
+  left: attr(data-left);
+}
+
+.progress-bar:hover .progress-handle,
+.progress-handle:active {
+  opacity: 1;
+}
+
+.progress-handle:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Control Buttons */
+.control-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.control-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.control-button:active {
+  transform: scale(0.95);
+}
+
+.control-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.control-button.primary {
+  background: var(--primary-color);
+  font-size: 1.8rem;
+  width: 56px;
+  height: 56px;
+}
+
+.control-button.primary:hover {
+  background: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 122, 204, 0.5);
+}
+
+/* Volume Control */
+.volume-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.volume-button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.volume-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.volume-slider {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--control-background);
+  padding: 1rem 0.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.volume-slider input[type='range'] {
+  writing-mode: bt-lr; /* IE */
+  -webkit-appearance: slider-vertical; /* WebKit */
+  width: 6px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border-radius: 3px;
+}
+
+.volume-slider input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.volume-slider input[type='range']::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+/* Playback Rate Control */
+.playback-rate-control {
+  position: relative;
+}
+
+.rate-button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.rate-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.rate-menu {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--control-background);
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  min-width: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+.rate-option {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.rate-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.rate-option.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Subtitle Control */
+.subtitle-control {
+  position: relative;
+}
+
+.subtitle-button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.subtitle-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.subtitle-menu {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--control-background);
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  min-width: 120px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+.subtitle-option {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.subtitle-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.subtitle-option.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Subtitle Display */
+.subtitle-display {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  max-width: 80%;
+  text-align: center;
+}
+
+.subtitle-text {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Playlist Section */
+.playlist-section {
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.playlist-header {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.playlist-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.playlist-items {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.playlist-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.playlist-item.active {
+  background: rgba(0, 122, 204, 0.1);
+  border-left: 3px solid var(--primary-color);
+}
+
+.playlist-item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.playlist-item-number {
+  width: 30px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.playlist-item.active .playlist-item-number {
+  opacity: 1;
+}
+
+.playlist-item-info {
+  flex: 1;
+  margin: 0 1rem;
+  min-width: 0;
+}
+
+.playlist-item-title {
+  font-weight: 500;
+  color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlist-item-artist {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlist-item-duration {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .media-controls {
+    padding: 0.75rem;
+  }
+
+  .progress-section {
+    margin-bottom: 0.75rem;
+  }
+
+  .control-buttons {
+    gap: 0.25rem;
+  }
+
+  .control-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .control-button.primary {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+
+  .track-info {
+    padding: 0.75rem;
+  }
+
+  .track-title {
+    font-size: 1.1rem;
+  }
+
+  .audio-container {
+    padding: 0.75rem;
+  }
+
+  .audio-artwork {
+    width: 60px;
+    height: 60px;
+  }
+
+  .playlist-item {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .subtitle-display {
+    max-width: 90%;
+    bottom: 60px;
+  }
+
+  .subtitle-text {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .control-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .volume-slider {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1000;
+  }
+
+  .rate-menu,
+  .subtitle-menu {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1000;
+  }
+}
+
+/* Touch Optimization */
+@media (hover: none) and (pointer: coarse) {
+  .control-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .control-button.primary {
+    width: 56px;
+    height: 56px;
+  }
+
+  .progress-handle {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+  }
+
+  .volume-slider input[type='range']::-webkit-slider-thumb,
+  .volume-slider input[type='range']::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Dark Theme Variables */
+.media-player.dark-theme {
+  --primary-color: #0ea5e9;
+  --secondary-color: #f8fafc;
+  --background-color: #0f172a;
+  --control-background: rgba(15, 23, 42, 0.9);
+  --text-color: #f8fafc;
+}
+
+/* Light Theme Variables */
+.media-player.light-theme {
+  --primary-color: #0ea5e9;
+  --secondary-color: #0f172a;
+  --background-color: #ffffff;
+  --control-background: rgba(255, 255, 255, 0.9);
+  --text-color: #0f172a;
+}
+
+.light-theme .progress-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.light-theme .progress-buffered {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .control-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .playlist-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}

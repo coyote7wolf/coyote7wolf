@@ -1,0 +1,292 @@
+<testsuites id="" name="" tests="70" failures="0" skipped="70" errors="0" time="0.09403099999999995">
+<testsuite name="main-flows.spec.ts" timestamp="2025-11-10T15:24:10.502Z" hostname="chromium" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="Homepage E2E Tests › should load homepage correctly" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to login page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to register page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle sidebar navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle responsive navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle login form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle register form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Page Loading E2E Tests › should load all main pages without errors" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle button interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle hover effects" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle 404 pages gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle network errors gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should load pages within acceptable time" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should handle multiple simultaneous interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="main-flows.spec.ts" timestamp="2025-11-10T15:24:10.502Z" hostname="firefox" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="Homepage E2E Tests › should load homepage correctly" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to login page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to register page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle sidebar navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle responsive navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle login form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle register form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Page Loading E2E Tests › should load all main pages without errors" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle button interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle hover effects" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle 404 pages gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle network errors gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should load pages within acceptable time" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should handle multiple simultaneous interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="main-flows.spec.ts" timestamp="2025-11-10T15:24:10.502Z" hostname="webkit" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="Homepage E2E Tests › should load homepage correctly" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to login page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to register page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle sidebar navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle responsive navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle login form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle register form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Page Loading E2E Tests › should load all main pages without errors" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle button interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle hover effects" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle 404 pages gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle network errors gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should load pages within acceptable time" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should handle multiple simultaneous interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="main-flows.spec.ts" timestamp="2025-11-10T15:24:10.502Z" hostname="Mobile Chrome" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="Homepage E2E Tests › should load homepage correctly" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to login page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to register page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle sidebar navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle responsive navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle login form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle register form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Page Loading E2E Tests › should load all main pages without errors" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle button interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle hover effects" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle 404 pages gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle network errors gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should load pages within acceptable time" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should handle multiple simultaneous interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="main-flows.spec.ts" timestamp="2025-11-10T15:24:10.502Z" hostname="Mobile Safari" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="Homepage E2E Tests › should load homepage correctly" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to login page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage E2E Tests › should navigate to register page" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle sidebar navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation E2E Tests › should handle responsive navigation" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle login form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Form Interaction E2E Tests › should handle register form" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Page Loading E2E Tests › should load all main pages without errors" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle button interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Interactive Elements E2E Tests › should handle hover effects" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle 404 pages gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Error Handling E2E Tests › should handle network errors gracefully" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should load pages within acceptable time" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Performance E2E Tests › should handle multiple simultaneous interactions" classname="main-flows.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
