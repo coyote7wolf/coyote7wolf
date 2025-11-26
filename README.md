@@ -83,6 +83,12 @@
 - Features: LTR, Japanese, High Contrast Theme
   ![Product Listing Page High Contrast Theme](img/frontend/product-listing-page-high-contrast-theme.png)
 
+#### 3D Product Showcase Page
+
+- Component: Header, Description, ThreeCanvas, Footer
+- Features: three.js 3D interactive scene
+  ![3D Product Showcase Page](img/frontend/3d-product-showcase.png)
+
 ### Design System
 
 #### Component
