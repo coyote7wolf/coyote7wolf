@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package event;
+
+option go_package = "syncservice/api/eventpb;eventpb";
+
+service EventBus {
+  rpc PublishEvent (PublishEventRequest) returns (PublishEventResponse);
+  rpc SubscribeEvent (SubscribeEventRequest) returns (stream EventEnvelope);
+  rpc ListTopics (ListTopicsRequest) returns (ListTopicsResponse);
+}
+
+message PublishEventRequest {
+  string topic = 1;
+  string payload = 2;
+  string token = 3; // 權限驗證
+}
+
+message PublishEventResponse {
+  string trace_id = 1;
+  bool success = 2;
+  string message = 3;
+}
+
+message SubscribeEventRequest {
+  string topic = 1;
+  string token = 2; // 權限驗證
+}
+
+message EventEnvelope {
+  string topic = 1;
+  string payload = 2;
+  string trace_id = 3;
+  string timestamp = 4;
+}
+
+message ListTopicsRequest {
+  string token = 1; // 權限驗證
+}
+
+message ListTopicsResponse {
+  repeated string topics = 1;
+}
