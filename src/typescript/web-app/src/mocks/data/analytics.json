@@ -1,0 +1,247 @@
+[
+  {
+    "id": "analytics-001",
+    "userId": "user-001",
+    "documentId": "doc-001",
+    "event": "document_opened",
+    "timestamp": "2024-01-20T15:30:00.000Z",
+    "sessionId": "session-active-001",
+    "metadata": {
+      "sessionDuration": 1800000,
+      "device": "desktop",
+      "browser": "Chrome",
+      "os": "macOS",
+      "screenResolution": "1920x1080",
+      "referrer": "/dashboard",
+      "loadTime": 1200,
+      "documentSize": 712
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "ip": "192.168.1.100",
+    "location": {
+      "country": "Taiwan",
+      "city": "Taipei",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-002",
+    "userId": "user-002",
+    "documentId": "doc-001",
+    "event": "text_inserted",
+    "timestamp": "2024-01-20T15:45:00.000Z",
+    "sessionId": "session-active-002",
+    "metadata": {
+      "wordCount": 15,
+      "position": 245,
+      "language": "zh-TW",
+      "insertedText": "這是新增的重要內容",
+      "sectionName": "技術架構",
+      "typingSpeed": 65,
+      "correctionsMade": 2
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0",
+    "ip": "192.168.1.101",
+    "location": {
+      "country": "Taiwan",
+      "city": "Kaohsiung",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-003",
+    "userId": "user-003",
+    "documentId": "doc-002",
+    "event": "comment_added",
+    "timestamp": "2024-01-20T14:30:00.000Z",
+    "sessionId": "session-active-003",
+    "metadata": {
+      "commentLength": 87,
+      "commentType": "suggestion",
+      "position": 125,
+      "sectionName": "URL 設計",
+      "mentions": ["user-001"],
+      "attachments": 0,
+      "threadDepth": 0
+    },
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+    "ip": "192.168.1.102",
+    "location": {
+      "country": "Taiwan",
+      "city": "Taichung",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-004",
+    "userId": "user-002",
+    "documentId": "doc-003",
+    "event": "document_shared",
+    "timestamp": "2024-01-20T16:15:00.000Z",
+    "sessionId": "session-active-004",
+    "metadata": {
+      "shareMethod": "link",
+      "permissions": ["read", "comment"],
+      "expiryTime": "2024-02-20T16:15:00.000Z",
+      "recipientCount": 3,
+      "shareScope": "workspace",
+      "passwordProtected": false
+    },
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-G998B) AppleWebKit/537.36",
+    "ip": "192.168.1.103",
+    "location": {
+      "country": "Taiwan",
+      "city": "Tainan",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-005",
+    "userId": "user-001",
+    "documentId": "doc-001",
+    "event": "ai_suggestion_used",
+    "timestamp": "2024-01-20T16:00:00.000Z",
+    "sessionId": "session-active-001",
+    "metadata": {
+      "suggestionType": "grammar",
+      "suggestionId": "suggestion-001",
+      "originalText": "這個專案將會很成功",
+      "suggestedText": "這個專案有望成功",
+      "confidence": 0.85,
+      "accepted": true,
+      "processingTime": 1200,
+      "language": "zh-TW"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "ip": "192.168.1.100",
+    "location": {
+      "country": "Taiwan",
+      "city": "Taipei",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-006",
+    "userId": "user-003",
+    "documentId": "doc-002",
+    "event": "version_created",
+    "timestamp": "2024-01-20T17:30:00.000Z",
+    "sessionId": "session-active-003",
+    "metadata": {
+      "versionNumber": "1.3.0",
+      "changeType": "major",
+      "changesCount": 12,
+      "addedLines": 45,
+      "deletedLines": 8,
+      "modifiedLines": 23,
+      "commitMessage": "Add comprehensive error handling section",
+      "autoSave": false
+    },
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+    "ip": "192.168.1.102",
+    "location": {
+      "country": "Taiwan",
+      "city": "Taichung",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-007",
+    "userId": "user-004",
+    "documentId": "doc-001",
+    "event": "collaboration_session",
+    "timestamp": "2024-01-20T13:30:00.000Z",
+    "sessionId": "session-inactive-001",
+    "metadata": {
+      "sessionType": "review",
+      "duration": 2700000,
+      "participantCount": 3,
+      "interactionCount": 8,
+      "commentsAdded": 2,
+      "suggestionsGiven": 5,
+      "conflictsResolved": 0,
+      "endReason": "user_left"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "ip": "192.168.1.104",
+    "location": {
+      "country": "Taiwan",
+      "city": "Hsinchu",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-008",
+    "userId": "user-002",
+    "documentId": "doc-001",
+    "event": "search_performed",
+    "timestamp": "2024-01-20T15:20:00.000Z",
+    "sessionId": "session-active-002",
+    "metadata": {
+      "searchQuery": "微服務架構",
+      "resultsCount": 5,
+      "resultClicked": true,
+      "clickedPosition": 2,
+      "searchDuration": 1500,
+      "searchType": "document_content",
+      "filtersUsed": ["tag:技術", "author:user-001"]
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0",
+    "ip": "192.168.1.101",
+    "location": {
+      "country": "Taiwan",
+      "city": "Kaohsiung",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-009",
+    "userId": "user-003",
+    "documentId": null,
+    "event": "workspace_activity",
+    "timestamp": "2024-01-20T09:00:00.000Z",
+    "sessionId": "session-workspace-001",
+    "metadata": {
+      "workspaceId": "workspace-001",
+      "activityType": "daily_summary",
+      "documentsAccessed": 3,
+      "collaborationsJoined": 2,
+      "commentsPosted": 4,
+      "timeSpent": 7200000,
+      "mostActiveDocument": "doc-001",
+      "productivityScore": 85
+    },
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+    "ip": "192.168.1.102",
+    "location": {
+      "country": "Taiwan",
+      "city": "Taichung",
+      "timezone": "Asia/Taipei"
+    }
+  },
+  {
+    "id": "analytics-010",
+    "userId": "user-001",
+    "documentId": null,
+    "event": "system_performance",
+    "timestamp": "2024-01-20T18:00:00.000Z",
+    "sessionId": "system-monitoring",
+    "metadata": {
+      "pageLoadTime": 1200,
+      "apiResponseTime": 250,
+      "renderTime": 800,
+      "memoryUsage": 45.2,
+      "networkLatency": 15,
+      "errorRate": 0.001,
+      "activeUsers": 156,
+      "concurrentSessions": 23
+    },
+    "userAgent": "System Monitor",
+    "ip": "127.0.0.1",
+    "location": {
+      "country": "Taiwan",
+      "city": "System",
+      "timezone": "Asia/Taipei"
+    }
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "documents": [
+    {
+      "id": "doc-001",
+      "title": "SyncCoreAI 專案規劃",
+      "content": "# SyncCoreAI 專案規劃\n\n這是一個關於 SyncCoreAI 平台的專案規劃文檔。\n\n## 專案目標\n\n1. 建立智能協作文檔編輯平台\n2. 整合 AI 輔助功能\n3. 支援即時多人協作\n\n## 技術架構\n\n- 前端：Next.js + TypeScript\n- 後端：微服務架構\n- 資料庫：PostgreSQL + Redis\n- AI：整合多個 LLM 模型",
+      "authorId": "user-001",
+      "status": "published",
+      "visibility": "public",
+      "tags": ["規劃", "專案管理"],
+      "collaborators": ["user-002", "user-003"],
+      "createdAt": "2024-01-01T10:00:00.000Z",
+      "updatedAt": "2024-01-15T16:30:00.000Z",
+      "metadata": {
+        "wordCount": 245,
+        "readingTime": 2,
+        "language": "zh-TW",
+        "version": 5
+      }
+    },
+    {
+      "id": "doc-002",
+      "title": "API 設計規範",
+      "content": "# API 設計規範\n\n## RESTful API 設計原則\n\n### 1. URL 設計\n\n- 使用名詞而非動詞\n- 使用複數形式\n- 保持一致性\n\n### 2. HTTP 方法\n\n- GET: 獲取資源\n- POST: 創建資源\n- PUT: 完整更新資源\n- PATCH: 部分更新資源\n- DELETE: 刪除資源\n\n### 3. 狀態碼\n\n- 200: 成功\n- 201: 創建成功\n- 400: 客戶端錯誤\n- 401: 未授權\n- 404: 資源不存在\n- 500: 伺服器錯誤",
+      "authorId": "user-003",
+      "status": "draft",
+      "visibility": "private",
+      "tags": ["API", "開發規範"],
+      "collaborators": ["user-001"],
+      "createdAt": "2024-01-10T14:20:00.000Z",
+      "updatedAt": "2024-01-12T11:45:00.000Z",
+      "metadata": {
+        "wordCount": 180,
+        "readingTime": 1,
+        "language": "zh-TW",
+        "version": 3
+      }
+    },
+    {
+      "id": "doc-003",
+      "title": "用戶手冊草稿",
+      "content": "# SyncCoreAI 用戶手冊\n\n歡迎使用 SyncCoreAI 智能協作平台！\n\n## 快速開始\n\n### 1. 註冊帳號\n\n訪問我們的網站，點擊「註冊」按鈕創建新帳號。\n\n### 2. 創建文檔\n\n登入後，點擊「新建文檔」開始創建您的第一個文檔。\n\n### 3. 邀請協作\n\n在文檔中點擊「分享」按鈕，邀請其他用戶一起編輯。\n\n## 主要功能\n\n- 即時協作編輯\n- AI 輔助寫作\n- 版本控制\n- 衝突解決\n- 離線編輯",
+      "authorId": "user-002",
+      "status": "review",
+      "visibility": "team",
+      "tags": ["用戶手冊", "教程"],
+      "collaborators": ["user-001", "user-003"],
+      "createdAt": "2024-01-05T09:30:00.000Z",
+      "updatedAt": "2024-01-18T13:15:00.000Z",
+      "metadata": {
+        "wordCount": 320,
+        "readingTime": 3,
+        "language": "zh-TW",
+        "version": 7
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+[
+  {
+    "id": "workspace-001",
+    "name": "SyncCoreAI 開發團隊",
+    "description": "SyncCoreAI 核心開發團隊工作空間，負責產品的核心功能開發和技術架構設計。",
+    "ownerId": "user-001",
+    "avatar": "https://ui-avatars.com/api/?name=SyncCoreAI&background=3B82F6&color=ffffff&size=200",
+    "members": [
+      {
+        "userId": "user-001",
+        "role": "admin",
+        "permissions": ["manage_workspace", "invite_users", "delete_documents", "manage_roles", "view_analytics"],
+        "joinedAt": "2024-01-01T00:00:00.000Z",
+        "lastActiveAt": "2024-01-20T16:30:00.000Z"
+      },
+      {
+        "userId": "user-002",
+        "role": "editor",
+        "permissions": ["create_documents", "edit_documents", "comment", "share", "view_documents"],
+        "joinedAt": "2024-01-15T10:30:00.000Z",
+        "lastActiveAt": "2024-01-20T15:45:00.000Z"
+      },
+      {
+        "userId": "user-003",
+        "role": "editor",
+        "permissions": ["create_documents", "edit_documents", "comment", "review", "view_documents"],
+        "joinedAt": "2024-02-01T09:15:00.000Z",
+        "lastActiveAt": "2024-01-20T14:20:00.000Z"
+      },
+      {
+        "userId": "user-004",
+        "role": "viewer",
+        "permissions": ["view_documents", "comment"],
+        "joinedAt": "2024-02-10T11:00:00.000Z",
+        "lastActiveAt": "2024-01-19T18:15:00.000Z"
+      }
+    ],
+    "settings": {
+      "defaultPermissions": "editor",
+      "allowPublicSharing": true,
+      "requireApproval": false,
+      "enableAI": true,
+      "enableOffline": true,
+      "allowExternalInvites": true,
+      "documentRetentionDays": 90,
+      "maxFileSize": 52428800,
+      "allowedFileTypes": [".md", ".txt", ".docx", ".pdf"],
+      "theme": "light",
+      "language": "zh-TW"
+    },
+    "documents": ["doc-001", "doc-002", "doc-003", "doc-004", "doc-005"],
+    "stats": {
+      "totalDocuments": 5,
+      "totalMembers": 4,
+      "documentsCreatedThisMonth": 2,
+      "activeCollaborations": 3,
+      "storageUsed": 15728640
+    },
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-02-10T11:00:00.000Z"
+  },
+  {
+    "id": "workspace-002",
+    "name": "產品設計團隊",
+    "description": "負責產品UI/UX設計和用戶體驗優化的專業團隊。",
+    "ownerId": "user-003",
+    "avatar": "https://ui-avatars.com/api/?name=Design&background=10B981&color=ffffff&size=200",
+    "members": [
+      {
+        "userId": "user-003",
+        "role": "admin",
+        "permissions": ["manage_workspace", "invite_users", "delete_documents", "manage_roles"],
+        "joinedAt": "2024-01-20T09:00:00.000Z",
+        "lastActiveAt": "2024-01-20T14:20:00.000Z"
+      },
+      {
+        "userId": "user-004",
+        "role": "editor",
+        "permissions": ["create_documents", "edit_documents", "comment", "share"],
+        "joinedAt": "2024-01-25T14:30:00.000Z",
+        "lastActiveAt": "2024-01-19T18:15:00.000Z"
+      },
+      {
+        "userId": "user-005",
+        "role": "editor",
+        "permissions": ["create_documents", "edit_documents", "comment"],
+        "joinedAt": "2024-02-01T10:15:00.000Z",
+        "lastActiveAt": "2024-01-20T12:45:00.000Z"
+      }
+    ],
+    "settings": {
+      "defaultPermissions": "viewer",
+      "allowPublicSharing": false,
+      "requireApproval": true,
+      "enableAI": true,
+      "enableOffline": false,
+      "allowExternalInvites": false,
+      "documentRetentionDays": 365,
+      "maxFileSize": 104857600,
+      "allowedFileTypes": [".md", ".txt", ".fig", ".sketch", ".psd"],
+      "theme": "dark",
+      "language": "zh-TW"
+    },
+    "documents": ["doc-006", "doc-007"],
+    "stats": {
+      "totalDocuments": 2,
+      "totalMembers": 3,
+      "documentsCreatedThisMonth": 1,
+      "activeCollaborations": 2,
+      "storageUsed": 8388608
+    },
+    "createdAt": "2024-01-20T09:00:00.000Z",
+    "updatedAt": "2024-02-01T10:15:00.000Z"
+  },
+  {
+    "id": "workspace-003",
+    "name": "市場營銷部門",
+    "description": "負責產品推廣、內容營銷和市場策略的團隊工作空間。",
+    "ownerId": "user-005",
+    "avatar": "https://ui-avatars.com/api/?name=Marketing&background=F59E0B&color=ffffff&size=200",
+    "members": [
+      {
+        "userId": "user-005",
+        "role": "admin",
+        "permissions": ["manage_workspace", "invite_users", "delete_documents", "manage_roles"],
+        "joinedAt": "2024-02-05T08:30:00.000Z",
+        "lastActiveAt": "2024-01-20T12:45:00.000Z"
+      },
+      {
+        "userId": "user-002",
+        "role": "contributor",
+        "permissions": ["create_documents", "edit_documents", "comment"],
+        "joinedAt": "2024-02-08T16:20:00.000Z",
+        "lastActiveAt": "2024-01-20T15:45:00.000Z"
+      }
+    ],
+    "settings": {
+      "defaultPermissions": "contributor",
+      "allowPublicSharing": true,
+      "requireApproval": false,
+      "enableAI": true,
+      "enableOffline": true,
+      "allowExternalInvites": true,
+      "documentRetentionDays": 180,
+      "maxFileSize": 20971520,
+      "allowedFileTypes": [".md", ".txt", ".docx", ".pptx", ".xlsx"],
+      "theme": "light",
+      "language": "zh-TW"
+    },
+    "documents": ["doc-008"],
+    "stats": {
+      "totalDocuments": 1,
+      "totalMembers": 2,
+      "documentsCreatedThisMonth": 1,
+      "activeCollaborations": 1,
+      "storageUsed": 2097152
+    },
+    "createdAt": "2024-02-05T08:30:00.000Z",
+    "updatedAt": "2024-02-08T16:20:00.000Z"
+  }
+]

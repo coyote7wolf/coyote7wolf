@@ -1,0 +1,282 @@
+/**
+ * Touch Optimization Styles
+ * CSS classes for touch-optimized interfaces
+ */
+
+/* Touch target sizing (minimum 44px for accessibility) */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Enhanced touch feedback */
+.touch-feedback {
+  transition: transform 0.15s ease-out;
+  cursor: pointer;
+}
+
+.touch-feedback:active {
+  transform: scale(0.95);
+}
+
+/* Prevent text selection during touch interactions */
+.touch-no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth scrolling for touch devices */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+/* Touch-friendly spacing */
+.touch-spacing {
+  padding: 16px;
+  gap: 16px;
+}
+
+.touch-spacing > * + * {
+  margin-top: 16px;
+}
+
+/* Enhanced tap targets with larger hit areas */
+.touch-enhanced-tap {
+  position: relative;
+}
+
+.touch-enhanced-tap::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  min-height: 44px;
+  min-width: 44px;
+  z-index: -1;
+}
+
+/* Touch gesture indicators */
+.touch-swipe-indicator {
+  position: relative;
+  overflow: hidden;
+}
+
+.touch-swipe-indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.5),
+    transparent
+  );
+  transform: translateY(-50%);
+  transition: left 0.3s ease-out;
+}
+
+.touch-swipe-indicator.swiping::after {
+  left: 100%;
+}
+
+/* Pinch/zoom indicators */
+.touch-pinchable {
+  touch-action: pinch-zoom;
+  user-select: none;
+}
+
+/* Touch ripple effect */
+.touch-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.touch-ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.3s ease-out,
+    height 0.3s ease-out;
+  pointer-events: none;
+}
+
+.touch-ripple:active::before {
+  width: 200%;
+  height: 200%;
+}
+
+/* Touch-optimized form elements */
+.touch-input {
+  min-height: 48px;
+  padding: 12px 16px;
+  font-size: 16px; /* Prevents zoom on iOS */
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  transition: border-color 0.2s ease;
+}
+
+.touch-input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.touch-button {
+  min-height: 48px;
+  min-width: 48px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.touch-button:active {
+  transform: scale(0.96);
+}
+
+.touch-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Touch-friendly navigation */
+.touch-nav {
+  padding: 8px 0;
+}
+
+.touch-nav-item {
+  min-height: 56px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.2s ease;
+  border-radius: 8px;
+  margin: 2px 8px;
+}
+
+.touch-nav-item:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Touch-optimized cards */
+.touch-card {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.touch-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Touch gesture feedback */
+.touch-gesture-active {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+/* Responsive touch optimizations */
+@media (max-width: 768px) {
+  .touch-mobile-spacing {
+    padding: 20px 16px;
+  }
+
+  .touch-mobile-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .touch-mobile-button {
+    min-height: 52px;
+    padding: 16px 24px;
+    font-size: 18px;
+  }
+}
+
+/* Dark mode touch optimizations */
+@media (prefers-color-scheme: dark) {
+  .touch-input {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: white;
+  }
+
+  .touch-input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+  }
+
+  .touch-card {
+    background-color: #1f2937;
+    border-color: #374151;
+  }
+
+  .touch-nav-item:active {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Accessibility enhancements for touch */
+@media (prefers-reduced-motion: reduce) {
+  .touch-feedback {
+    transition: none;
+  }
+
+  .touch-button {
+    transition: none;
+  }
+
+  .touch-card {
+    transition: none;
+  }
+
+  .touch-ripple::before {
+    transition: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .touch-input {
+    border-width: 3px;
+  }
+
+  .touch-button {
+    border: 2px solid currentColor;
+  }
+
+  .touch-card {
+    border-width: 2px;
+  }
+}

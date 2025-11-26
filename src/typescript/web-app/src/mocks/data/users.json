@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "id": "user-001",
+      "email": "admin@synccoreai.com",
+      "password": "admin123",
+      "name": "系統管理員",
+      "role": "admin",
+      "avatar": "https://ui-avatars.com/api/?name=Admin&background=3B82F6&color=ffffff",
+      "status": "active",
+      "verified": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z",
+      "preferences": {
+        "theme": "light",
+        "language": "zh-TW",
+        "notifications": true
+      },
+      "profile": {
+        "firstName": "系統",
+        "lastName": "管理員",
+        "phone": "+886-912-345-678",
+        "company": "SyncCoreAI",
+        "position": "系統管理員",
+        "bio": "SyncCoreAI 系統管理員帳號"
+      }
+    },
+    {
+      "id": "user-002",
+      "email": "user@example.com",
+      "password": "password123",
+      "name": "測試用戶",
+      "role": "user",
+      "avatar": "https://ui-avatars.com/api/?name=User&background=10B981&color=ffffff",
+      "status": "active",
+      "verified": true,
+      "createdAt": "2024-01-15T10:30:00.000Z",
+      "updatedAt": "2024-01-20T15:45:00.000Z",
+      "preferences": {
+        "theme": "light",
+        "language": "zh-TW",
+        "notifications": true
+      },
+      "profile": {
+        "firstName": "測試",
+        "lastName": "用戶",
+        "phone": "+886-987-654-321",
+        "company": "測試公司",
+        "position": "測試工程師",
+        "bio": "這是一個測試用戶帳號"
+      }
+    },
+    {
+      "id": "user-003",
+      "email": "editor@synccoreai.com",
+      "password": "editor123",
+      "name": "文檔編輯者",
+      "role": "editor",
+      "avatar": "https://ui-avatars.com/api/?name=Editor&background=F59E0B&color=ffffff",
+      "status": "active",
+      "verified": true,
+      "createdAt": "2024-02-01T09:15:00.000Z",
+      "updatedAt": "2024-02-10T14:22:00.000Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "en",
+        "notifications": false
+      },
+      "profile": {
+        "firstName": "文檔",
+        "lastName": "編輯者",
+        "phone": "+886-955-123-789",
+        "company": "SyncCoreAI",
+        "position": "資深編輯",
+        "bio": "專門負責文檔編輯和審核工作"
+      }
+    }
+  ]
+}

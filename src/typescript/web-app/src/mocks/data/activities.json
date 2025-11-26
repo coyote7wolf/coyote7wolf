@@ -1,0 +1,388 @@
+[
+  {
+    "id": "activity-001",
+    "userId": "user-001",
+    "type": "document_created",
+    "resourceId": "doc-001",
+    "resourceType": "document",
+    "action": "create",
+    "title": "創建了文檔《專案企劃書》",
+    "description": "使用專案提案書模板創建了新文檔",
+    "metadata": {
+      "documentTitle": "專案企劃書",
+      "templateUsed": "template-001",
+      "wordCount": 0
+    },
+    "timestamp": "2024-02-15T09:30:00.000Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-002",
+    "userId": "user-002",
+    "type": "document_edited",
+    "resourceId": "doc-002",
+    "resourceType": "document",
+    "action": "edit",
+    "title": "編輯了文檔《產品設計規範》",
+    "description": "在設計原則章節新增了 3 個段落",
+    "metadata": {
+      "documentTitle": "產品設計規範",
+      "changesCount": 15,
+      "wordsAdded": 247,
+      "wordsDeleted": 12,
+      "editDuration": 1800
+    },
+    "timestamp": "2024-02-15T10:15:30.000Z",
+    "ipAddress": "192.168.1.105",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-003",
+    "userId": "user-003",
+    "type": "comment_added",
+    "resourceId": "doc-001",
+    "resourceType": "document",
+    "action": "comment",
+    "title": "在《專案企劃書》添加了評論",
+    "description": "對「預算估算」章節提出了修改建議",
+    "metadata": {
+      "documentTitle": "專案企劃書",
+      "commentId": "comment-001",
+      "commentText": "建議在預算估算中加入風險緩衝...",
+      "mentionedUsers": ["user-001"]
+    },
+    "timestamp": "2024-02-15T11:45:15.000Z",
+    "ipAddress": "10.0.0.25",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+  },
+  {
+    "id": "activity-004",
+    "userId": "user-001",
+    "type": "document_shared",
+    "resourceId": "doc-001",
+    "resourceType": "document",
+    "action": "share",
+    "title": "分享了文檔《專案企劃書》",
+    "description": "與 3 位協作者分享了編輯權限",
+    "metadata": {
+      "documentTitle": "專案企劃書",
+      "sharedWith": ["user-004", "user-005", "user-006"],
+      "permissions": "edit",
+      "shareType": "team"
+    },
+    "timestamp": "2024-02-15T13:20:45.000Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-005",
+    "userId": "user-004",
+    "type": "workspace_joined",
+    "resourceId": "workspace-001",
+    "resourceType": "workspace",
+    "action": "join",
+    "title": "加入了工作區《產品開發團隊》",
+    "description": "通過邀請連結加入了工作區",
+    "metadata": {
+      "workspaceName": "產品開發團隊",
+      "invitedBy": "user-001",
+      "role": "editor"
+    },
+    "timestamp": "2024-02-15T14:10:30.000Z",
+    "ipAddress": "203.74.123.45",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15"
+  },
+  {
+    "id": "activity-006",
+    "userId": "user-002",
+    "type": "version_created",
+    "resourceId": "doc-002",
+    "resourceType": "document",
+    "action": "version",
+    "title": "創建了文檔版本",
+    "description": "為《產品設計規範》創建了 v2.1 版本",
+    "metadata": {
+      "documentTitle": "產品設計規範",
+      "versionNumber": "2.1",
+      "changesSummary": "更新色彩系統和字體規範",
+      "previousVersion": "2.0"
+    },
+    "timestamp": "2024-02-15T15:30:20.000Z",
+    "ipAddress": "192.168.1.105",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-007",
+    "userId": "user-005",
+    "type": "ai_suggestion_applied",
+    "resourceId": "doc-003",
+    "resourceType": "document",
+    "action": "ai_assist",
+    "title": "應用了 AI 建議",
+    "description": "在《用戶手冊草稿》中應用了語法檢查建議",
+    "metadata": {
+      "documentTitle": "用戶手冊草稿",
+      "suggestionType": "grammar",
+      "suggestionsApplied": 12,
+      "aiModel": "gpt-4",
+      "improvementScore": 0.85
+    },
+    "timestamp": "2024-02-15T16:45:10.000Z",
+    "ipAddress": "172.16.0.88",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-008",
+    "userId": "user-003",
+    "type": "template_used",
+    "resourceId": "template-004",
+    "resourceType": "template",
+    "action": "use",
+    "title": "使用了模板《產品需求文檔 (PRD)》",
+    "description": "基於 PRD 模板創建了新的產品規劃文檔",
+    "metadata": {
+      "templateName": "產品需求文檔 (PRD)",
+      "newDocumentId": "doc-009",
+      "newDocumentTitle": "SyncCoreAI 3.0 產品規劃",
+      "templateCategory": "product"
+    },
+    "timestamp": "2024-02-15T17:15:40.000Z",
+    "ipAddress": "10.0.0.25",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+  },
+  {
+    "id": "activity-009",
+    "userId": "user-006",
+    "type": "document_exported",
+    "resourceId": "doc-001",
+    "resourceType": "document",
+    "action": "export",
+    "title": "匯出了文檔《專案企劃書》",
+    "description": "將文檔匯出為 PDF 格式",
+    "metadata": {
+      "documentTitle": "專案企劃書",
+      "exportFormat": "pdf",
+      "fileSize": "2.3MB",
+      "pageCount": 15
+    },
+    "timestamp": "2024-02-15T18:30:25.000Z",
+    "ipAddress": "198.51.100.42",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101"
+  },
+  {
+    "id": "activity-010",
+    "userId": "user-001",
+    "type": "search_performed",
+    "resourceId": null,
+    "resourceType": "search",
+    "action": "search",
+    "title": "執行了搜尋",
+    "description": "搜尋關鍵字：\"用戶體驗設計\"",
+    "metadata": {
+      "searchQuery": "用戶體驗設計",
+      "resultsCount": 23,
+      "searchScope": "all_documents",
+      "filters": {
+        "type": "document",
+        "dateRange": "last_month"
+      }
+    },
+    "timestamp": "2024-02-15T19:45:12.000Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-011",
+    "userId": "user-002",
+    "type": "conflict_resolved",
+    "resourceId": "doc-004",
+    "resourceType": "document",
+    "action": "resolve",
+    "title": "解決了編輯衝突",
+    "description": "在《團隊協作最佳實踐》中解決了與 user-003 的編輯衝突",
+    "metadata": {
+      "documentTitle": "團隊協作最佳實踐",
+      "conflictWith": "user-003",
+      "conflictType": "concurrent_edit",
+      "resolutionMethod": "merge",
+      "affectedLines": ["45-52", "78-85"]
+    },
+    "timestamp": "2024-02-15T20:20:35.000Z",
+    "ipAddress": "192.168.1.105",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-012",
+    "userId": "user-004",
+    "type": "mention_created",
+    "resourceId": "doc-005",
+    "resourceType": "document",
+    "action": "mention",
+    "title": "提及了團隊成員",
+    "description": "在《產品功能規格書》中提及了 @user-001 和 @user-003",
+    "metadata": {
+      "documentTitle": "產品功能規格書",
+      "mentionedUsers": ["user-001", "user-003"],
+      "mentionContext": "需要確認技術可行性",
+      "mentionType": "task_assignment"
+    },
+    "timestamp": "2024-02-15T21:10:50.000Z",
+    "ipAddress": "203.74.123.45",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15"
+  },
+  {
+    "id": "activity-013",
+    "userId": "user-005",
+    "type": "document_archived",
+    "resourceId": "doc-old-001",
+    "resourceType": "document",
+    "action": "archive",
+    "title": "歸檔了文檔",
+    "description": "將過期的設計文檔移至歸檔區",
+    "metadata": {
+      "documentTitle": "舊版設計規範 v1.0",
+      "archiveReason": "版本過期",
+      "replacedBy": "doc-006"
+    },
+    "timestamp": "2024-02-15T22:05:15.000Z",
+    "ipAddress": "172.16.0.88",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-014",
+    "userId": "user-003",
+    "type": "integration_connected",
+    "resourceId": "slack-integration",
+    "resourceType": "integration",
+    "action": "connect",
+    "title": "連接了 Slack 整合",
+    "description": "將工作區與 Slack #product-team 頻道連接",
+    "metadata": {
+      "integrationName": "Slack",
+      "channelName": "#product-team",
+      "permissions": ["post_updates", "receive_notifications"],
+      "workspaceId": "workspace-001"
+    },
+    "timestamp": "2024-02-15T08:30:40.000Z",
+    "ipAddress": "10.0.0.25",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+  },
+  {
+    "id": "activity-015",
+    "userId": "user-006",
+    "type": "permission_changed",
+    "resourceId": "doc-007",
+    "resourceType": "document",
+    "action": "permission",
+    "title": "修改了文檔權限",
+    "description": "將《品牌視覺識別手冊》的權限從「團隊」改為「公開」",
+    "metadata": {
+      "documentTitle": "品牌視覺識別手冊",
+      "previousPermission": "team",
+      "newPermission": "public",
+      "changedBy": "user-006",
+      "reason": "需要與外部合作夥伴分享"
+    },
+    "timestamp": "2024-02-15T07:45:20.000Z",
+    "ipAddress": "198.51.100.42",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101"
+  },
+  {
+    "id": "activity-016",
+    "userId": "user-001",
+    "type": "bulk_operation",
+    "resourceId": null,
+    "resourceType": "multiple",
+    "action": "bulk",
+    "title": "執行了批量操作",
+    "description": "批量更新了 5 個文檔的標籤",
+    "metadata": {
+      "operationType": "tag_update",
+      "affectedDocuments": ["doc-001", "doc-002", "doc-003", "doc-004", "doc-005"],
+      "addedTags": ["Q1-2024", "高優先級"],
+      "removedTags": ["草稿"]
+    },
+    "timestamp": "2024-02-15T06:20:10.000Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-017",
+    "userId": "user-002",
+    "type": "workflow_triggered",
+    "resourceId": "workflow-001",
+    "resourceType": "workflow",
+    "action": "trigger",
+    "title": "觸發了自動化工作流程",
+    "description": "文檔發佈時自動通知相關團隊成員",
+    "metadata": {
+      "workflowName": "文檔發佈通知",
+      "triggerEvent": "document_published",
+      "notifiedUsers": ["user-001", "user-003", "user-004"],
+      "documentId": "doc-008"
+    },
+    "timestamp": "2024-02-15T05:15:35.000Z",
+    "ipAddress": "192.168.1.105",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-018",
+    "userId": "user-004",
+    "type": "mobile_sync",
+    "resourceId": null,
+    "resourceType": "sync",
+    "action": "sync",
+    "title": "行動裝置同步",
+    "description": "完成了與行動應用程式的資料同步",
+    "metadata": {
+      "deviceType": "iOS",
+      "deviceId": "iPhone-12-Pro",
+      "syncedDocuments": 12,
+      "syncDuration": 3.2,
+      "lastSyncTime": "2024-02-15T04:30:00.000Z"
+    },
+    "timestamp": "2024-02-15T04:35:25.000Z",
+    "ipAddress": "203.74.123.45",
+    "userAgent": "SyncCoreAI-iOS/2.1.0 (iPhone; iOS 17.0)"
+  },
+  {
+    "id": "activity-019",
+    "userId": "user-005",
+    "type": "analytics_viewed",
+    "resourceId": "analytics-dashboard",
+    "resourceType": "analytics",
+    "action": "view",
+    "title": "查看了分析儀表板",
+    "description": "檢視了工作區的使用統計和效能指標",
+    "metadata": {
+      "dashboardType": "workspace_analytics",
+      "viewedMetrics": ["user_activity", "document_stats", "collaboration_metrics"],
+      "dateRange": "last_30_days",
+      "exportedReport": false
+    },
+    "timestamp": "2024-02-15T03:20:45.000Z",
+    "ipAddress": "172.16.0.88",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+  },
+  {
+    "id": "activity-020",
+    "userId": "user-003",
+    "type": "backup_created",
+    "resourceId": "backup-001",
+    "resourceType": "backup",
+    "action": "backup",
+    "title": "創建了資料備份",
+    "description": "為工作區創建了完整的資料備份",
+    "metadata": {
+      "backupType": "full",
+      "includedData": ["documents", "comments", "versions", "settings"],
+      "backupSize": "156.7MB",
+      "compressionRatio": 0.72,
+      "workspaceId": "workspace-001"
+    },
+    "timestamp": "2024-02-15T02:10:30.000Z",
+    "ipAddress": "10.0.0.25",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+  }
+]

@@ -1,0 +1,3073 @@
+{
+  "users": [
+    {
+      "id": "user_3",
+      "email": "charlie.miller@synccoreai.com",
+      "name": "Charlie Miller",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=CharlieMiller",
+      "role": "editor",
+      "department": "Marketing",
+      "isOnline": true,
+      "lastSeen": "2025-11-08T10:38:16.485Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "zh-TW",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "mentions": true
+        }
+      },
+      "createdAt": "2025-09-11T16:28:42.637Z",
+      "updatedAt": "2025-11-09T10:16:23.466Z"
+    },
+    {
+      "id": "user_4",
+      "email": "diana.williams@synccoreai.com",
+      "name": "Diana Williams",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=DianaWilliams",
+      "role": "viewer",
+      "department": "Marketing",
+      "isOnline": true,
+      "lastSeen": "2025-11-08T19:06:10.725Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "zh-TW",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "mentions": true
+        }
+      },
+      "createdAt": "2025-08-29T01:01:44.911Z",
+      "updatedAt": "2025-11-09T10:16:23.466Z"
+    },
+    {
+      "id": "user_5",
+      "email": "edward.martinez@synccoreai.com",
+      "name": "Edward Martinez",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=EdwardMartinez",
+      "role": "viewer",
+      "department": "HR",
+      "isOnline": false,
+      "lastSeen": "2025-11-09T03:30:46.564Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "zh-TW",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "mentions": true
+        }
+      },
+      "createdAt": "2025-09-12T14:28:52.814Z",
+      "updatedAt": "2025-11-09T10:16:23.466Z"
+    },
+    {
+      "id": "user_2",
+      "email": "bob.jones@synccoreai.com",
+      "name": "Bob Jones",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=BobJones",
+      "role": "viewer",
+      "department": "HR",
+      "isOnline": true,
+      "lastSeen": "2025-11-08T20:53:49.382Z",
+      "preferences": {
+        "theme": "light",
+        "language": "zh-TW",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "mentions": true
+        }
+      },
+      "createdAt": "2025-10-09T19:26:22.426Z",
+      "updatedAt": "2025-11-09T10:16:23.466Z"
+    },
+    {
+      "id": "user_1",
+      "email": "alice.jones@synccoreai.com",
+      "name": "Alice Jones",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=AliceJones",
+      "role": "admin",
+      "department": "Design",
+      "isOnline": true,
+      "lastSeen": "2025-11-09T07:43:24.180Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "zh-TW",
+        "notifications": {
+          "email": true,
+          "push": false,
+          "mentions": true
+        }
+      },
+      "createdAt": "2025-09-18T21:14:37.132Z",
+      "updatedAt": "2025-11-09T10:16:23.466Z"
+    }
+  ],
+  "workspaces": [
+    {
+      "id": "workspace_1",
+      "name": "AI Research Project",
+      "description": "Collaborative workspace for ai research project",
+      "ownerId": "user_1",
+      "members": [
+        {
+          "userId": "user_2",
+          "role": "admin",
+          "joinedAt": "2025-09-22T20:18:39.025Z"
+        },
+        {
+          "userId": "user_3",
+          "role": "member",
+          "joinedAt": "2025-09-15T00:01:29.876Z"
+        },
+        {
+          "userId": "user_1",
+          "role": "owner",
+          "joinedAt": "2025-09-14T01:30:53.934Z"
+        },
+        {
+          "userId": "user_5",
+          "role": "member",
+          "joinedAt": "2025-10-22T03:08:20.385Z"
+        },
+        {
+          "userId": "user_4",
+          "role": "member",
+          "joinedAt": "2025-11-07T03:31:25.901Z"
+        }
+      ],
+      "settings": {
+        "isPublic": false,
+        "allowGuests": false,
+        "defaultPermissions": "read",
+        "integrations": {
+          "slack": true,
+          "teams": false,
+          "github": true
+        }
+      },
+      "stats": {
+        "documentCount": 42,
+        "memberCount": 5,
+        "activityCount": 82
+      },
+      "createdAt": "2025-11-04T13:45:59.439Z",
+      "updatedAt": "2025-11-09T10:16:23.466Z"
+    },
+    {
+      "id": "workspace_2",
+      "name": "Mobile App Development",
+      "description": "Collaborative workspace for mobile app development",
+      "ownerId": "user_2",
+      "members": [
+        {
+          "userId": "user_3",
+          "role": "admin",
+          "joinedAt": "2025-11-06T09:02:39.229Z"
+        },
+        {
+          "userId": "user_4",
+          "role": "admin",
+          "joinedAt": "2025-10-09T01:26:37.430Z"
+        },
+        {
+          "userId": "user_5",
+          "role": "member",
+          "joinedAt": "2025-09-25T02:22:47.203Z"
+        },
+        {
+          "userId": "user_2",
+          "role": "owner",
+          "joinedAt": "2025-11-05T17:56:45.751Z"
+        },
+        {
+          "userId": "user_1",
+          "role": "member",
+          "joinedAt": "2025-10-01T06:10:27.088Z"
+        }
+      ],
+      "settings": {
+        "isPublic": true,
+        "allowGuests": true,
+        "defaultPermissions": "read",
+        "integrations": {
+          "slack": false,
+          "teams": true,
+          "github": true
+        }
+      },
+      "stats": {
+        "documentCount": 23,
+        "memberCount": 5,
+        "activityCount": 25
+      },
+      "createdAt": "2025-09-29T12:17:11.976Z",
+      "updatedAt": "2025-11-09T10:16:23.466Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_1",
+      "title": "Project Requirements Document ",
+      "content": "# 專案需求文件\n\n## 概述\n本文件詳細說明專案的功能需求、技術規格及實作細節。\n\n## 功能需求\n1. 用戶認證系統\n2. 文件協作平台\n3. 即時通訊功能\n\n## 技術規格\n- 前端：Next.js 14\n- 後端：Node.js with TypeScript\n- 數據庫：PostgreSQL\n\n## 時程規劃\n第一階段：基礎架構建置\n第二階段：核心功能開發\n第三階段：測試與部署",
+      "type": "presentation",
+      "authorId": "user_4",
+      "workspaceId": "workspace_1",
+      "collaborators": [
+        {
+          "userId": "user_3",
+          "role": "viewer",
+          "addedAt": "2025-10-17T04:10:23.635Z"
+        }
+      ],
+      "tags": ["緊急", "待審查", "重要"],
+      "status": "published",
+      "isPublic": true,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_4"],
+        "admin": ["user_4"]
+      },
+      "metadata": {
+        "wordCount": 4480,
+        "readTime": 7,
+        "version": "1.0",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-11-01T13:16:11.282Z",
+      "updatedAt": "2025-11-09T03:33:58.350Z",
+      "lastViewedAt": "2025-11-09T01:00:14.363Z"
+    },
+    {
+      "id": "doc_2",
+      "title": "API Documentation ",
+      "content": "# API 文件\n\n## 認證 API\n\n### POST /api/auth/login\n登入端點\n\n**請求格式：**\n```json\n{\n  \"email\": \"user@example.com\",\n  \"password\": \"password\"\n}\n```\n\n**回應格式：**\n```json\n{\n  \"token\": \"jwt_token\",\n  \"user\": {\n    \"id\": \"user_id\",\n    \"email\": \"user@example.com\"\n  }\n}\n```",
+      "type": "text",
+      "authorId": "user_1",
+      "workspaceId": "workspace_2",
+      "collaborators": [
+        {
+          "userId": "user_3",
+          "role": "editor",
+          "addedAt": "2025-10-29T00:21:32.366Z"
+        },
+        {
+          "userId": "user_2",
+          "role": "viewer",
+          "addedAt": "2025-11-08T08:38:18.105Z"
+        }
+      ],
+      "tags": ["已完成", "重要"],
+      "status": "archived",
+      "isPublic": false,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_1"],
+        "admin": ["user_1"]
+      },
+      "metadata": {
+        "wordCount": 3169,
+        "readTime": 2,
+        "version": "1.6",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-09-21T10:46:02.160Z",
+      "updatedAt": "2025-11-04T18:10:50.718Z",
+      "lastViewedAt": "2025-11-08T11:32:31.356Z"
+    },
+    {
+      "id": "doc_3",
+      "title": "Design System Guidelines ",
+      "content": "# 文件標題\n\n## 簡介\n這是一份示範文件，包含了基本的內容結構。\n\n## 內容\n文件的主要內容在這裡，包括：\n- 重點項目一\n- 重點項目二\n- 重點項目三\n\n## 結論\n總結文件的重點內容。",
+      "type": "presentation",
+      "authorId": "user_4",
+      "workspaceId": "workspace_2",
+      "collaborators": [],
+      "tags": ["技術", "重要", "待審查"],
+      "status": "published",
+      "isPublic": true,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_4"],
+        "admin": ["user_4"]
+      },
+      "metadata": {
+        "wordCount": 2123,
+        "readTime": 20,
+        "version": "1.8",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-09-02T03:07:56.235Z",
+      "updatedAt": "2025-11-04T10:15:15.929Z",
+      "lastViewedAt": "2025-11-08T10:54:18.711Z"
+    },
+    {
+      "id": "doc_4",
+      "title": "Performance Optimization Plan ",
+      "content": "# 文件標題\n\n## 簡介\n這是一份示範文件，包含了基本的內容結構。\n\n## 內容\n文件的主要內容在這裡，包括：\n- 重點項目一\n- 重點項目二\n- 重點項目三\n\n## 結論\n總結文件的重點內容。",
+      "type": "presentation",
+      "authorId": "user_5",
+      "workspaceId": "workspace_2",
+      "collaborators": [
+        {
+          "userId": "user_3",
+          "role": "editor",
+          "addedAt": "2025-11-07T20:03:57.924Z"
+        },
+        {
+          "userId": "user_4",
+          "role": "editor",
+          "addedAt": "2025-10-29T03:14:18.665Z"
+        }
+      ],
+      "tags": [],
+      "status": "archived",
+      "isPublic": true,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_5"],
+        "admin": ["user_5"]
+      },
+      "metadata": {
+        "wordCount": 4557,
+        "readTime": 14,
+        "version": "1.1",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-09-24T02:59:19.178Z",
+      "updatedAt": "2025-11-07T01:27:50.046Z",
+      "lastViewedAt": "2025-11-08T11:44:23.298Z"
+    },
+    {
+      "id": "doc_5",
+      "title": "Security Audit Report ",
+      "content": "# 文件標題\n\n## 簡介\n這是一份示範文件，包含了基本的內容結構。\n\n## 內容\n文件的主要內容在這裡，包括：\n- 重點項目一\n- 重點項目二\n- 重點項目三\n\n## 結論\n總結文件的重點內容。",
+      "type": "spreadsheet",
+      "authorId": "user_5",
+      "workspaceId": "workspace_2",
+      "collaborators": [],
+      "tags": ["技術", "草稿", "設計"],
+      "status": "published",
+      "isPublic": true,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_5"],
+        "admin": ["user_5"]
+      },
+      "metadata": {
+        "wordCount": 1406,
+        "readTime": 7,
+        "version": "1.1",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-08-23T12:31:09.798Z",
+      "updatedAt": "2025-11-02T23:14:34.191Z",
+      "lastViewedAt": "2025-11-08T14:26:36.603Z"
+    },
+    {
+      "id": "doc_6",
+      "title": "Performance Optimization Plan ",
+      "content": "# 文件標題\n\n## 簡介\n這是一份示範文件，包含了基本的內容結構。\n\n## 內容\n文件的主要內容在這裡，包括：\n- 重點項目一\n- 重點項目二\n- 重點項目三\n\n## 結論\n總結文件的重點內容。",
+      "type": "template",
+      "authorId": "user_3",
+      "workspaceId": "workspace_2",
+      "collaborators": [
+        {
+          "userId": "user_1",
+          "role": "viewer",
+          "addedAt": "2025-10-19T20:08:04.975Z"
+        },
+        {
+          "userId": "user_2",
+          "role": "editor",
+          "addedAt": "2025-10-28T07:42:14.324Z"
+        },
+        {
+          "userId": "user_5",
+          "role": "viewer",
+          "addedAt": "2025-10-27T00:43:17.474Z"
+        }
+      ],
+      "tags": ["草稿", "重要", "設計"],
+      "status": "published",
+      "isPublic": true,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_3"],
+        "admin": ["user_3"]
+      },
+      "metadata": {
+        "wordCount": 4343,
+        "readTime": 15,
+        "version": "1.9",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-10-12T05:48:34.532Z",
+      "updatedAt": "2025-11-08T14:54:35.179Z",
+      "lastViewedAt": "2025-11-08T22:13:50.826Z"
+    },
+    {
+      "id": "doc_7",
+      "title": "API Documentation ",
+      "content": "# API 文件\n\n## 認證 API\n\n### POST /api/auth/login\n登入端點\n\n**請求格式：**\n```json\n{\n  \"email\": \"user@example.com\",\n  \"password\": \"password\"\n}\n```\n\n**回應格式：**\n```json\n{\n  \"token\": \"jwt_token\",\n  \"user\": {\n    \"id\": \"user_id\",\n    \"email\": \"user@example.com\"\n  }\n}\n```",
+      "type": "note",
+      "authorId": "user_1",
+      "workspaceId": "workspace_1",
+      "collaborators": [
+        {
+          "userId": "user_4",
+          "role": "viewer",
+          "addedAt": "2025-11-03T23:41:16.051Z"
+        }
+      ],
+      "tags": ["待審查", "設計"],
+      "status": "draft",
+      "isPublic": false,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_1"],
+        "admin": ["user_1"]
+      },
+      "metadata": {
+        "wordCount": 3700,
+        "readTime": 19,
+        "version": "1.8",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-10-12T22:51:02.997Z",
+      "updatedAt": "2025-11-09T06:39:34.033Z",
+      "lastViewedAt": "2025-11-09T06:06:54.078Z"
+    },
+    {
+      "id": "doc_8",
+      "title": "Customer Feedback Analysis ",
+      "content": "# 文件標題\n\n## 簡介\n這是一份示範文件，包含了基本的內容結構。\n\n## 內容\n文件的主要內容在這裡，包括：\n- 重點項目一\n- 重點項目二\n- 重點項目三\n\n## 結論\n總結文件的重點內容。",
+      "type": "text",
+      "authorId": "user_3",
+      "workspaceId": "workspace_2",
+      "collaborators": [
+        {
+          "userId": "user_4",
+          "role": "viewer",
+          "addedAt": "2025-11-08T08:46:13.289Z"
+        },
+        {
+          "userId": "user_5",
+          "role": "viewer",
+          "addedAt": "2025-10-21T03:18:04.238Z"
+        }
+      ],
+      "tags": ["進行中", "已完成"],
+      "status": "published",
+      "isPublic": false,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_3"],
+        "admin": ["user_3"]
+      },
+      "metadata": {
+        "wordCount": 874,
+        "readTime": 8,
+        "version": "1.9",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-10-02T02:02:13.196Z",
+      "updatedAt": "2025-11-04T19:58:57.887Z",
+      "lastViewedAt": "2025-11-08T15:35:10.893Z"
+    },
+    {
+      "id": "doc_9",
+      "title": "Marketing Strategy 2024 ",
+      "content": "# 文件標題\n\n## 簡介\n這是一份示範文件，包含了基本的內容結構。\n\n## 內容\n文件的主要內容在這裡，包括：\n- 重點項目一\n- 重點項目二\n- 重點項目三\n\n## 結論\n總結文件的重點內容。",
+      "type": "text",
+      "authorId": "user_1",
+      "workspaceId": "workspace_1",
+      "collaborators": [
+        {
+          "userId": "user_5",
+          "role": "viewer",
+          "addedAt": "2025-10-29T14:32:15.611Z"
+        }
+      ],
+      "tags": [],
+      "status": "published",
+      "isPublic": false,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_1"],
+        "admin": ["user_1"]
+      },
+      "metadata": {
+        "wordCount": 2470,
+        "readTime": 11,
+        "version": "1.3",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-09-29T14:07:52.576Z",
+      "updatedAt": "2025-11-04T23:01:50.134Z",
+      "lastViewedAt": "2025-11-09T04:30:06.947Z"
+    },
+    {
+      "id": "doc_10",
+      "title": "Technical Architecture Overview ",
+      "content": "# 文件標題\n\n## 簡介\n這是一份示範文件，包含了基本的內容結構。\n\n## 內容\n文件的主要內容在這裡，包括：\n- 重點項目一\n- 重點項目二\n- 重點項目三\n\n## 結論\n總結文件的重點內容。",
+      "type": "text",
+      "authorId": "user_1",
+      "workspaceId": "workspace_2",
+      "collaborators": [
+        {
+          "userId": "user_2",
+          "role": "editor",
+          "addedAt": "2025-11-05T06:11:29.738Z"
+        }
+      ],
+      "tags": ["緊急", "重要"],
+      "status": "published",
+      "isPublic": true,
+      "permissions": {
+        "read": ["all"],
+        "write": ["user_1"],
+        "admin": ["user_1"]
+      },
+      "metadata": {
+        "wordCount": 522,
+        "readTime": 17,
+        "version": "1.1",
+        "language": "zh-TW"
+      },
+      "createdAt": "2025-10-01T16:14:25.007Z",
+      "updatedAt": "2025-11-08T19:07:46.494Z",
+      "lastViewedAt": "2025-11-08T16:59:17.267Z"
+    }
+  ],
+  "templates": [
+    {
+      "id": "template-001",
+      "name": "專案提案書",
+      "description": "用於撰寫專案提案的標準化模組",
+      "category": "business",
+      "language": "zh-TW",
+      "content": "# 專案提案書\n\n## 專案概述\n\n### 專案名稱\n[請填入專案名稱]\n\n### 專案目標\n[描述專案要達成的主要目標]\n\n### 專案範圍\n[明確定義專案包含和不包含的內容]\n\n## 背景分析\n\n### 現狀描述\n[描述當前狀況和存在的問題]\n\n### 需求分析\n[分析解決方案需要滿足的需求]\n\n### 市場機會\n[描述市場機會和潛在收益]\n\n## 解決方案\n\n### 技術方案\n[詳細描述技術實施方案]\n\n### 實施計劃\n[列出詳細的實施步驟和時程]\n\n### 資源需求\n[列出所需的人力、物力、財力資源]\n\n## 預期效益\n\n### 量化效益\n[列出可量化的預期收益]\n\n### 定性效益\n[描述難以量化但重要的效益]\n\n## 風險評估\n\n### 技術風險\n[識別和評估技術相關風險]\n\n### 市場風險\n[識別和評估市場相關風險]\n\n### 應對策略\n[針對各項風險的應對措施]\n\n## 預算估算\n\n### 開發成本\n[詳細的開發成本估算]\n\n### 運營成本\n[預估的持續運營成本]\n\n### 投資回報\n[ROI 分析和回收期估算]\n\n## 結論\n\n[總結提案的核心價值和建議行動]",
+      "tags": ["提案", "專案", "商業"],
+      "authorId": "admin",
+      "usageCount": 245,
+      "rating": 4.7,
+      "isPremium": false,
+      "createdAt": "2024-01-15T10:00:00.000Z",
+      "updatedAt": "2024-02-10T14:30:00.000Z"
+    },
+    {
+      "id": "template-002",
+      "name": "技術規格文檔",
+      "description": "完整的技術規格文檔模板，適用於軟體開發專案",
+      "category": "technical",
+      "language": "zh-TW",
+      "content": "# 技術規格文檔\n\n## 文檔資訊\n\n- **專案名稱**: [專案名稱]\n- **版本**: 1.0\n- **日期**: [日期]\n- **作者**: [作者姓名]\n- **審核者**: [審核者姓名]\n\n## 1. 概述\n\n### 1.1 專案背景\n[描述專案背景和目的]\n\n### 1.2 範圍和目標\n[明確專案範圍和要達成的目標]\n\n### 1.3 術語定義\n[定義專案中使用的專業術語]\n\n## 2. 系統架構\n\n### 2.1 整體架構\n[描述系統的整體架構設計]\n\n### 2.2 技術堆疊\n[列出使用的技術棧]\n\n### 2.3 部署架構\n[描述系統的部署方式]\n\n## 3. 功能需求\n\n### 3.1 用戶故事\n[列出主要的用戶故事]\n\n### 3.2 功能列表\n[詳細的功能清單]\n\n### 3.3 用戶流程\n[描述主要的用戶操作流程]\n\n## 4. 非功能需求\n\n### 4.1 效能需求\n[定義系統效能指標]\n\n### 4.2 安全需求\n[列出安全相關要求]\n\n### 4.3 可用性需求\n[定義系統可用性標準]\n\n## 5. 技術細節\n\n### 5.1 資料模型\n[描述資料結構和關係]\n\n### 5.2 API 設計\n[定義 API 接口規範]\n\n### 5.3 演算法設計\n[描述核心演算法]\n\n## 6. 測試策略\n\n### 6.1 測試計劃\n[制定測試計劃]\n\n### 6.2 測試用例\n[列出主要測試用例]\n\n### 6.3 品質保證\n[定義品質保證流程]\n\n## 7. 實施計劃\n\n### 7.1 開發階段\n[劃分開發階段]\n\n### 7.2 里程碑\n[設定重要里程碑]\n\n### 7.3 交付物\n[列出各階段交付物]\n\n## 8. 風險管理\n\n### 8.1 風險識別\n[識別潛在風險]\n\n### 8.2 應對策略\n[制定風險應對策略]\n\n## 9. 附錄\n\n### 9.1 參考資料\n[列出參考文檔]\n\n### 9.2 變更記錄\n[記錄文檔變更歷史]",
+      "tags": ["技術", "規格", "開發"],
+      "authorId": "admin",
+      "usageCount": 189,
+      "rating": 4.8,
+      "isPremium": true,
+      "createdAt": "2024-01-20T11:30:00.000Z",
+      "updatedAt": "2024-02-08T16:45:00.000Z"
+    },
+    {
+      "id": "template-003",
+      "name": "會議記錄模板",
+      "description": "標準化的會議記錄格式，確保重要資訊不遺漏",
+      "category": "business",
+      "language": "zh-TW",
+      "content": "# 會議記錄\n\n## 會議資訊\n\n- **會議主題**: [會議主題]\n- **日期**: [日期]\n- **時間**: [開始時間] - [結束時間]\n- **地點**: [會議地點或線上會議連結]\n- **主持人**: [主持人姓名]\n- **記錄人**: [記錄人姓名]\n\n## 與會人員\n\n### 出席者\n- [姓名1] - [職位/部門]\n- [姓名2] - [職位/部門]\n- [姓名3] - [職位/部門]\n\n### 缺席者\n- [姓名] - [缺席原因]\n\n## 會議議程\n\n1. [議程項目1]\n2. [議程項目2]\n3. [議程項目3]\n\n## 討論內容\n\n### 議程項目1: [標題]\n\n**討論重點**:\n- [要點1]\n- [要點2]\n- [要點3]\n\n**決議**:\n[記錄達成的決議]\n\n### 議程項目2: [標題]\n\n**討論重點**:\n- [要點1]\n- [要點2]\n- [要點3]\n\n**決議**:\n[記錄達成的決議]\n\n### 議程項目3: [標題]\n\n**討論重點**:\n- [要點1]\n- [要點2]\n- [要點3]\n\n**決議**:\n[記錄達成的決議]\n\n## 行動項目\n\n| 項目 | 負責人 | 截止日期 | 狀態 |\n|------|--------|----------|------|\n| [行動項目1] | [負責人] | [日期] | 進行中 |\n| [行動項目2] | [負責人] | [日期] | 未開始 |\n| [行動項目3] | [負責人] | [日期] | 已完成 |\n\n## 下次會議\n\n- **日期**: [下次會議日期]\n- **時間**: [下次會議時間]\n- **主要議題**: [下次會議主要討論內容]\n\n## 其他事項\n\n[記錄其他需要注意的事項]\n\n## 附件\n\n- [附件1描述]\n- [附件2描述]\n\n---\n\n**記錄完成時間**: [記錄完成的時間]\n**分發名單**: [需要接收會議記錄的人員清單]",
+      "tags": ["會議", "記錄", "管理"],
+      "authorId": "admin",
+      "usageCount": 567,
+      "rating": 4.6,
+      "isPremium": false,
+      "createdAt": "2024-01-18T09:00:00.000Z",
+      "updatedAt": "2024-02-12T10:15:00.000Z"
+    },
+    {
+      "id": "template-004",
+      "name": "產品需求文檔 (PRD)",
+      "description": "產品經理專用的需求文檔模板，涵蓋完整的產品規劃流程",
+      "category": "product",
+      "language": "zh-TW",
+      "content": "# 產品需求文檔 (PRD)\n\n## 文檔資訊\n\n- **產品名稱**: [產品名稱]\n- **版本**: 1.0\n- **產品經理**: [產品經理姓名]\n- **創建日期**: [日期]\n- **最後更新**: [日期]\n\n## 1. 產品概述\n\n### 1.1 產品願景\n[描述產品的長期願景和使命]\n\n### 1.2 目標用戶\n[定義主要目標用戶群體]\n\n### 1.3 核心價值\n[闡述產品為用戶創造的核心價值]\n\n## 2. 市場分析\n\n### 2.1 市場機會\n[分析市場機會和潛在規模]\n\n### 2.2 競爭分析\n[分析主要競爭對手和差異化策略]\n\n### 2.3 商業模式\n[描述產品的商業模式和收益來源]\n\n## 3. 用戶研究\n\n### 3.1 用戶畫像\n\n**主要用戶群體1**:\n- 人口統計: [年齡、性別、職業等]\n- 行為特徵: [使用習慣、偏好等]\n- 痛點: [主要問題和需求]\n\n**主要用戶群體2**:\n- 人口統計: [年齡、性別、職業等]\n- 行為特徵: [使用習慣、偏好等]\n- 痛點: [主要問題和需求]\n\n### 3.2 用戶旅程\n[描述用戶使用產品的完整旅程]\n\n### 3.3 用戶故事\n- 作為 [用戶角色]，我希望 [功能]，以便 [價值/目的]\n- 作為 [用戶角色]，我希望 [功能]，以便 [價值/目的]\n- 作為 [用戶角色]，我希望 [功能]，以便 [價值/目的]\n\n## 4. 產品功能\n\n### 4.1 功能架構\n[描述產品的整體功能架構]\n\n### 4.2 核心功能\n\n#### 功能1: [功能名稱]\n- **描述**: [功能詳細描述]\n- **優先級**: 高/中/低\n- **驗收標準**: [明確的驗收標準]\n- **技術要求**: [技術實現要求]\n\n#### 功能2: [功能名稱]\n- **描述**: [功能詳細描述]\n- **優先級**: 高/中/低\n- **驗收標準**: [明確的驗收標準]\n- **技術要求**: [技術實現要求]\n\n### 4.3 功能規格\n\n| 功能 | 優先級 | 工作量估算 | 負責團隊 | 預計完成 |\n|------|--------|------------|----------|----------|\n| [功能1] | 高 | 5天 | 前端 | [日期] |\n| [功能2] | 中 | 3天 | 後端 | [日期] |\n| [功能3] | 低 | 2天 | 設計 | [日期] |\n\n## 5. 設計要求\n\n### 5.1 用戶體驗\n[描述用戶體驗設計要求]\n\n### 5.2 用戶界面\n[描述用戶界面設計要求]\n\n### 5.3 交互設計\n[描述交互設計規範]\n\n## 6. 技術要求\n\n### 6.1 效能要求\n- 頁面載入時間: < 2秒\n- API 響應時間: < 500ms\n- 系統可用性: > 99.9%\n\n### 6.2 相容性要求\n- 瀏覽器支援: Chrome 90+, Firefox 88+, Safari 14+\n- 行動裝置: iOS 14+, Android 10+\n- 響應式設計: 支援各種螢幕尺寸\n\n### 6.3 安全要求\n[列出安全相關要求]\n\n## 7. 成功指標\n\n### 7.1 關鍵指標 (KPIs)\n- 用戶註冊數: [目標數字]\n- 日活躍用戶: [目標數字]\n- 用戶留存率: [目標百分比]\n- 轉換率: [目標百分比]\n\n### 7.2 衡量方法\n[描述如何衡量成功指標]\n\n## 8. 發布計劃\n\n### 8.1 開發階段\n\n**階段1**: MVP 開發 (預計 [時間])\n- [主要功能1]\n- [主要功能2]\n- [主要功能3]\n\n**階段2**: 功能增強 (預計 [時間])\n- [增強功能1]\n- [增強功能2]\n- [增強功能3]\n\n**階段3**: 優化完善 (預計 [時間])\n- [優化項目1]\n- [優化項目2]\n- [優化項目3]\n\n### 8.2 里程碑\n- [日期]: [里程碑1]\n- [日期]: [里程碑2]\n- [日期]: [里程碑3]\n\n## 9. 風險評估\n\n### 9.1 技術風險\n[識別技術相關風險]\n\n### 9.2 市場風險\n[識別市場相關風險]\n\n### 9.3 資源風險\n[識別資源相關風險]\n\n### 9.4 應對策略\n[針對各項風險的應對措施]\n\n## 10. 附錄\n\n### 10.1 原型設計\n[連結到設計原型]\n\n### 10.2 用戶研究報告\n[連結到相關研究報告]\n\n### 10.3 技術可行性分析\n[連結到技術分析文檔]\n\n---\n\n**審核記錄**:\n- [日期] - [審核者] - [審核意見]\n- [日期] - [審核者] - [審核意見]",
+      "tags": ["產品", "需求", "PRD"],
+      "authorId": "admin",
+      "usageCount": 324,
+      "rating": 4.9,
+      "isPremium": true,
+      "createdAt": "2024-01-25T14:20:00.000Z",
+      "updatedAt": "2024-02-14T09:30:00.000Z"
+    },
+    {
+      "id": "template-005",
+      "name": "學術論文模板",
+      "description": "標準的學術論文格式，適用於研究報告和學術發表",
+      "category": "academic",
+      "language": "zh-TW",
+      "content": "# [論文標題]\n\n## 摘要\n\n[中文摘要，約200-300字，簡要說明研究背景、方法、結果和結論]\n\n**關鍵詞**: [關鍵詞1], [關鍵詞2], [關鍵詞3], [關鍵詞4], [關鍵詞5]\n\n## Abstract\n\n[English abstract, approximately 200-300 words, briefly describing research background, methods, results, and conclusions]\n\n**Keywords**: [keyword1], [keyword2], [keyword3], [keyword4], [keyword5]\n\n## 1. 緒論\n\n### 1.1 研究背景\n[描述研究領域的背景和重要性]\n\n### 1.2 研究動機\n[說明進行此研究的動機和原因]\n\n### 1.3 研究目的\n[明確陳述研究要達成的目標]\n\n### 1.4 研究問題\n[提出具體的研究問題]\n\n### 1.5 研究假設\n[如適用，提出研究假設]\n\n### 1.6 研究限制\n[說明研究的限制和範圍]\n\n### 1.7 名詞定義\n[定義重要的專業術語]\n\n### 1.8 論文結構\n[簡要說明論文各章節內容]\n\n## 2. 文獻探討\n\n### 2.1 相關理論基礎\n[回顧相關的理論基礎]\n\n### 2.2 國外研究現況\n[回顧國外相關研究]\n\n### 2.3 國內研究現況\n[回顧國內相關研究]\n\n### 2.4 文獻評析\n[評析現有文獻的貢獻和不足]\n\n### 2.5 研究缺口\n[指出現有研究的缺口]\n\n## 3. 研究方法\n\n### 3.1 研究設計\n[描述研究設計類型和架構]\n\n### 3.2 研究對象\n[描述研究的目標群體]\n\n### 3.3 抽樣方法\n[說明抽樣方法和樣本大小]\n\n### 3.4 資料蒐集\n[描述資料蒐集的方法和工具]\n\n### 3.5 資料分析\n[說明資料分析的方法和統計技術]\n\n### 3.6 研究工具\n[描述使用的研究工具和儀器]\n\n### 3.7 研究程序\n[詳細說明研究執行的步驟]\n\n### 3.8 研究倫理\n[說明研究倫理考量]\n\n## 4. 研究結果\n\n### 4.1 描述性統計\n[呈現基本的描述性統計結果]\n\n### 4.2 推論性統計\n[呈現推論性統計分析結果]\n\n### 4.3 研究發現\n[詳細描述主要研究發現]\n\n### 4.4 資料呈現\n[使用表格、圖表等方式呈現資料]\n\n## 5. 討論與分析\n\n### 5.1 結果詮釋\n[詮釋和解釋研究結果]\n\n### 5.2 理論意涵\n[討論結果的理論意義]\n\n### 5.3 實務意涵\n[討論結果的實務應用價值]\n\n### 5.4 與過往研究比較\n[將結果與過往研究進行比較]\n\n### 5.5 研究限制\n[討論研究的限制和不足]\n\n## 6. 結論與建議\n\n### 6.1 研究結論\n[總結主要研究結論]\n\n### 6.2 研究貢獻\n[說明研究的學術和實務貢獻]\n\n### 6.3 未來研究建議\n[提出未來研究的方向和建議]\n\n### 6.4 實務建議\n[提出實務應用的建議]\n\n## 參考文獻\n\n[按照指定的引用格式列出所有參考文獻]\n\n## 附錄\n\n### 附錄A: [標題]\n[相關的補充資料]\n\n### 附錄B: [標題]\n[相關的補充資料]\n\n---\n\n**作者資訊**:\n- 姓名: [作者姓名]\n- 機構: [所屬機構]\n- 電子郵件: [聯絡信箱]\n- ORCID: [ORCID ID]\n\n**投稿資訊**:\n- 投稿日期: [日期]\n- 修改日期: [日期]\n- 接受日期: [日期]\n\n**致謝**:\n[感謝對研究有貢獻的人員和機構]",
+      "tags": ["學術", "論文", "研究"],
+      "authorId": "admin",
+      "usageCount": 156,
+      "rating": 4.5,
+      "isPremium": false,
+      "createdAt": "2024-01-30T16:00:00.000Z",
+      "updatedAt": "2024-02-05T12:45:00.000Z"
+    },
+    {
+      "id": "template-006",
+      "name": "敏捷開發 Sprint 規劃",
+      "description": "Scrum 團隊 Sprint 規劃和回顧模板",
+      "category": "agile",
+      "language": "zh-TW",
+      "content": "# Sprint 規劃文檔\n\n## Sprint 資訊\n\n- **Sprint 編號**: Sprint [編號]\n- **Sprint 目標**: [本次 Sprint 的主要目標]\n- **開始日期**: [開始日期]\n- **結束日期**: [結束日期]\n- **Sprint 長度**: [天數] 天\n- **團隊容量**: [團隊總工作小時數]\n\n## 團隊成員\n\n| 姓名 | 職位 | 可用時數 | 備註 |\n|------|------|----------|------|\n| [成員1] | [職位] | [時數] | [如請假等] |\n| [成員2] | [職位] | [時數] | [如請假等] |\n| [成員3] | [職位] | [時數] | [如請假等] |\n\n## Product Backlog 優先順序\n\n### 高優先級 (Must Have)\n\n1. **[User Story 標題]**\n   - Story Points: [點數]\n   - 驗收標準: [具體標準]\n   - 負責人: [團隊成員]\n   - 預估工時: [小時]\n\n2. **[User Story 標題]**\n   - Story Points: [點數]\n   - 驗收標準: [具體標準]\n   - 負責人: [團隊成員]\n   - 預估工時: [小時]\n\n### 中優先級 (Should Have)\n\n1. **[User Story 標題]**\n   - Story Points: [點數]\n   - 驗收標準: [具體標準]\n   - 負責人: [團隊成員]\n   - 預估工時: [小時]\n\n### 低優先級 (Could Have)\n\n1. **[User Story 標題]**\n   - Story Points: [點數]\n   - 驗收標準: [具體標準]\n   - 負責人: [團隊成員]\n   - 預估工時: [小時]\n\n## Sprint Backlog\n\n### 承諾項目\n\n| 項目 | Story Points | 預估工時 | 負責人 | 狀態 |\n|------|--------------|----------|--------|------|\n| [項目1] | [點數] | [工時] | [負責人] | To Do |\n| [項目2] | [點數] | [工時] | [負責人] | To Do |\n| [項目3] | [點數] | [工時] | [負責人] | To Do |\n\n**總 Story Points**: [總點數]\n**總預估工時**: [總工時]\n\n## 任務分解\n\n### [User Story 1]: [標題]\n\n**任務清單**:\n- [ ] [子任務1] - [負責人] - [預估工時]\n- [ ] [子任務2] - [負責人] - [預估工時]\n- [ ] [子任務3] - [負責人] - [預估工時]\n\n**技術考量**:\n- [技術挑戰1]\n- [技術挑戰2]\n\n**相依性**:\n- [相依項目1]\n- [相依項目2]\n\n### [User Story 2]: [標題]\n\n**任務清單**:\n- [ ] [子任務1] - [負責人] - [預估工時]\n- [ ] [子任務2] - [負責人] - [預估工時]\n- [ ] [子任務3] - [負責人] - [預估工時]\n\n**技術考量**:\n- [技術挑戰1]\n- [技術挑戰2]\n\n**相依性**:\n- [相依項目1]\n- [相依項目2]\n\n## Definition of Done\n\n- [ ] 功能開發完成\n- [ ] 單元測試撰寫並通過\n- [ ] 程式碼審查完成\n- [ ] 整合測試通過\n- [ ] 用戶驗收測試通過\n- [ ] 文檔更新完成\n- [ ] 部署到測試環境\n- [ ] 產品負責人驗收通過\n\n## 風險識別\n\n### 高風險項目\n- [風險1]: [描述] - [應對策略]\n- [風險2]: [描述] - [應對策略]\n\n### 中風險項目\n- [風險1]: [描述] - [應對策略]\n- [風險2]: [描述] - [應對策略]\n\n### 阻礙因素\n- [阻礙1]: [描述] - [解決方案]\n- [阻礙2]: [描述] - [解決方案]\n\n## Daily Standup 記錄\n\n### Day 1 ([日期])\n\n**[成員1]**:\n- 昨天完成: [工作內容]\n- 今天計劃: [工作內容]\n- 遇到阻礙: [阻礙描述]\n\n**[成員2]**:\n- 昨天完成: [工作內容]\n- 今天計劃: [工作內容]\n- 遇到阻礙: [阻礙描述]\n\n### Day 2 ([日期])\n\n**[成員1]**:\n- 昨天完成: [工作內容]\n- 今天計劃: [工作內容]\n- 遇到阻礙: [阻礙描述]\n\n**[成員2]**:\n- 昨天完成: [工作內容]\n- 今天計劃: [工作內容]\n- 遇到阻礙: [阻礙描述]\n\n## Sprint Review\n\n### 完成項目\n\n| 項目 | Story Points | 實際工時 | 完成度 | 備註 |\n|------|--------------|----------|--------|------|\n| [項目1] | [點數] | [工時] | 100% | [備註] |\n| [項目2] | [點數] | [工時] | 80% | [備註] |\n\n### 未完成項目\n\n| 項目 | 原因 | 處理方式 |\n|------|------|----------|\n| [項目1] | [原因] | [處理方式] |\n| [項目2] | [原因] | [處理方式] |\n\n### Demo 回饋\n- [利害關係人回饋1]\n- [利害關係人回饋2]\n- [利害關係人回饋3]\n\n## Sprint Retrospective\n\n### 做得好的地方 (Keep)\n- [團隊表現良好的方面1]\n- [團隊表現良好的方面2]\n- [團隊表現良好的方面3]\n\n### 需要改進的地方 (Problem)\n- [需要改進的問題1]\n- [需要改進的問題2]\n- [需要改進的問題3]\n\n### 改進措施 (Try)\n- [改進措施1] - [負責人] - [截止日期]\n- [改進措施2] - [負責人] - [截止日期]\n- [改進措施3] - [負責人] - [截止日期]\n\n## 指標統計\n\n### 燃盡圖數據\n\n| 日期 | 剩餘 Story Points | 理想燃盡 | 實際燃盡 |\n|------|-------------------|----------|----------|\n| Day 1 | [點數] | [點數] | [點數] |\n| Day 2 | [點數] | [點數] | [點數] |\n| Day 3 | [點數] | [點數] | [點數] |\n\n### 團隊指標\n- **完成的 Story Points**: [點數]\n- **團隊速度**: [點數]\n- **完成率**: [百分比]\n- **品質指標**: [Bug 數量]\n\n## 下個 Sprint 準備\n\n### 待辦事項\n- [ ] 產品 Backlog 優先順序調整\n- [ ] 團隊容量規劃\n- [ ] 技術債務處理\n- [ ] 改進措施執行\n\n### 學習心得\n[記錄本次 Sprint 的學習和經驗]",
+      "tags": ["敏捷", "Scrum", "Sprint"],
+      "authorId": "admin",
+      "usageCount": 289,
+      "rating": 4.7,
+      "isPremium": true,
+      "createdAt": "2024-02-02T11:00:00.000Z",
+      "updatedAt": "2024-02-11T14:20:00.000Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-001",
+      "userId": "user-001",
+      "type": "document_created",
+      "resourceId": "doc-001",
+      "resourceType": "document",
+      "action": "create",
+      "title": "創建了文檔《專案企劃書》",
+      "description": "使用專案提案書模板創建了新文檔",
+      "metadata": {
+        "documentTitle": "專案企劃書",
+        "templateUsed": "template-001",
+        "wordCount": 0
+      },
+      "timestamp": "2024-02-15T09:30:00.000Z",
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-002",
+      "userId": "user-002",
+      "type": "document_edited",
+      "resourceId": "doc-002",
+      "resourceType": "document",
+      "action": "edit",
+      "title": "編輯了文檔《產品設計規範》",
+      "description": "在設計原則章節新增了 3 個段落",
+      "metadata": {
+        "documentTitle": "產品設計規範",
+        "changesCount": 15,
+        "wordsAdded": 247,
+        "wordsDeleted": 12,
+        "editDuration": 1800
+      },
+      "timestamp": "2024-02-15T10:15:30.000Z",
+      "ipAddress": "192.168.1.105",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-003",
+      "userId": "user-003",
+      "type": "comment_added",
+      "resourceId": "doc-001",
+      "resourceType": "document",
+      "action": "comment",
+      "title": "在《專案企劃書》添加了評論",
+      "description": "對「預算估算」章節提出了修改建議",
+      "metadata": {
+        "documentTitle": "專案企劃書",
+        "commentId": "comment-001",
+        "commentText": "建議在預算估算中加入風險緩衝...",
+        "mentionedUsers": ["user-001"]
+      },
+      "timestamp": "2024-02-15T11:45:15.000Z",
+      "ipAddress": "10.0.0.25",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+    },
+    {
+      "id": "activity-004",
+      "userId": "user-001",
+      "type": "document_shared",
+      "resourceId": "doc-001",
+      "resourceType": "document",
+      "action": "share",
+      "title": "分享了文檔《專案企劃書》",
+      "description": "與 3 位協作者分享了編輯權限",
+      "metadata": {
+        "documentTitle": "專案企劃書",
+        "sharedWith": ["user-004", "user-005", "user-006"],
+        "permissions": "edit",
+        "shareType": "team"
+      },
+      "timestamp": "2024-02-15T13:20:45.000Z",
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-005",
+      "userId": "user-004",
+      "type": "workspace_joined",
+      "resourceId": "workspace-001",
+      "resourceType": "workspace",
+      "action": "join",
+      "title": "加入了工作區《產品開發團隊》",
+      "description": "通過邀請連結加入了工作區",
+      "metadata": {
+        "workspaceName": "產品開發團隊",
+        "invitedBy": "user-001",
+        "role": "editor"
+      },
+      "timestamp": "2024-02-15T14:10:30.000Z",
+      "ipAddress": "203.74.123.45",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15"
+    },
+    {
+      "id": "activity-006",
+      "userId": "user-002",
+      "type": "version_created",
+      "resourceId": "doc-002",
+      "resourceType": "document",
+      "action": "version",
+      "title": "創建了文檔版本",
+      "description": "為《產品設計規範》創建了 v2.1 版本",
+      "metadata": {
+        "documentTitle": "產品設計規範",
+        "versionNumber": "2.1",
+        "changesSummary": "更新色彩系統和字體規範",
+        "previousVersion": "2.0"
+      },
+      "timestamp": "2024-02-15T15:30:20.000Z",
+      "ipAddress": "192.168.1.105",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-007",
+      "userId": "user-005",
+      "type": "ai_suggestion_applied",
+      "resourceId": "doc-003",
+      "resourceType": "document",
+      "action": "ai_assist",
+      "title": "應用了 AI 建議",
+      "description": "在《用戶手冊草稿》中應用了語法檢查建議",
+      "metadata": {
+        "documentTitle": "用戶手冊草稿",
+        "suggestionType": "grammar",
+        "suggestionsApplied": 12,
+        "aiModel": "gpt-4",
+        "improvementScore": 0.85
+      },
+      "timestamp": "2024-02-15T16:45:10.000Z",
+      "ipAddress": "172.16.0.88",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-008",
+      "userId": "user-003",
+      "type": "template_used",
+      "resourceId": "template-004",
+      "resourceType": "template",
+      "action": "use",
+      "title": "使用了模板《產品需求文檔 (PRD)》",
+      "description": "基於 PRD 模板創建了新的產品規劃文檔",
+      "metadata": {
+        "templateName": "產品需求文檔 (PRD)",
+        "newDocumentId": "doc-009",
+        "newDocumentTitle": "SyncCoreAI 3.0 產品規劃",
+        "templateCategory": "product"
+      },
+      "timestamp": "2024-02-15T17:15:40.000Z",
+      "ipAddress": "10.0.0.25",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+    },
+    {
+      "id": "activity-009",
+      "userId": "user-006",
+      "type": "document_exported",
+      "resourceId": "doc-001",
+      "resourceType": "document",
+      "action": "export",
+      "title": "匯出了文檔《專案企劃書》",
+      "description": "將文檔匯出為 PDF 格式",
+      "metadata": {
+        "documentTitle": "專案企劃書",
+        "exportFormat": "pdf",
+        "fileSize": "2.3MB",
+        "pageCount": 15
+      },
+      "timestamp": "2024-02-15T18:30:25.000Z",
+      "ipAddress": "198.51.100.42",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101"
+    },
+    {
+      "id": "activity-010",
+      "userId": "user-001",
+      "type": "search_performed",
+      "resourceId": null,
+      "resourceType": "search",
+      "action": "search",
+      "title": "執行了搜尋",
+      "description": "搜尋關鍵字：\"用戶體驗設計\"",
+      "metadata": {
+        "searchQuery": "用戶體驗設計",
+        "resultsCount": 23,
+        "searchScope": "all_documents",
+        "filters": {
+          "type": "document",
+          "dateRange": "last_month"
+        }
+      },
+      "timestamp": "2024-02-15T19:45:12.000Z",
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-011",
+      "userId": "user-002",
+      "type": "conflict_resolved",
+      "resourceId": "doc-004",
+      "resourceType": "document",
+      "action": "resolve",
+      "title": "解決了編輯衝突",
+      "description": "在《團隊協作最佳實踐》中解決了與 user-003 的編輯衝突",
+      "metadata": {
+        "documentTitle": "團隊協作最佳實踐",
+        "conflictWith": "user-003",
+        "conflictType": "concurrent_edit",
+        "resolutionMethod": "merge",
+        "affectedLines": ["45-52", "78-85"]
+      },
+      "timestamp": "2024-02-15T20:20:35.000Z",
+      "ipAddress": "192.168.1.105",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-012",
+      "userId": "user-004",
+      "type": "mention_created",
+      "resourceId": "doc-005",
+      "resourceType": "document",
+      "action": "mention",
+      "title": "提及了團隊成員",
+      "description": "在《產品功能規格書》中提及了 @user-001 和 @user-003",
+      "metadata": {
+        "documentTitle": "產品功能規格書",
+        "mentionedUsers": ["user-001", "user-003"],
+        "mentionContext": "需要確認技術可行性",
+        "mentionType": "task_assignment"
+      },
+      "timestamp": "2024-02-15T21:10:50.000Z",
+      "ipAddress": "203.74.123.45",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15"
+    },
+    {
+      "id": "activity-013",
+      "userId": "user-005",
+      "type": "document_archived",
+      "resourceId": "doc-old-001",
+      "resourceType": "document",
+      "action": "archive",
+      "title": "歸檔了文檔",
+      "description": "將過期的設計文檔移至歸檔區",
+      "metadata": {
+        "documentTitle": "舊版設計規範 v1.0",
+        "archiveReason": "版本過期",
+        "replacedBy": "doc-006"
+      },
+      "timestamp": "2024-02-15T22:05:15.000Z",
+      "ipAddress": "172.16.0.88",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-014",
+      "userId": "user-003",
+      "type": "integration_connected",
+      "resourceId": "slack-integration",
+      "resourceType": "integration",
+      "action": "connect",
+      "title": "連接了 Slack 整合",
+      "description": "將工作區與 Slack #product-team 頻道連接",
+      "metadata": {
+        "integrationName": "Slack",
+        "channelName": "#product-team",
+        "permissions": ["post_updates", "receive_notifications"],
+        "workspaceId": "workspace-001"
+      },
+      "timestamp": "2024-02-15T08:30:40.000Z",
+      "ipAddress": "10.0.0.25",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+    },
+    {
+      "id": "activity-015",
+      "userId": "user-006",
+      "type": "permission_changed",
+      "resourceId": "doc-007",
+      "resourceType": "document",
+      "action": "permission",
+      "title": "修改了文檔權限",
+      "description": "將《品牌視覺識別手冊》的權限從「團隊」改為「公開」",
+      "metadata": {
+        "documentTitle": "品牌視覺識別手冊",
+        "previousPermission": "team",
+        "newPermission": "public",
+        "changedBy": "user-006",
+        "reason": "需要與外部合作夥伴分享"
+      },
+      "timestamp": "2024-02-15T07:45:20.000Z",
+      "ipAddress": "198.51.100.42",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101"
+    },
+    {
+      "id": "activity-016",
+      "userId": "user-001",
+      "type": "bulk_operation",
+      "resourceId": null,
+      "resourceType": "multiple",
+      "action": "bulk",
+      "title": "執行了批量操作",
+      "description": "批量更新了 5 個文檔的標籤",
+      "metadata": {
+        "operationType": "tag_update",
+        "affectedDocuments": ["doc-001", "doc-002", "doc-003", "doc-004", "doc-005"],
+        "addedTags": ["Q1-2024", "高優先級"],
+        "removedTags": ["草稿"]
+      },
+      "timestamp": "2024-02-15T06:20:10.000Z",
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-017",
+      "userId": "user-002",
+      "type": "workflow_triggered",
+      "resourceId": "workflow-001",
+      "resourceType": "workflow",
+      "action": "trigger",
+      "title": "觸發了自動化工作流程",
+      "description": "文檔發佈時自動通知相關團隊成員",
+      "metadata": {
+        "workflowName": "文檔發佈通知",
+        "triggerEvent": "document_published",
+        "notifiedUsers": ["user-001", "user-003", "user-004"],
+        "documentId": "doc-008"
+      },
+      "timestamp": "2024-02-15T05:15:35.000Z",
+      "ipAddress": "192.168.1.105",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-018",
+      "userId": "user-004",
+      "type": "mobile_sync",
+      "resourceId": null,
+      "resourceType": "sync",
+      "action": "sync",
+      "title": "行動裝置同步",
+      "description": "完成了與行動應用程式的資料同步",
+      "metadata": {
+        "deviceType": "iOS",
+        "deviceId": "iPhone-12-Pro",
+        "syncedDocuments": 12,
+        "syncDuration": 3.2,
+        "lastSyncTime": "2024-02-15T04:30:00.000Z"
+      },
+      "timestamp": "2024-02-15T04:35:25.000Z",
+      "ipAddress": "203.74.123.45",
+      "userAgent": "SyncCoreAI-iOS/2.1.0 (iPhone; iOS 17.0)"
+    },
+    {
+      "id": "activity-019",
+      "userId": "user-005",
+      "type": "analytics_viewed",
+      "resourceId": "analytics-dashboard",
+      "resourceType": "analytics",
+      "action": "view",
+      "title": "查看了分析儀表板",
+      "description": "檢視了工作區的使用統計和效能指標",
+      "metadata": {
+        "dashboardType": "workspace_analytics",
+        "viewedMetrics": ["user_activity", "document_stats", "collaboration_metrics"],
+        "dateRange": "last_30_days",
+        "exportedReport": false
+      },
+      "timestamp": "2024-02-15T03:20:45.000Z",
+      "ipAddress": "172.16.0.88",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+    },
+    {
+      "id": "activity-020",
+      "userId": "user-003",
+      "type": "backup_created",
+      "resourceId": "backup-001",
+      "resourceType": "backup",
+      "action": "backup",
+      "title": "創建了資料備份",
+      "description": "為工作區創建了完整的資料備份",
+      "metadata": {
+        "backupType": "full",
+        "includedData": ["documents", "comments", "versions", "settings"],
+        "backupSize": "156.7MB",
+        "compressionRatio": 0.72,
+        "workspaceId": "workspace-001"
+      },
+      "timestamp": "2024-02-15T02:10:30.000Z",
+      "ipAddress": "10.0.0.25",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1",
+      "userId": "user_5",
+      "type": "mention",
+      "title": "有人提及您：Project Requirements Document ",
+      "message": "您在文件「Project Requirements Document 」中被提及",
+      "resourceId": "doc_1",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-04T10:19:07.575Z"
+    },
+    {
+      "id": "notif_2",
+      "userId": "user_3",
+      "type": "share",
+      "title": "文件已分享：Customer Feedback Analysis ",
+      "message": "文件「Customer Feedback Analysis 」已與您分享",
+      "resourceId": "doc_8",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-08T18:56:09.630Z"
+    },
+    {
+      "id": "notif_3",
+      "userId": "user_1",
+      "type": "mention",
+      "title": "有人提及您：API Documentation ",
+      "message": "您在文件「API Documentation 」中被提及",
+      "resourceId": "doc_2",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-05T20:53:48.081Z"
+    },
+    {
+      "id": "notif_4",
+      "userId": "user_4",
+      "type": "comment",
+      "title": "新評論：Security Audit Report ",
+      "message": "您的文件「Security Audit Report 」收到新評論",
+      "resourceId": "doc_5",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-05T08:30:52.739Z"
+    },
+    {
+      "id": "notif_5",
+      "userId": "user_1",
+      "type": "system",
+      "title": "系統通知",
+      "message": "系統維護通知",
+      "resourceId": "doc_8",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-03T11:55:50.975Z"
+    },
+    {
+      "id": "notif_6",
+      "userId": "user_4",
+      "type": "share",
+      "title": "文件已分享：Design System Guidelines ",
+      "message": "文件「Design System Guidelines 」已與您分享",
+      "resourceId": "doc_3",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-07T16:23:03.454Z"
+    },
+    {
+      "id": "notif_7",
+      "userId": "user_3",
+      "type": "mention",
+      "title": "有人提及您：Customer Feedback Analysis ",
+      "message": "您在文件「Customer Feedback Analysis 」中被提及",
+      "resourceId": "doc_8",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-03T13:21:51.894Z"
+    },
+    {
+      "id": "notif_8",
+      "userId": "user_4",
+      "type": "system",
+      "title": "系統通知",
+      "message": "系統維護通知",
+      "resourceId": "doc_6",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-04T20:50:03.159Z"
+    },
+    {
+      "id": "notif_9",
+      "userId": "user_4",
+      "type": "share",
+      "title": "文件已分享：Project Requirements Document ",
+      "message": "文件「Project Requirements Document 」已與您分享",
+      "resourceId": "doc_1",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-04T08:05:55.260Z"
+    },
+    {
+      "id": "notif_10",
+      "userId": "user_3",
+      "type": "system",
+      "title": "系統通知",
+      "message": "系統維護通知",
+      "resourceId": "doc_7",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-09T09:45:53.171Z"
+    },
+    {
+      "id": "notif_11",
+      "userId": "user_2",
+      "type": "mention",
+      "title": "有人提及您：Security Audit Report ",
+      "message": "您在文件「Security Audit Report 」中被提及",
+      "resourceId": "doc_5",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-03T02:55:14.949Z"
+    },
+    {
+      "id": "notif_12",
+      "userId": "user_5",
+      "type": "comment",
+      "title": "新評論：Performance Optimization Plan ",
+      "message": "您的文件「Performance Optimization Plan 」收到新評論",
+      "resourceId": "doc_6",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-07T09:49:21.883Z"
+    },
+    {
+      "id": "notif_13",
+      "userId": "user_5",
+      "type": "mention",
+      "title": "有人提及您：Security Audit Report ",
+      "message": "您在文件「Security Audit Report 」中被提及",
+      "resourceId": "doc_5",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-02T12:29:27.921Z"
+    },
+    {
+      "id": "notif_14",
+      "userId": "user_3",
+      "type": "system",
+      "title": "系統通知",
+      "message": "系統維護通知",
+      "resourceId": "doc_8",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-08T08:49:49.073Z"
+    },
+    {
+      "id": "notif_15",
+      "userId": "user_1",
+      "type": "mention",
+      "title": "有人提及您：Project Requirements Document ",
+      "message": "您在文件「Project Requirements Document 」中被提及",
+      "resourceId": "doc_1",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-09T02:22:23.191Z"
+    },
+    {
+      "id": "notif_16",
+      "userId": "user_5",
+      "type": "comment",
+      "title": "新評論：Marketing Strategy 2024 ",
+      "message": "您的文件「Marketing Strategy 2024 」收到新評論",
+      "resourceId": "doc_9",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-07T23:49:09.952Z"
+    },
+    {
+      "id": "notif_17",
+      "userId": "user_1",
+      "type": "comment",
+      "title": "新評論：Technical Architecture Overview ",
+      "message": "您的文件「Technical Architecture Overview 」收到新評論",
+      "resourceId": "doc_10",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-03T23:55:59.792Z"
+    },
+    {
+      "id": "notif_18",
+      "userId": "user_2",
+      "type": "mention",
+      "title": "有人提及您：Security Audit Report ",
+      "message": "您在文件「Security Audit Report 」中被提及",
+      "resourceId": "doc_5",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-07T02:01:51.967Z"
+    },
+    {
+      "id": "notif_19",
+      "userId": "user_2",
+      "type": "comment",
+      "title": "新評論：Customer Feedback Analysis ",
+      "message": "您的文件「Customer Feedback Analysis 」收到新評論",
+      "resourceId": "doc_8",
+      "resourceType": "document",
+      "read": true,
+      "createdAt": "2025-11-02T17:06:29.770Z"
+    },
+    {
+      "id": "notif_20",
+      "userId": "user_2",
+      "type": "comment",
+      "title": "新評論：Design System Guidelines ",
+      "message": "您的文件「Design System Guidelines 」收到新評論",
+      "resourceId": "doc_3",
+      "resourceType": "document",
+      "read": false,
+      "createdAt": "2025-11-04T13:49:50.286Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "comment_1",
+      "documentId": "doc_1",
+      "authorId": "user_5",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 46,
+        "character": 66
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-26T09:22:40.330Z",
+      "updatedAt": "2025-11-08T11:51:51.670Z"
+    },
+    {
+      "id": "comment_2",
+      "documentId": "doc_4",
+      "authorId": "user_3",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 50,
+        "character": 58
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-04T12:21:18.970Z",
+      "updatedAt": "2025-11-05T08:06:24.138Z"
+    },
+    {
+      "id": "comment_3",
+      "documentId": "doc_2",
+      "authorId": "user_1",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 7,
+        "character": 6
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-17T08:55:11.650Z",
+      "updatedAt": "2025-11-03T12:51:17.425Z"
+    },
+    {
+      "id": "comment_4",
+      "documentId": "doc_6",
+      "authorId": "user_2",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 38,
+        "character": 35
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-07T10:32:40.161Z",
+      "updatedAt": "2025-11-07T12:49:35.320Z"
+    },
+    {
+      "id": "comment_5",
+      "documentId": "doc_2",
+      "authorId": "user_4",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 17,
+        "character": 0
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-20T14:58:57.387Z",
+      "updatedAt": "2025-11-07T18:31:54.318Z"
+    },
+    {
+      "id": "comment_6",
+      "documentId": "doc_7",
+      "authorId": "user_3",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 31,
+        "character": 8
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-17T08:19:35.115Z",
+      "updatedAt": "2025-11-07T04:46:50.239Z"
+    },
+    {
+      "id": "comment_7",
+      "documentId": "doc_1",
+      "authorId": "user_1",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 3,
+        "character": 36
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-31T22:33:22.983Z",
+      "updatedAt": "2025-11-03T23:31:00.358Z"
+    },
+    {
+      "id": "comment_8",
+      "documentId": "doc_9",
+      "authorId": "user_3",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 15,
+        "character": 72
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-18T09:04:32.691Z",
+      "updatedAt": "2025-11-04T23:18:30.077Z"
+    },
+    {
+      "id": "comment_9",
+      "documentId": "doc_8",
+      "authorId": "user_3",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 36,
+        "character": 21
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-03T21:36:56.576Z",
+      "updatedAt": "2025-11-08T19:10:35.594Z"
+    },
+    {
+      "id": "comment_10",
+      "documentId": "doc_10",
+      "authorId": "user_3",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 18,
+        "character": 78
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-28T18:22:44.043Z",
+      "updatedAt": "2025-11-04T19:41:17.013Z"
+    },
+    {
+      "id": "comment_11",
+      "documentId": "doc_1",
+      "authorId": "user_2",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 28,
+        "character": 30
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-05T20:24:13.550Z",
+      "updatedAt": "2025-11-09T02:43:07.595Z"
+    },
+    {
+      "id": "comment_12",
+      "documentId": "doc_10",
+      "authorId": "user_4",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 3,
+        "character": 12
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-27T03:07:10.152Z",
+      "updatedAt": "2025-11-05T05:06:39.445Z"
+    },
+    {
+      "id": "comment_13",
+      "documentId": "doc_3",
+      "authorId": "user_1",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 8,
+        "character": 37
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-17T11:01:17.362Z",
+      "updatedAt": "2025-11-04T18:23:19.058Z"
+    },
+    {
+      "id": "comment_14",
+      "documentId": "doc_3",
+      "authorId": "user_3",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 8,
+        "character": 66
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-20T16:36:18.424Z",
+      "updatedAt": "2025-11-05T07:22:00.389Z"
+    },
+    {
+      "id": "comment_15",
+      "documentId": "doc_2",
+      "authorId": "user_2",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 27,
+        "character": 70
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-21T17:42:18.130Z",
+      "updatedAt": "2025-11-02T12:08:20.482Z"
+    },
+    {
+      "id": "comment_16",
+      "documentId": "doc_4",
+      "authorId": "user_4",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 36,
+        "character": 14
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-19T02:38:15.406Z",
+      "updatedAt": "2025-11-04T13:50:55.656Z"
+    },
+    {
+      "id": "comment_17",
+      "documentId": "doc_10",
+      "authorId": "user_3",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 11,
+        "character": 14
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-08T15:54:27.652Z",
+      "updatedAt": "2025-11-08T01:25:02.682Z"
+    },
+    {
+      "id": "comment_18",
+      "documentId": "doc_4",
+      "authorId": "user_4",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 28,
+        "character": 10
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-14T01:49:34.905Z",
+      "updatedAt": "2025-11-06T06:36:52.779Z"
+    },
+    {
+      "id": "comment_19",
+      "documentId": "doc_7",
+      "authorId": "user_3",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 38,
+        "character": 69
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-27T01:11:45.996Z",
+      "updatedAt": "2025-11-07T01:17:35.445Z"
+    },
+    {
+      "id": "comment_20",
+      "documentId": "doc_4",
+      "authorId": "user_3",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 11,
+        "character": 5
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-14T08:34:13.134Z",
+      "updatedAt": "2025-11-05T22:20:27.473Z"
+    },
+    {
+      "id": "comment_21",
+      "documentId": "doc_10",
+      "authorId": "user_2",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 18,
+        "character": 29
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-10T17:26:24.904Z",
+      "updatedAt": "2025-11-07T02:57:51.706Z"
+    },
+    {
+      "id": "comment_22",
+      "documentId": "doc_6",
+      "authorId": "user_5",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 8,
+        "character": 22
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-18T16:19:19.501Z",
+      "updatedAt": "2025-11-06T06:09:57.120Z"
+    },
+    {
+      "id": "comment_23",
+      "documentId": "doc_5",
+      "authorId": "user_2",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 43,
+        "character": 28
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-16T03:22:33.977Z",
+      "updatedAt": "2025-11-05T04:07:59.754Z"
+    },
+    {
+      "id": "comment_24",
+      "documentId": "doc_5",
+      "authorId": "user_4",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 36,
+        "character": 68
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-05T04:50:47.541Z",
+      "updatedAt": "2025-11-03T03:04:28.732Z"
+    },
+    {
+      "id": "comment_25",
+      "documentId": "doc_2",
+      "authorId": "user_5",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 43,
+        "character": 57
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-26T23:18:35.693Z",
+      "updatedAt": "2025-11-07T13:18:02.920Z"
+    },
+    {
+      "id": "comment_26",
+      "documentId": "doc_4",
+      "authorId": "user_4",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 14,
+        "character": 40
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-22T17:02:32.021Z",
+      "updatedAt": "2025-11-03T08:13:58.040Z"
+    },
+    {
+      "id": "comment_27",
+      "documentId": "doc_10",
+      "authorId": "user_1",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 49,
+        "character": 50
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-04T20:26:38.883Z",
+      "updatedAt": "2025-11-06T17:25:42.833Z"
+    },
+    {
+      "id": "comment_28",
+      "documentId": "doc_7",
+      "authorId": "user_4",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 20,
+        "character": 31
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-27T10:56:01.761Z",
+      "updatedAt": "2025-11-06T05:35:42.385Z"
+    },
+    {
+      "id": "comment_29",
+      "documentId": "doc_7",
+      "authorId": "user_4",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 46,
+        "character": 68
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-21T13:09:19.231Z",
+      "updatedAt": "2025-11-02T23:22:25.458Z"
+    },
+    {
+      "id": "comment_30",
+      "documentId": "doc_2",
+      "authorId": "user_2",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 7,
+        "character": 33
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-11T05:23:12.153Z",
+      "updatedAt": "2025-11-06T10:10:55.741Z"
+    },
+    {
+      "id": "comment_31",
+      "documentId": "doc_2",
+      "authorId": "user_4",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 39,
+        "character": 75
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-01T06:43:12.889Z",
+      "updatedAt": "2025-11-06T14:01:44.643Z"
+    },
+    {
+      "id": "comment_32",
+      "documentId": "doc_6",
+      "authorId": "user_4",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 33,
+        "character": 60
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-31T18:01:13.928Z",
+      "updatedAt": "2025-11-04T07:52:55.829Z"
+    },
+    {
+      "id": "comment_33",
+      "documentId": "doc_8",
+      "authorId": "user_2",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 32,
+        "character": 25
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-08T04:02:45.148Z",
+      "updatedAt": "2025-11-03T17:33:01.654Z"
+    },
+    {
+      "id": "comment_34",
+      "documentId": "doc_2",
+      "authorId": "user_5",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 32,
+        "character": 35
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-07T23:39:11.871Z",
+      "updatedAt": "2025-11-05T14:11:46.934Z"
+    },
+    {
+      "id": "comment_35",
+      "documentId": "doc_4",
+      "authorId": "user_2",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 14,
+        "character": 19
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-31T10:07:40.568Z",
+      "updatedAt": "2025-11-06T02:02:15.981Z"
+    },
+    {
+      "id": "comment_36",
+      "documentId": "doc_2",
+      "authorId": "user_2",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 35,
+        "character": 62
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-05T21:17:00.785Z",
+      "updatedAt": "2025-11-06T15:23:01.673Z"
+    },
+    {
+      "id": "comment_37",
+      "documentId": "doc_8",
+      "authorId": "user_4",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 30,
+        "character": 36
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-07T20:16:57.363Z",
+      "updatedAt": "2025-11-07T19:43:30.300Z"
+    },
+    {
+      "id": "comment_38",
+      "documentId": "doc_2",
+      "authorId": "user_1",
+      "content": "這個部分需要更詳細的說明",
+      "position": {
+        "line": 50,
+        "character": 27
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-03T23:13:45.686Z",
+      "updatedAt": "2025-11-05T02:50:16.790Z"
+    },
+    {
+      "id": "comment_39",
+      "documentId": "doc_10",
+      "authorId": "user_3",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 21,
+        "character": 8
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-13T19:06:26.831Z",
+      "updatedAt": "2025-11-02T20:37:16.431Z"
+    },
+    {
+      "id": "comment_40",
+      "documentId": "doc_6",
+      "authorId": "user_3",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 32,
+        "character": 45
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-11-02T00:38:57.535Z",
+      "updatedAt": "2025-11-03T05:28:38.575Z"
+    },
+    {
+      "id": "comment_41",
+      "documentId": "doc_4",
+      "authorId": "user_3",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 19,
+        "character": 44
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-06T11:20:39.096Z",
+      "updatedAt": "2025-11-07T23:37:47.424Z"
+    },
+    {
+      "id": "comment_42",
+      "documentId": "doc_1",
+      "authorId": "user_3",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 48,
+        "character": 17
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-27T09:44:52.904Z",
+      "updatedAt": "2025-11-07T02:29:43.614Z"
+    },
+    {
+      "id": "comment_43",
+      "documentId": "doc_1",
+      "authorId": "user_1",
+      "content": "內容很完整，感謝分享",
+      "position": {
+        "line": 43,
+        "character": 27
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-21T10:52:04.755Z",
+      "updatedAt": "2025-11-05T19:23:42.526Z"
+    },
+    {
+      "id": "comment_44",
+      "documentId": "doc_4",
+      "authorId": "user_4",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 6,
+        "character": 72
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-30T11:15:32.932Z",
+      "updatedAt": "2025-11-04T20:37:10.026Z"
+    },
+    {
+      "id": "comment_45",
+      "documentId": "doc_9",
+      "authorId": "user_5",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 49,
+        "character": 8
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-23T22:34:56.515Z",
+      "updatedAt": "2025-11-03T06:49:28.060Z"
+    },
+    {
+      "id": "comment_46",
+      "documentId": "doc_10",
+      "authorId": "user_4",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 13,
+        "character": 74
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-10T21:33:00.408Z",
+      "updatedAt": "2025-11-07T11:17:02.546Z"
+    },
+    {
+      "id": "comment_47",
+      "documentId": "doc_8",
+      "authorId": "user_5",
+      "content": "建議增加一些實例",
+      "position": {
+        "line": 42,
+        "character": 27
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-10-30T04:31:27.688Z",
+      "updatedAt": "2025-11-08T18:41:50.854Z"
+    },
+    {
+      "id": "comment_48",
+      "documentId": "doc_10",
+      "authorId": "user_1",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 25,
+        "character": 32
+      },
+      "resolved": false,
+      "replies": [],
+      "createdAt": "2025-11-07T15:34:51.599Z",
+      "updatedAt": "2025-11-06T04:13:05.327Z"
+    },
+    {
+      "id": "comment_49",
+      "documentId": "doc_8",
+      "authorId": "user_2",
+      "content": "這個方案很不錯",
+      "position": {
+        "line": 30,
+        "character": 30
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-29T01:46:59.726Z",
+      "updatedAt": "2025-11-03T21:05:03.362Z"
+    },
+    {
+      "id": "comment_50",
+      "documentId": "doc_1",
+      "authorId": "user_4",
+      "content": "有幾個地方需要修正",
+      "position": {
+        "line": 39,
+        "character": 42
+      },
+      "resolved": true,
+      "replies": [],
+      "createdAt": "2025-10-16T21:21:13.763Z",
+      "updatedAt": "2025-11-08T11:11:49.579Z"
+    }
+  ],
+  "versions": [
+    {
+      "id": "version_1",
+      "documentId": "doc_3",
+      "version": "1.3",
+      "authorId": "user_4",
+      "changes": "Version 1 updates",
+      "summary": "文件內容更新",
+      "size": 943,
+      "createdAt": "2025-10-14T08:33:43.793Z"
+    },
+    {
+      "id": "version_2",
+      "documentId": "doc_8",
+      "version": "1.2",
+      "authorId": "user_4",
+      "changes": "Version 2 updates",
+      "summary": "文件內容更新",
+      "size": 893,
+      "createdAt": "2025-10-13T07:34:59.494Z"
+    },
+    {
+      "id": "version_3",
+      "documentId": "doc_3",
+      "version": "1.2",
+      "authorId": "user_2",
+      "changes": "Version 3 updates",
+      "summary": "文件內容更新",
+      "size": 376,
+      "createdAt": "2025-10-23T14:37:16.950Z"
+    },
+    {
+      "id": "version_4",
+      "documentId": "doc_4",
+      "version": "1.7",
+      "authorId": "user_3",
+      "changes": "Version 4 updates",
+      "summary": "文件內容更新",
+      "size": 1051,
+      "createdAt": "2025-11-04T22:08:14.176Z"
+    },
+    {
+      "id": "version_5",
+      "documentId": "doc_7",
+      "version": "1.6",
+      "authorId": "user_2",
+      "changes": "Version 5 updates",
+      "summary": "文件內容更新",
+      "size": 465,
+      "createdAt": "2025-10-14T05:02:16.157Z"
+    },
+    {
+      "id": "version_6",
+      "documentId": "doc_4",
+      "version": "1.7",
+      "authorId": "user_4",
+      "changes": "Version 6 updates",
+      "summary": "文件內容更新",
+      "size": 956,
+      "createdAt": "2025-09-27T08:35:32.762Z"
+    },
+    {
+      "id": "version_7",
+      "documentId": "doc_8",
+      "version": "1.9",
+      "authorId": "user_2",
+      "changes": "Version 7 updates",
+      "summary": "文件內容更新",
+      "size": 888,
+      "createdAt": "2025-09-26T01:26:16.185Z"
+    },
+    {
+      "id": "version_8",
+      "documentId": "doc_7",
+      "version": "1.2",
+      "authorId": "user_1",
+      "changes": "Version 8 updates",
+      "summary": "文件內容更新",
+      "size": 902,
+      "createdAt": "2025-10-24T17:39:56.453Z"
+    },
+    {
+      "id": "version_9",
+      "documentId": "doc_5",
+      "version": "1.9",
+      "authorId": "user_5",
+      "changes": "Version 9 updates",
+      "summary": "文件內容更新",
+      "size": 202,
+      "createdAt": "2025-10-02T11:22:15.296Z"
+    },
+    {
+      "id": "version_10",
+      "documentId": "doc_10",
+      "version": "1.3",
+      "authorId": "user_5",
+      "changes": "Version 10 updates",
+      "summary": "文件內容更新",
+      "size": 146,
+      "createdAt": "2025-10-26T02:46:09.968Z"
+    },
+    {
+      "id": "version_11",
+      "documentId": "doc_10",
+      "version": "1.1",
+      "authorId": "user_2",
+      "changes": "Version 11 updates",
+      "summary": "文件內容更新",
+      "size": 792,
+      "createdAt": "2025-10-22T01:41:08.683Z"
+    },
+    {
+      "id": "version_12",
+      "documentId": "doc_1",
+      "version": "1.7",
+      "authorId": "user_5",
+      "changes": "Version 12 updates",
+      "summary": "文件內容更新",
+      "size": 396,
+      "createdAt": "2025-09-13T10:13:48.429Z"
+    },
+    {
+      "id": "version_13",
+      "documentId": "doc_2",
+      "version": "1.2",
+      "authorId": "user_4",
+      "changes": "Version 13 updates",
+      "summary": "文件內容更新",
+      "size": 714,
+      "createdAt": "2025-11-07T20:08:38.864Z"
+    },
+    {
+      "id": "version_14",
+      "documentId": "doc_5",
+      "version": "1.0",
+      "authorId": "user_5",
+      "changes": "Version 14 updates",
+      "summary": "文件內容更新",
+      "size": 1072,
+      "createdAt": "2025-10-24T00:43:11.883Z"
+    },
+    {
+      "id": "version_15",
+      "documentId": "doc_7",
+      "version": "1.5",
+      "authorId": "user_3",
+      "changes": "Version 15 updates",
+      "summary": "文件內容更新",
+      "size": 352,
+      "createdAt": "2025-11-06T00:14:01.795Z"
+    },
+    {
+      "id": "version_16",
+      "documentId": "doc_7",
+      "version": "1.9",
+      "authorId": "user_4",
+      "changes": "Version 16 updates",
+      "summary": "文件內容更新",
+      "size": 838,
+      "createdAt": "2025-09-14T06:22:46.936Z"
+    },
+    {
+      "id": "version_17",
+      "documentId": "doc_6",
+      "version": "1.2",
+      "authorId": "user_1",
+      "changes": "Version 17 updates",
+      "summary": "文件內容更新",
+      "size": 464,
+      "createdAt": "2025-10-01T17:42:19.249Z"
+    },
+    {
+      "id": "version_18",
+      "documentId": "doc_4",
+      "version": "1.2",
+      "authorId": "user_1",
+      "changes": "Version 18 updates",
+      "summary": "文件內容更新",
+      "size": 1058,
+      "createdAt": "2025-10-31T04:36:35.220Z"
+    },
+    {
+      "id": "version_19",
+      "documentId": "doc_3",
+      "version": "1.4",
+      "authorId": "user_5",
+      "changes": "Version 19 updates",
+      "summary": "文件內容更新",
+      "size": 1048,
+      "createdAt": "2025-10-04T06:10:50.001Z"
+    },
+    {
+      "id": "version_20",
+      "documentId": "doc_1",
+      "version": "1.7",
+      "authorId": "user_3",
+      "changes": "Version 20 updates",
+      "summary": "文件內容更新",
+      "size": 926,
+      "createdAt": "2025-10-08T22:25:13.880Z"
+    },
+    {
+      "id": "version_21",
+      "documentId": "doc_9",
+      "version": "1.6",
+      "authorId": "user_1",
+      "changes": "Version 21 updates",
+      "summary": "文件內容更新",
+      "size": 446,
+      "createdAt": "2025-10-30T00:06:45.475Z"
+    },
+    {
+      "id": "version_22",
+      "documentId": "doc_5",
+      "version": "1.4",
+      "authorId": "user_1",
+      "changes": "Version 22 updates",
+      "summary": "文件內容更新",
+      "size": 554,
+      "createdAt": "2025-09-19T02:29:32.827Z"
+    },
+    {
+      "id": "version_23",
+      "documentId": "doc_3",
+      "version": "1.3",
+      "authorId": "user_2",
+      "changes": "Version 23 updates",
+      "summary": "文件內容更新",
+      "size": 432,
+      "createdAt": "2025-10-14T13:11:11.861Z"
+    },
+    {
+      "id": "version_24",
+      "documentId": "doc_9",
+      "version": "1.4",
+      "authorId": "user_5",
+      "changes": "Version 24 updates",
+      "summary": "文件內容更新",
+      "size": 1085,
+      "createdAt": "2025-09-28T11:08:39.353Z"
+    },
+    {
+      "id": "version_25",
+      "documentId": "doc_1",
+      "version": "1.2",
+      "authorId": "user_5",
+      "changes": "Version 25 updates",
+      "summary": "文件內容更新",
+      "size": 198,
+      "createdAt": "2025-10-02T18:51:28.137Z"
+    },
+    {
+      "id": "version_26",
+      "documentId": "doc_8",
+      "version": "1.3",
+      "authorId": "user_1",
+      "changes": "Version 26 updates",
+      "summary": "文件內容更新",
+      "size": 204,
+      "createdAt": "2025-09-26T09:53:38.409Z"
+    },
+    {
+      "id": "version_27",
+      "documentId": "doc_4",
+      "version": "1.8",
+      "authorId": "user_1",
+      "changes": "Version 27 updates",
+      "summary": "文件內容更新",
+      "size": 781,
+      "createdAt": "2025-10-20T08:39:39.696Z"
+    },
+    {
+      "id": "version_28",
+      "documentId": "doc_2",
+      "version": "1.3",
+      "authorId": "user_3",
+      "changes": "Version 28 updates",
+      "summary": "文件內容更新",
+      "size": 736,
+      "createdAt": "2025-09-12T06:56:46.205Z"
+    },
+    {
+      "id": "version_29",
+      "documentId": "doc_6",
+      "version": "1.3",
+      "authorId": "user_5",
+      "changes": "Version 29 updates",
+      "summary": "文件內容更新",
+      "size": 225,
+      "createdAt": "2025-09-13T07:12:35.655Z"
+    },
+    {
+      "id": "version_30",
+      "documentId": "doc_7",
+      "version": "1.5",
+      "authorId": "user_1",
+      "changes": "Version 30 updates",
+      "summary": "文件內容更新",
+      "size": 881,
+      "createdAt": "2025-10-11T00:48:09.237Z"
+    }
+  ],
+  "presence": [
+    {
+      "id": "presence_1",
+      "userId": "user_5",
+      "documentId": "doc_5",
+      "isActive": false,
+      "cursor": {
+        "line": 82,
+        "character": 77
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:59:28.729Z"
+    },
+    {
+      "id": "presence_2",
+      "userId": "user_1",
+      "documentId": "doc_9",
+      "isActive": false,
+      "cursor": {
+        "line": 22,
+        "character": 20
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T10:04:10.307Z"
+    },
+    {
+      "id": "presence_3",
+      "userId": "user_3",
+      "documentId": "doc_3",
+      "isActive": true,
+      "cursor": {
+        "line": 39,
+        "character": 69
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:52:20.335Z"
+    },
+    {
+      "id": "presence_4",
+      "userId": "user_5",
+      "documentId": "doc_10",
+      "isActive": true,
+      "cursor": {
+        "line": 35,
+        "character": 10
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:30:30.755Z"
+    },
+    {
+      "id": "presence_5",
+      "userId": "user_3",
+      "documentId": "doc_8",
+      "isActive": false,
+      "cursor": {
+        "line": 38,
+        "character": 2
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T10:07:21.737Z"
+    },
+    {
+      "id": "presence_6",
+      "userId": "user_1",
+      "documentId": "doc_8",
+      "isActive": false,
+      "cursor": {
+        "line": 10,
+        "character": 1
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:54:06.910Z"
+    },
+    {
+      "id": "presence_7",
+      "userId": "user_4",
+      "documentId": "doc_2",
+      "isActive": false,
+      "cursor": {
+        "line": 74,
+        "character": 76
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:51:51.774Z"
+    },
+    {
+      "id": "presence_8",
+      "userId": "user_4",
+      "documentId": "doc_3",
+      "isActive": false,
+      "cursor": {
+        "line": 46,
+        "character": 35
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:36:06.386Z"
+    },
+    {
+      "id": "presence_9",
+      "userId": "user_3",
+      "documentId": "doc_2",
+      "isActive": false,
+      "cursor": {
+        "line": 34,
+        "character": 51
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T10:11:11.704Z"
+    },
+    {
+      "id": "presence_10",
+      "userId": "user_5",
+      "documentId": "doc_1",
+      "isActive": false,
+      "cursor": {
+        "line": 86,
+        "character": 61
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T10:05:31.635Z"
+    },
+    {
+      "id": "presence_11",
+      "userId": "user_2",
+      "documentId": "doc_7",
+      "isActive": false,
+      "cursor": {
+        "line": 88,
+        "character": 72
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T10:04:46.058Z"
+    },
+    {
+      "id": "presence_12",
+      "userId": "user_2",
+      "documentId": "doc_5",
+      "isActive": false,
+      "cursor": {
+        "line": 81,
+        "character": 76
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:43:34.281Z"
+    },
+    {
+      "id": "presence_13",
+      "userId": "user_2",
+      "documentId": "doc_4",
+      "isActive": false,
+      "cursor": {
+        "line": 67,
+        "character": 42
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T10:13:23.527Z"
+    },
+    {
+      "id": "presence_14",
+      "userId": "user_1",
+      "documentId": "doc_3",
+      "isActive": true,
+      "cursor": {
+        "line": 68,
+        "character": 45
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:20:48.434Z"
+    },
+    {
+      "id": "presence_15",
+      "userId": "user_1",
+      "documentId": "doc_7",
+      "isActive": false,
+      "cursor": {
+        "line": 40,
+        "character": 57
+      },
+      "selection": null,
+      "lastActivity": "2025-11-09T09:20:04.373Z"
+    }
+  ],
+  "analytics": {
+    "overview": {
+      "totalUsers": 5,
+      "totalDocuments": 10,
+      "totalWorkspaces": 2,
+      "activeUsers": 4,
+      "documentsCreatedToday": 7,
+      "collaborationsToday": 13
+    },
+    "usage": {
+      "dailyActiveUsers": 3,
+      "weeklyActiveUsers": 4,
+      "monthlyActiveUsers": 5,
+      "avgSessionDuration": 123,
+      "avgDocumentsPerUser": 2
+    },
+    "performance": {
+      "avgLoadTime": 0.6007123633807616,
+      "avgSyncTime": 0.687616504945457,
+      "uptime": 99.9,
+      "errorRate": 0.0952258648334996
+    }
+  },
+  "settings": [
+    {
+      "id": "config-001",
+      "category": "system",
+      "key": "max_file_size",
+      "value": "50MB",
+      "type": "string",
+      "description": "單一文檔的最大檔案大小限制",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "config-002",
+      "category": "system",
+      "key": "session_timeout",
+      "value": 3600,
+      "type": "number",
+      "description": "用戶會話過期時間（秒）",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-15T14:30:00.000Z"
+    },
+    {
+      "id": "config-003",
+      "category": "ai",
+      "key": "default_model",
+      "value": "gpt-4",
+      "type": "string",
+      "description": "預設的 AI 模型",
+      "options": ["gpt-4", "gpt-3.5-turbo", "claude-3"],
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-10T09:15:00.000Z"
+    },
+    {
+      "id": "config-004",
+      "category": "ai",
+      "key": "suggestion_frequency",
+      "value": "medium",
+      "type": "string",
+      "description": "AI 建議的顯示頻率",
+      "options": ["low", "medium", "high"],
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-05T16:20:00.000Z"
+    },
+    {
+      "id": "config-005",
+      "category": "collaboration",
+      "key": "auto_save_interval",
+      "value": 5,
+      "type": "number",
+      "description": "自動儲存間隔時間（秒）",
+      "min": 1,
+      "max": 60,
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-20T11:45:00.000Z"
+    },
+    {
+      "id": "config-006",
+      "category": "collaboration",
+      "key": "max_collaborators",
+      "value": 50,
+      "type": "number",
+      "description": "單一文檔的最大協作者數量",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "config-007",
+      "category": "ui",
+      "key": "theme",
+      "value": "system",
+      "type": "string",
+      "description": "用戶界面主題",
+      "options": ["light", "dark", "system"],
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-08T13:30:00.000Z"
+    },
+    {
+      "id": "config-008",
+      "category": "ui",
+      "key": "language",
+      "value": "zh-TW",
+      "type": "string",
+      "description": "界面語言",
+      "options": ["zh-TW", "zh-CN", "en-US", "ja-JP"],
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-10T08:15:00.000Z"
+    },
+    {
+      "id": "config-009",
+      "category": "ui",
+      "key": "editor_font_size",
+      "value": 16,
+      "type": "number",
+      "description": "編輯器字體大小（像素）",
+      "min": 12,
+      "max": 24,
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-03T15:20:00.000Z"
+    },
+    {
+      "id": "config-010",
+      "category": "security",
+      "key": "password_min_length",
+      "value": 8,
+      "type": "number",
+      "description": "密碼最小長度",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "config-011",
+      "category": "security",
+      "key": "require_mfa",
+      "value": false,
+      "type": "boolean",
+      "description": "是否強制要求多因子認證",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-25T12:00:00.000Z"
+    },
+    {
+      "id": "config-012",
+      "category": "notifications",
+      "key": "email_notifications",
+      "value": true,
+      "type": "boolean",
+      "description": "是否啟用郵件通知",
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-12T10:30:00.000Z"
+    },
+    {
+      "id": "config-013",
+      "category": "notifications",
+      "key": "push_notifications",
+      "value": true,
+      "type": "boolean",
+      "description": "是否啟用推播通知",
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-07T14:45:00.000Z"
+    },
+    {
+      "id": "config-014",
+      "category": "performance",
+      "key": "cache_duration",
+      "value": 300,
+      "type": "number",
+      "description": "快取持續時間（秒）",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-30T16:10:00.000Z"
+    },
+    {
+      "id": "config-015",
+      "category": "performance",
+      "key": "lazy_loading",
+      "value": true,
+      "type": "boolean",
+      "description": "是否啟用延遲載入",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-15T09:25:00.000Z"
+    },
+    {
+      "id": "config-016",
+      "category": "backup",
+      "key": "auto_backup_enabled",
+      "value": true,
+      "type": "boolean",
+      "description": "是否啟用自動備份",
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-14T11:00:00.000Z"
+    },
+    {
+      "id": "config-017",
+      "category": "backup",
+      "key": "backup_frequency",
+      "value": "daily",
+      "type": "string",
+      "description": "自動備份頻率",
+      "options": ["hourly", "daily", "weekly"],
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-06T13:15:00.000Z"
+    },
+    {
+      "id": "config-018",
+      "category": "export",
+      "key": "default_export_format",
+      "value": "pdf",
+      "type": "string",
+      "description": "預設匯出格式",
+      "options": ["pdf", "docx", "html", "markdown"],
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-02T17:40:00.000Z"
+    },
+    {
+      "id": "config-019",
+      "category": "export",
+      "key": "include_metadata",
+      "value": true,
+      "type": "boolean",
+      "description": "匯出時是否包含元資料",
+      "isUserConfigurable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-28T15:50:00.000Z"
+    },
+    {
+      "id": "config-020",
+      "category": "integration",
+      "key": "allowed_integrations",
+      "value": ["slack", "teams", "discord", "webhook"],
+      "type": "array",
+      "description": "允許的第三方整合服務",
+      "isUserConfigurable": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-02-04T12:35:00.000Z"
+    }
+  ],
+  "auth": [
+    {
+      "id": "token_1",
+      "userId": "user_3",
+      "token": "mock_jwt_token_user_3",
+      "refreshToken": "mock_refresh_token_user_3",
+      "expiresAt": "2025-11-10T10:16:23.468Z",
+      "createdAt": "2025-11-09T10:16:23.468Z"
+    },
+    {
+      "id": "token_2",
+      "userId": "user_4",
+      "token": "mock_jwt_token_user_4",
+      "refreshToken": "mock_refresh_token_user_4",
+      "expiresAt": "2025-11-10T10:16:23.468Z",
+      "createdAt": "2025-11-09T10:16:23.468Z"
+    },
+    {
+      "id": "token_3",
+      "userId": "user_5",
+      "token": "mock_jwt_token_user_5",
+      "refreshToken": "mock_refresh_token_user_5",
+      "expiresAt": "2025-11-10T10:16:23.468Z",
+      "createdAt": "2025-11-09T10:16:23.468Z"
+    },
+    {
+      "id": "token_4",
+      "userId": "user_2",
+      "token": "mock_jwt_token_user_2",
+      "refreshToken": "mock_refresh_token_user_2",
+      "expiresAt": "2025-11-10T10:16:23.468Z",
+      "createdAt": "2025-11-09T10:16:23.468Z"
+    },
+    {
+      "id": "token_5",
+      "userId": "user_1",
+      "token": "mock_jwt_token_user_1",
+      "refreshToken": "mock_refresh_token_user_1",
+      "expiresAt": "2025-11-10T10:16:23.468Z",
+      "createdAt": "2025-11-09T10:16:23.468Z"
+    }
+  ],
+  "ai_suggestions": [
+    {
+      "id": "ai_suggestion_1",
+      "documentId": "doc_10",
+      "type": "content",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.7648678214031825,
+      "position": {
+        "line": 43,
+        "character": 61
+      },
+      "applied": true,
+      "createdAt": "2025-11-08T10:40:21.616Z"
+    },
+    {
+      "id": "ai_suggestion_2",
+      "documentId": "doc_1",
+      "type": "translation",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.9933399712520005,
+      "position": {
+        "line": 49,
+        "character": 31
+      },
+      "applied": false,
+      "createdAt": "2025-11-03T08:47:20.406Z"
+    },
+    {
+      "id": "ai_suggestion_3",
+      "documentId": "doc_4",
+      "type": "style",
+      "suggestion": "建議調整段落結構以提高可讀性",
+      "confidence": 0.6896737307521785,
+      "position": {
+        "line": 26,
+        "character": 1
+      },
+      "applied": true,
+      "createdAt": "2025-11-03T12:21:39.182Z"
+    },
+    {
+      "id": "ai_suggestion_4",
+      "documentId": "doc_2",
+      "type": "content",
+      "suggestion": "這個部分可以加入圖表說明",
+      "confidence": 0.9901072818053799,
+      "position": {
+        "line": 4,
+        "character": 67
+      },
+      "applied": true,
+      "createdAt": "2025-11-07T19:37:42.933Z"
+    },
+    {
+      "id": "ai_suggestion_5",
+      "documentId": "doc_6",
+      "type": "structure",
+      "suggestion": "建議重新組織內容順序",
+      "confidence": 0.7013403636293278,
+      "position": {
+        "line": 29,
+        "character": 68
+      },
+      "applied": false,
+      "createdAt": "2025-11-04T22:44:38.900Z"
+    },
+    {
+      "id": "ai_suggestion_6",
+      "documentId": "doc_2",
+      "type": "translation",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.8039052016073557,
+      "position": {
+        "line": 25,
+        "character": 67
+      },
+      "applied": true,
+      "createdAt": "2025-11-09T00:24:50.440Z"
+    },
+    {
+      "id": "ai_suggestion_7",
+      "documentId": "doc_10",
+      "type": "translation",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.6426230782627328,
+      "position": {
+        "line": 23,
+        "character": 11
+      },
+      "applied": true,
+      "createdAt": "2025-11-09T00:34:20.540Z"
+    },
+    {
+      "id": "ai_suggestion_8",
+      "documentId": "doc_6",
+      "type": "grammar",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.7062233948512048,
+      "position": {
+        "line": 24,
+        "character": 8
+      },
+      "applied": false,
+      "createdAt": "2025-11-06T07:37:00.553Z"
+    },
+    {
+      "id": "ai_suggestion_9",
+      "documentId": "doc_10",
+      "type": "content",
+      "suggestion": "建議調整段落結構以提高可讀性",
+      "confidence": 0.7588755302837261,
+      "position": {
+        "line": 10,
+        "character": 37
+      },
+      "applied": true,
+      "createdAt": "2025-11-08T15:49:21.607Z"
+    },
+    {
+      "id": "ai_suggestion_10",
+      "documentId": "doc_4",
+      "type": "structure",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.8475042561118071,
+      "position": {
+        "line": 50,
+        "character": 29
+      },
+      "applied": false,
+      "createdAt": "2025-11-04T04:19:37.353Z"
+    },
+    {
+      "id": "ai_suggestion_11",
+      "documentId": "doc_10",
+      "type": "grammar",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.7463283104822968,
+      "position": {
+        "line": 8,
+        "character": 41
+      },
+      "applied": false,
+      "createdAt": "2025-11-07T02:19:51.044Z"
+    },
+    {
+      "id": "ai_suggestion_12",
+      "documentId": "doc_8",
+      "type": "structure",
+      "suggestion": "建議調整段落結構以提高可讀性",
+      "confidence": 0.6395203922665651,
+      "position": {
+        "line": 5,
+        "character": 1
+      },
+      "applied": false,
+      "createdAt": "2025-11-05T14:59:12.728Z"
+    },
+    {
+      "id": "ai_suggestion_13",
+      "documentId": "doc_2",
+      "type": "translation",
+      "suggestion": "建議重新組織內容順序",
+      "confidence": 0.6378270208515943,
+      "position": {
+        "line": 20,
+        "character": 74
+      },
+      "applied": false,
+      "createdAt": "2025-11-07T19:12:18.111Z"
+    },
+    {
+      "id": "ai_suggestion_14",
+      "documentId": "doc_2",
+      "type": "grammar",
+      "suggestion": "建議調整段落結構以提高可讀性",
+      "confidence": 0.8717982634314192,
+      "position": {
+        "line": 33,
+        "character": 46
+      },
+      "applied": false,
+      "createdAt": "2025-11-08T23:41:01.608Z"
+    },
+    {
+      "id": "ai_suggestion_15",
+      "documentId": "doc_4",
+      "type": "translation",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.6504447786479501,
+      "position": {
+        "line": 43,
+        "character": 20
+      },
+      "applied": false,
+      "createdAt": "2025-11-03T15:28:09.692Z"
+    },
+    {
+      "id": "ai_suggestion_16",
+      "documentId": "doc_3",
+      "type": "grammar",
+      "suggestion": "建議調整段落結構以提高可讀性",
+      "confidence": 0.8800074453145488,
+      "position": {
+        "line": 37,
+        "character": 3
+      },
+      "applied": false,
+      "createdAt": "2025-11-05T05:55:56.680Z"
+    },
+    {
+      "id": "ai_suggestion_17",
+      "documentId": "doc_8",
+      "type": "translation",
+      "suggestion": "建議調整段落結構以提高可讀性",
+      "confidence": 0.8679081074112885,
+      "position": {
+        "line": 19,
+        "character": 39
+      },
+      "applied": false,
+      "createdAt": "2025-11-04T13:33:59.046Z"
+    },
+    {
+      "id": "ai_suggestion_18",
+      "documentId": "doc_9",
+      "type": "style",
+      "suggestion": "這個部分可以加入圖表說明",
+      "confidence": 0.6027370872709624,
+      "position": {
+        "line": 47,
+        "character": 50
+      },
+      "applied": true,
+      "createdAt": "2025-11-08T07:29:51.302Z"
+    },
+    {
+      "id": "ai_suggestion_19",
+      "documentId": "doc_1",
+      "type": "translation",
+      "suggestion": "建議使用更正式的語調",
+      "confidence": 0.7208101361360385,
+      "position": {
+        "line": 29,
+        "character": 55
+      },
+      "applied": false,
+      "createdAt": "2025-11-04T11:11:23.181Z"
+    },
+    {
+      "id": "ai_suggestion_20",
+      "documentId": "doc_3",
+      "type": "translation",
+      "suggestion": "建議使用更正式的語調",
+      "confidence": 0.7894988962738373,
+      "position": {
+        "line": 35,
+        "character": 17
+      },
+      "applied": false,
+      "createdAt": "2025-11-08T04:08:05.659Z"
+    },
+    {
+      "id": "ai_suggestion_21",
+      "documentId": "doc_8",
+      "type": "style",
+      "suggestion": "建議使用更正式的語調",
+      "confidence": 0.7607602245849548,
+      "position": {
+        "line": 1,
+        "character": 18
+      },
+      "applied": true,
+      "createdAt": "2025-11-05T02:09:15.734Z"
+    },
+    {
+      "id": "ai_suggestion_22",
+      "documentId": "doc_10",
+      "type": "grammar",
+      "suggestion": "可以增加更多技術細節",
+      "confidence": 0.7692416316484192,
+      "position": {
+        "line": 33,
+        "character": 58
+      },
+      "applied": false,
+      "createdAt": "2025-11-08T15:55:18.095Z"
+    },
+    {
+      "id": "ai_suggestion_23",
+      "documentId": "doc_9",
+      "type": "translation",
+      "suggestion": "建議調整段落結構以提高可讀性",
+      "confidence": 0.684695669925677,
+      "position": {
+        "line": 29,
+        "character": 73
+      },
+      "applied": true,
+      "createdAt": "2025-11-03T18:27:27.057Z"
+    },
+    {
+      "id": "ai_suggestion_24",
+      "documentId": "doc_10",
+      "type": "content",
+      "suggestion": "這個部分可以加入圖表說明",
+      "confidence": 0.8122548281044601,
+      "position": {
+        "line": 23,
+        "character": 63
+      },
+      "applied": false,
+      "createdAt": "2025-11-05T12:17:48.170Z"
+    },
+    {
+      "id": "ai_suggestion_25",
+      "documentId": "doc_1",
+      "type": "grammar",
+      "suggestion": "建議重新組織內容順序",
+      "confidence": 0.9868079030146015,
+      "position": {
+        "line": 28,
+        "character": 52
+      },
+      "applied": false,
+      "createdAt": "2025-11-09T08:30:45.524Z"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastSeeded": "2025-11-09T10:16:23.468Z",
+    "mode": "minimal",
+    "counts": {
+      "users": 5,
+      "workspaces": 2,
+      "documents": 10,
+      "templates": 6,
+      "activities": 20,
+      "notifications": 20,
+      "comments": 50,
+      "versions": 30
+    }
+  }
+}

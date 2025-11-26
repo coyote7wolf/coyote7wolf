@@ -1,0 +1,178 @@
+[
+  {
+    "id": "version-001",
+    "documentId": "doc-001",
+    "version": "1.0.0",
+    "title": "SyncCoreAI 專案規劃 - 初版",
+    "authorId": "user-001",
+    "changes": [
+      {
+        "type": "insert",
+        "position": 0,
+        "content": "# SyncCoreAI 專案規劃\n\n這是一個關於 SyncCoreAI 平台的專案規劃文檔。",
+        "timestamp": "2024-01-01T10:00:00.000Z"
+      }
+    ],
+    "changesSummary": "創建文檔初版，包含基本專案概述",
+    "size": 245,
+    "commitMessage": "Initial project planning document",
+    "tags": ["initial", "planning"],
+    "isPublished": true,
+    "publishedAt": "2024-01-01T10:00:00.000Z",
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": "version-002",
+    "documentId": "doc-001",
+    "version": "1.1.0",
+    "title": "SyncCoreAI 專案規劃 - 添加技術架構",
+    "authorId": "user-002",
+    "changes": [
+      {
+        "type": "insert",
+        "position": 200,
+        "content": "\n\n## 技術架構\n\n- 前端：Next.js + TypeScript\n- 後端：微服務架構",
+        "timestamp": "2024-01-05T14:30:00.000Z"
+      }
+    ],
+    "changesSummary": "添加技術架構章節，說明前後端技術選型",
+    "size": 324,
+    "commitMessage": "Add technical architecture section",
+    "tags": ["architecture", "technical"],
+    "isPublished": true,
+    "publishedAt": "2024-01-05T14:30:00.000Z",
+    "createdAt": "2024-01-05T14:30:00.000Z"
+  },
+  {
+    "id": "version-003",
+    "documentId": "doc-001",
+    "version": "1.2.0",
+    "title": "SyncCoreAI 專案規劃 - 完善架構細節",
+    "authorId": "user-002",
+    "changes": [
+      {
+        "type": "update",
+        "position": 230,
+        "oldContent": "- 後端：微服務架構",
+        "newContent": "- 後端：微服務架構\n- 資料庫：PostgreSQL + Redis\n- AI：整合多個 LLM 模型",
+        "timestamp": "2024-01-10T16:15:00.000Z"
+      }
+    ],
+    "changesSummary": "完善技術架構，添加資料庫和 AI 技術選型",
+    "size": 398,
+    "commitMessage": "Enhance architecture with database and AI details",
+    "tags": ["architecture", "database", "ai"],
+    "isPublished": true,
+    "publishedAt": "2024-01-10T16:15:00.000Z",
+    "createdAt": "2024-01-10T16:15:00.000Z"
+  },
+  {
+    "id": "version-004",
+    "documentId": "doc-001",
+    "version": "1.2.1",
+    "title": "SyncCoreAI 專案規劃 - 修正錯字",
+    "authorId": "user-003",
+    "changes": [
+      {
+        "type": "update",
+        "position": 150,
+        "oldContent": "智能協作文檔編輯平台",
+        "newContent": "智慧協作文檔編輯平台",
+        "timestamp": "2024-01-12T09:20:00.000Z"
+      }
+    ],
+    "changesSummary": "修正用詞，使用更準確的術語",
+    "size": 398,
+    "commitMessage": "Fix terminology",
+    "tags": ["fix", "terminology"],
+    "isPublished": true,
+    "publishedAt": "2024-01-12T09:20:00.000Z",
+    "createdAt": "2024-01-12T09:20:00.000Z"
+  },
+  {
+    "id": "version-005",
+    "documentId": "doc-001",
+    "version": "2.0.0",
+    "title": "SyncCoreAI 專案規劃 - 重大更新",
+    "authorId": "user-001",
+    "changes": [
+      {
+        "type": "insert",
+        "position": 398,
+        "content": "\n\n## 專案時程\n\n### Phase 1: 基礎建設 (1-2個月)\n- 項目架構搭建\n- 核心 API 開發\n- 基礎 UI 組件\n\n### Phase 2: 核心功能 (2-3個月)\n- 文檔編輯器\n- 即時協作\n- 用戶管理\n\n### Phase 3: 高級功能 (3-4個月)\n- AI 輔助功能\n- 衝突解決\n- 離線支援",
+        "timestamp": "2024-01-15T11:45:00.000Z"
+      }
+    ],
+    "changesSummary": "添加詳細專案時程規劃，定義三個主要開發階段",
+    "size": 712,
+    "commitMessage": "Add comprehensive project timeline",
+    "tags": ["timeline", "phases", "major"],
+    "isPublished": true,
+    "publishedAt": "2024-01-15T11:45:00.000Z",
+    "createdAt": "2024-01-15T11:45:00.000Z"
+  },
+  {
+    "id": "version-006",
+    "documentId": "doc-002",
+    "version": "1.0.0",
+    "title": "API 設計規範 - 初版",
+    "authorId": "user-003",
+    "changes": [
+      {
+        "type": "insert",
+        "position": 0,
+        "content": "# API 設計規範\n\n## RESTful API 設計原則\n\n### 1. URL 設計\n\n- 使用名詞而非動詞\n- 使用複數形式\n- 保持一致性",
+        "timestamp": "2024-01-10T14:20:00.000Z"
+      }
+    ],
+    "changesSummary": "創建 API 設計規範文檔",
+    "size": 180,
+    "commitMessage": "Initial API design guidelines",
+    "tags": ["initial", "api", "guidelines"],
+    "isPublished": false,
+    "createdAt": "2024-01-10T14:20:00.000Z"
+  },
+  {
+    "id": "version-007",
+    "documentId": "doc-002",
+    "version": "1.1.0",
+    "title": "API 設計規範 - 添加 HTTP 方法說明",
+    "authorId": "user-003",
+    "changes": [
+      {
+        "type": "insert",
+        "position": 132,
+        "content": "\n\n### 2. HTTP 方法\n\n- GET: 獲取資源\n- POST: 創建資源\n- PUT: 完整更新資源\n- PATCH: 部分更新資源\n- DELETE: 刪除資源",
+        "timestamp": "2024-01-11T10:35:00.000Z"
+      }
+    ],
+    "changesSummary": "添加 HTTP 方法使用說明",
+    "size": 267,
+    "commitMessage": "Add HTTP methods documentation",
+    "tags": ["http", "methods"],
+    "isPublished": false,
+    "createdAt": "2024-01-11T10:35:00.000Z"
+  },
+  {
+    "id": "version-008",
+    "documentId": "doc-002",
+    "version": "1.2.0",
+    "title": "API 設計規範 - 完整版",
+    "authorId": "user-003",
+    "changes": [
+      {
+        "type": "insert",
+        "position": 267,
+        "content": "\n\n### 3. 狀態碼\n\n- 200: 成功\n- 201: 創建成功\n- 400: 客戶端錯誤\n- 401: 未授權\n- 404: 資源不存在\n- 500: 伺服器錯誤",
+        "timestamp": "2024-01-12T11:45:00.000Z"
+      }
+    ],
+    "changesSummary": "添加狀態碼說明，完成基本規範文檔",
+    "size": 380,
+    "commitMessage": "Complete basic API guidelines with status codes",
+    "tags": ["status-codes", "complete"],
+    "isPublished": true,
+    "publishedAt": "2024-01-12T11:45:00.000Z",
+    "createdAt": "2024-01-12T11:45:00.000Z"
+  }
+]

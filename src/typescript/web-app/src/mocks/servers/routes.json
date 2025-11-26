@@ -1,0 +1,85 @@
+{
+  "/api/v1/auth/login": "/auth/login",
+  "/api/v1/auth/register": "/auth/register",
+  "/api/v1/auth/logout": "/auth/logout",
+  "/api/v1/auth/refresh": "/auth/refresh",
+  "/api/v1/auth/verify-email": "/auth/verify-email",
+  "/api/v1/auth/forgot-password": "/auth/forgot-password",
+  "/api/v1/auth/reset-password": "/auth/reset-password",
+
+  "/api/v1/users": "/users",
+  "/api/v1/users/:id": "/users/:id",
+  "/api/v1/users/profile": "/users/profile",
+  "/api/v1/users/:id/avatar": "/users/:id/avatar",
+  "/api/v1/users/preferences": "/users/preferences",
+
+  "/api/v1/documents": "/documents",
+  "/api/v1/documents/:id": "/documents/:id",
+  "/api/v1/documents/:id/content": "/documents/:id/content",
+  "/api/v1/documents/:id/collaborators": "/documents/:id/collaborators",
+  "/api/v1/documents/:id/versions": "/documents/:id/versions",
+  "/api/v1/documents/:id/comments": "/documents/:id/comments",
+  "/api/v1/documents/:id/share": "/documents/:id/share",
+  "/api/v1/documents/:id/export": "/documents/:id/export",
+
+  "/api/v1/workspaces": "/workspaces",
+  "/api/v1/workspaces/:id": "/workspaces/:id",
+  "/api/v1/workspaces/:id/documents": "/workspaces/:id/documents",
+  "/api/v1/workspaces/:id/members": "/workspaces/:id/members",
+  "/api/v1/workspaces/:id/invitations": "/workspaces/:id/invitations",
+
+  "/api/v1/comments": "/comments",
+  "/api/v1/comments/:id": "/comments/:id",
+  "/api/v1/comments/:id/replies": "/comments/:id/replies",
+  "/api/v1/comments/:id/reactions": "/comments/:id/reactions",
+
+  "/api/v1/versions": "/versions",
+  "/api/v1/versions/:id": "/versions/:id",
+  "/api/v1/versions/:id/restore": "/versions/:id/restore",
+  "/api/v1/versions/:id/compare": "/versions/:id/compare",
+
+  "/api/v1/presence": "/presence",
+  "/api/v1/presence/document/:id": "/presence?documentId=:id",
+  "/api/v1/presence/workspace/:id": "/presence?workspaceId=:id",
+
+  "/api/v1/ai/suggestions": "/ai-suggestions",
+  "/api/v1/ai/suggestions/:id": "/ai-suggestions/:id",
+  "/api/v1/ai/suggestions/:id/apply": "/ai-suggestions/:id/apply",
+  "/api/v1/ai/grammar-check": "/ai/grammar-check",
+  "/api/v1/ai/content-completion": "/ai/content-completion",
+  "/api/v1/ai/translate": "/ai/translate",
+  "/api/v1/ai/summarize": "/ai/summarize",
+
+  "/api/v1/analytics": "/analytics",
+  "/api/v1/analytics/dashboard": "/analytics/dashboard",
+  "/api/v1/analytics/documents": "/analytics/documents",
+  "/api/v1/analytics/users": "/analytics/users",
+  "/api/v1/analytics/events": "/analytics",
+  "/api/v1/analytics/documents/:id/stats": "/analytics?documentId=:id",
+  "/api/v1/analytics/user-activity": "/analytics/user-activity",
+  "/api/v1/analytics/collaboration-metrics": "/analytics/collaboration-metrics",
+
+  "/api/v1/templates": "/templates",
+  "/api/v1/templates/:id": "/templates/:id",
+  "/api/v1/templates/categories": "/templates/categories",
+  "/api/v1/templates/:id/use": "/templates/:id/use",
+
+  "/api/v1/activities": "/activities",
+  "/api/v1/activities/:id": "/activities/:id",
+  "/api/v1/activities/user/:userId": "/activities?userId=:userId",
+
+  "/api/v1/settings": "/settings",
+  "/api/v1/settings/:id": "/settings/:id",
+  "/api/v1/settings/category/:category": "/settings?category=:category",
+
+  "/api/v1/search": "/search",
+  "/api/v1/search/global": "/search/global",
+  "/api/v1/search/documents": "/search/documents",
+  "/api/v1/search/users": "/search/users",
+  "/api/v1/search/suggestions": "/search/suggestions",
+
+  "/api/v1/integrations": "/integrations",
+  "/api/v1/integrations/:id": "/integrations/:id",
+  "/api/v1/webhooks": "/webhooks",
+  "/api/v1/webhooks/:id": "/webhooks/:id"
+}
