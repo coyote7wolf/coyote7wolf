@@ -10,6 +10,7 @@
 - [Kotlin](#kotlin)
 - [Java](#java)
 - [JavaScript](#javascript)
+- [React Native](#react-native)
 
 ## Full-Stack Highlights
 
@@ -129,9 +130,20 @@ flowchart TD
 ## Typescript
 
 - [React.js Tailwind CSS Design System](src/typescript/react-tailwind_design-system/)
+- [React.js Tailwind CSS Web App](src/typescript/web-app/)
+- [Vue.js Tailwind CSS Design System](src/typescript/vue-tailwind_design-system/)
+- [Vue.js Tailwind CSS Dashboard App](src/typescript/dashboard-web-app/)
 - [Nest.js Vector Memory Service](src/typescript/vector-memory-service/)
+- [Nest.js AI Agent Service](src/typescript/ai-agent-service/)
+- [Nest.js AI Orchestrator Service](src/typescript/ai-orchestrator-service/)
+- [Nest.js LLM Adapter Service](src/typescript/llm-adapter-service/)
 
 ## Go
+
+- [gRPC Sync Service](src/go/sync-service/)
+- [gRPC Broker Service](src/go/broker-service/)
+- [gRPC Config Service](src/go/config-service/)
+- [gRPC Real-time Service](src/go/realtime-service/)
 
 ## Python
 
@@ -152,3 +164,8 @@ flowchart TD
 ## JavaScript
 
 - [Express.js User Service](src/javascript/node-express_user-service/)
+
+## React Native
+
+- [React Native Mobile App](src/reactnative/mobile-app)
+- [React Native Mobile Design System](src/reactnative/react-native_design-system/)
