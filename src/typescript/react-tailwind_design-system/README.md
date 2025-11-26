@@ -2,34 +2,48 @@
 
 A modern, scalable React design system powered by Tailwind CSS, Storybook, and TypeScript.
 
-## 🧩 Component Group
+---
 
-### Component
+## ⏱️ Design Token Flow Sequence Diagram (Mermaid)
 
-- Button
-  ![Button](img/button.png)
-- Dropdown
-  ![Dropdown](img/dropdown.png)
-- Input
-  ![Input](img/input.png)
+```mermaid
+%%{init: {"theme":"neutral"}}%%
+sequenceDiagram
+autonumber
+  participant Designer
+  participant DesignToken
+  participant Theme
+  participant Component
+  participant User
 
-### Layout
+  Designer->>DesignToken: Define tokens (color, spacing, etc.)
+  DesignToken->>Theme: Provide token values
+  Theme->>Component: Apply themed tokens
+  Component->>User: Render styled UI
+  User-->>Component: Interact with UI
+  Component-->>Theme: Request updated tokens (on theme change)
+  Theme-->>DesignToken: Fetch new token values
+```
 
-### Navigation
+---
 
-### Data Display
+## 🔄 State Machine Diagram (Mermaid)
 
-### Feedback
-
-### Form
-
-### Overlay
-
-### Advanced
-
-### Dashboard
-
-### Business
+```mermaid
+%%{init: {"theme":"neutral"}}%%
+stateDiagram-v2
+  [*] --> Idle
+  Idle --> Editing: Edit
+  Editing --> Saving: Save
+  Saving --> Idle: Save Success
+  Saving --> Error: Save Failed
+  Editing --> Idle: Cancel
+  Error --> Editing: Retry
+  Idle: Default state
+  Editing: User modifies token
+  Saving: Persisting changes
+  Error: Save error
+```
 
 ---
 
@@ -96,3 +110,12 @@ A modern, scalable React design system powered by Tailwind CSS, Storybook, and T
 
 - Versioning
   - Versioning follows the [SemVer](https://semver.org/) specification.
+
+## 🧩 Component Group
+
+- Button
+  ![Button](img/button.png)
+- Dropdown
+  ![Dropdown](img/dropdown.png)
+- Input
+  ![Input](img/input.png)
