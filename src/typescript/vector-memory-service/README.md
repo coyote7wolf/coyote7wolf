@@ -1,5 +1,7 @@
 # Vector Memory Service
 
+A scalable, multi-backend vector memory service for semantic search, hybrid retrieval, and event-driven AI workflows, built with NestJS and TypeScript.
+
 ## 🗂️ Architecture Diagram
 
 ```mermaid
