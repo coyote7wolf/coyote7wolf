@@ -1,0 +1,34 @@
+{
+  "name": "vue-tailwind-design-system-skeleton",
+  "version": "1.0.0",
+  "description": "業界標準 Vue + Tailwind 設計系統骨架",
+  "main": "src/components/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "storybook": "storybook dev -p 6006",
+    "test": "vitest run src/components/*.test.js",
+    "format": "prettier --write .",
+    "publish:lib": "npm publish --access public"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^9.1.13",
+    "@storybook/addon-actions": "^9.0.8",
+    "@storybook/addon-docs": "^9.1.13",
+    "@storybook/addon-links": "^9.1.13",
+    "@storybook/testing-library": "^0.2.1",
+    "@storybook/vue3-vite": "^9.1.13",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/test-utils": "^2.4.0",
+    "jsdom": "^27.0.1",
+    "storybook": "^9.1.13",
+    "tailwindcss": "^3.3.0",
+    "vite": "^5.4.21",
+    "vitest": "^1.0.0"
+  }
+}
