@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option go_package = "syncservice/api";
+
+package sync;
+
+service SyncService {
+  rpc SyncDelta (SyncDeltaRequest) returns (SyncDeltaResponse);
+  rpc GetVersions (GetVersionsRequest) returns (GetVersionsResponse);
+  rpc Replay (ReplayRequest) returns (ReplayResponse);
+  rpc GetStatus (GetStatusRequest) returns (GetStatusResponse);
+}
+
+message SyncDeltaRequest {
+  string user_id = 1;
+  string doc_id = 2;
+  string delta = 3;
+}
+
+message SyncDeltaResponse {
+  bool success = 1;
+  string version_id = 2;
+}
+
+message GetVersionsRequest {
+  string user_id = 1;
+  string doc_id = 2;
+}
+
+message GetVersionsResponse {
+  repeated string version_ids = 1;
+}
+
+message ReplayRequest {
+  string user_id = 1;
+  string doc_id = 2;
+  repeated string deltas = 3;
+}
+
+message ReplayResponse {
+  bool success = 1;
+}
+
+message GetStatusRequest {
+  string user_id = 1;
+  string doc_id = 2;
+}
+
+message GetStatusResponse {
+  string status = 1;
+}
