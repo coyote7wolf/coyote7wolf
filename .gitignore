@@ -352,3 +352,29 @@ pnpm-lock.yaml
 .DS_Store.db*
 *.db*
 models/
+.next/
+node_modules/
+dist/
+.env
+*.log
+
+
+coverage/
+
+out/
+# TypeScript build info
+*.tsbuildinfo
+
+.DS_Store
+# Vim swap files
+*.swp
+*.swo
+
+.vscode/
+.idea/
+
+*.local
+# npm/yarn log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
