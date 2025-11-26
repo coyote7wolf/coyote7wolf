@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 2 驗證 - SyncCoreAI Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow mb-6">
+        <h1 class="text-3xl font-bold mb-4 text-blue-600">
+          🎯 Phase 2 實現驗證
+        </h1>
+        <p class="text-gray-600 mb-4">
+          請先登入，然後使用以下連結驗證 Phase 2 D3.js 組件實現
+        </p>
+
+        <!-- 登入狀態檢查 -->
+        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+          <h3 class="font-semibold text-yellow-800 mb-2">🔐 登入狀態</h3>
+          <div id="auth-status" class="text-sm">檢查中...</div>
+          <button
+            id="login-btn"
+            class="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          >
+            前往登入
+          </button>
+        </div>
+      </div>
+
+      <!-- Phase 2 功能驗證 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Dashboard -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-4 text-green-600">
+            📊 Dashboard
+          </h2>
+          <p class="text-gray-600 mb-4">包含多個 D3.js 視覺化組件</p>
+          <ul class="text-sm text-gray-500 mb-4 space-y-1">
+            <li>• 系統健康狀態</li>
+            <li>• 即時統計數據</li>
+            <li>• 互動式圖表</li>
+          </ul>
+          <a
+            href="/dashboard"
+            class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+          >
+            查看 Dashboard
+          </a>
+        </div>
+
+        <!-- Collaboration -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-4 text-purple-600">
+            🤝 Collaboration
+          </h2>
+          <p class="text-gray-600 mb-4">協作分析和熱力圖</p>
+          <ul class="text-sm text-gray-500 mb-4 space-y-1">
+            <li>• CollaborationHeatmap 組件</li>
+            <li>• ConflictPieChart 組件</li>
+            <li>• 使用者活動分析</li>
+          </ul>
+          <a
+            href="/collaboration"
+            class="inline-block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
+          >
+            查看 Collaboration
+          </a>
+        </div>
+
+        <!-- Performance -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-4 text-orange-600">
+            ⚡ Performance
+          </h2>
+          <p class="text-gray-600 mb-4">系統效能監控儀表板</p>
+          <ul class="text-sm text-gray-500 mb-4 space-y-1">
+            <li>• PerformanceDashboard 組件</li>
+            <li>• 即時效能指標</li>
+            <li>• 互動式效能圖表</li>
+          </ul>
+          <a
+            href="/performance"
+            class="inline-block px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700"
+          >
+            查看 Performance
+          </a>
+        </div>
+
+        <!-- AI Insights -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-4 text-indigo-600">
+            🤖 AI Insights
+          </h2>
+          <p class="text-gray-600 mb-4">AI 使用統計和洞察</p>
+          <ul class="text-sm text-gray-500 mb-4 space-y-1">
+            <li>• AIUsageChart 組件</li>
+            <li>• LLM 使用統計</li>
+            <li>• AI 協作分析</li>
+          </ul>
+          <a
+            href="/ai-insights"
+            class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+          >
+            查看 AI Insights
+          </a>
+        </div>
+
+        <!-- 3D Workspace -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-4 text-red-600">
+            🎮 3D Workspace
+          </h2>
+          <p class="text-gray-600 mb-4">沉浸式 3D 協作視覺化</p>
+          <ul class="text-sm text-gray-500 mb-4 space-y-1">
+            <li>• Three.js 3D 場景</li>
+            <li>• 互動式 3D 物件</li>
+            <li>• 協作空間視覺化</li>
+          </ul>
+          <a
+            href="/3d-workspace"
+            class="inline-block px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+          >
+            查看 3D Workspace
+          </a>
+        </div>
+
+        <!-- Settings -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-4 text-gray-600">⚙️ Settings</h2>
+          <p class="text-gray-600 mb-4">應用程式設定和偏好</p>
+          <ul class="text-sm text-gray-500 mb-4 space-y-1">
+            <li>• 使用者偏好設定</li>
+            <li>• 主題切換</li>
+            <li>• 系統配置</li>
+          </ul>
+          <a
+            href="/settings"
+            class="inline-block px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
+          >
+            查看 Settings
+          </a>
+        </div>
+      </div>
+
+      <!-- D3.js 組件驗證清單 -->
+      <div class="bg-white p-6 rounded-lg shadow mt-6">
+        <h2 class="text-xl font-semibold mb-4 text-blue-600">
+          ✅ Phase 2 D3.js 組件清單
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-800">已實現的 D3.js 組件:</h3>
+            <ul class="text-sm space-y-1">
+              <li class="flex items-center text-green-600">
+                <span class="mr-2">✅</span>
+                CollaborationHeatmap - 協作熱力圖
+              </li>
+              <li class="flex items-center text-green-600">
+                <span class="mr-2">✅</span>
+                ConflictPieChart - 衝突圓餅圖
+              </li>
+              <li class="flex items-center text-green-600">
+                <span class="mr-2">✅</span>
+                AIUsageChart - AI 使用統計圖
+              </li>
+              <li class="flex items-center text-green-600">
+                <span class="mr-2">✅</span>
+                PerformanceDashboard - 效能儀表板
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 檢查登入狀態
+      function checkAuthStatus() {
+        const token = localStorage.getItem("authToken");
+        const authStatus = document.getElementById("auth-status");
+        const loginBtn = document.getElementById("login-btn");
+
+        if (token) {
+          authStatus.innerHTML =
+            '<span class="text-green-600">✅ 已登入 - 可以開始驗證 Phase 2 功能</span>';
+          loginBtn.style.display = "none";
+        } else {
+          authStatus.innerHTML =
+            '<span class="text-red-600">❌ 未登入 - 請先登入後再驗證功能</span>';
+          loginBtn.style.display = "inline-block";
+        }
+      }
+
+      // 登入按鈕事件
+      document.getElementById("login-btn").addEventListener("click", () => {
+        window.location.href = "/login";
+      });
+
+      // 頁面載入時檢查狀態
+      document.addEventListener("DOMContentLoaded", checkAuthStatus);
+
+      // 每 2 秒檢查一次登入狀態
+      setInterval(checkAuthStatus, 2000);
+    </script>
+  </body>
+</html>

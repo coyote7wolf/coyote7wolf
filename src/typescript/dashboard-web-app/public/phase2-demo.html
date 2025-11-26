@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 2 完整實作演示 - SyncCoreAI Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900">
+    <div class="min-h-screen">
+      <!-- Header -->
+      <header
+        class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center space-x-4">
+              <div
+                class="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center"
+              >
+                <span class="text-white font-bold text-sm">S</span>
+              </div>
+              <h1 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Phase 2 完整實作演示
+              </h1>
+            </div>
+            <div class="flex items-center space-x-4">
+              <button
+                id="themeToggle"
+                class="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700"
+                title="切換深色/淺色主題"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
+                </svg>
+              </button>
+              <span
+                id="authStatus"
+                class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                >檢查登入狀態中...</span
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Progress Overview -->
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 mb-8"
+        >
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            🎯 Phase 2 實作完成狀況
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div
+              class="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800"
+            >
+              <div
+                class="text-3xl font-bold text-green-600 dark:text-green-400"
+              >
+                ✅
+              </div>
+              <div
+                class="text-sm font-medium text-green-800 dark:text-green-200 mt-2"
+              >
+                D3.js 圖表組件
+              </div>
+              <div class="text-xs text-green-600 dark:text-green-400 mt-1">
+                4個組件完成
+              </div>
+            </div>
+            <div
+              class="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800"
+            >
+              <div
+                class="text-3xl font-bold text-green-600 dark:text-green-400"
+              >
+                ✅
+              </div>
+              <div
+                class="text-sm font-medium text-green-800 dark:text-green-200 mt-2"
+              >
+                WebSocket 模擬
+              </div>
+              <div class="text-xs text-green-600 dark:text-green-400 mt-1">
+                即時數據推送
+              </div>
+            </div>
+            <div
+              class="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800"
+            >
+              <div
+                class="text-3xl font-bold text-green-600 dark:text-green-400"
+              >
+                ✅
+              </div>
+              <div
+                class="text-sm font-medium text-green-800 dark:text-green-200 mt-2"
+              >
+                響應式設計
+              </div>
+              <div class="text-xs text-green-600 dark:text-green-400 mt-1">
+                手機平板適配
+              </div>
+            </div>
+            <div
+              class="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800"
+            >
+              <div
+                class="text-3xl font-bold text-green-600 dark:text-green-400"
+              >
+                ✅
+              </div>
+              <div
+                class="text-sm font-medium text-green-800 dark:text-green-200 mt-2"
+              >
+                豐富Mock數據
+              </div>
+              <div class="text-xs text-green-600 dark:text-green-400 mt-1">
+                7天歷史+50用戶
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Features Showcase -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          <!-- WebSocket Status -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6"
+          >
+            <h3
+              class="text-lg font-semibold text-gray-900 dark:text-white mb-4"
+            >
+              📡 即時 WebSocket 連接
+            </h3>
+            <div class="space-y-4">
+              <div
+                class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg"
+              >
+                <span
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >連接狀態</span
+                >
+                <div id="wsStatus" class="flex items-center space-x-2">
+                  <div
+                    class="w-3 h-3 bg-green-500 rounded-full animate-pulse"
+                  ></div>
+                  <span class="text-sm text-green-600 dark:text-green-400"
+                    >已連接</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg"
+              >
+                <span
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >數據更新頻率</span
+                >
+                <span class="text-sm text-blue-600 dark:text-blue-400"
+                  >每2-10秒</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg"
+              >
+                <span
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >活躍連接數</span
+                >
+                <span
+                  id="activeConnections"
+                  class="text-sm text-purple-600 dark:text-purple-400"
+                  >加載中...</span
+                >
+              </div>
+              <button
+                id="testWS"
+                class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                測試 WebSocket 連接
+              </button>
+            </div>
+          </div>
+
+          <!-- Rich Mock Data -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6"
+          >
+            <h3
+              class="text-lg font-semibold text-gray-900 dark:text-white mb-4"
+            >
+              🎭 豐富 Mock 數據
+            </h3>
+            <div class="space-y-4">
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="text-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg"
+                >
+                  <div
+                    class="text-2xl font-bold text-blue-600 dark:text-blue-400"
+                  >
+                    50+
+                  </div>
+                  <div class="text-xs text-blue-800 dark:text-blue-200">
+                    模擬用戶
+                  </div>
+                </div>
+                <div
+                  class="text-center p-3 bg-green-50 dark:bg-green-900/20 rounded-lg"
+                >
+                  <div
+                    class="text-2xl font-bold text-green-600 dark:text-green-400"
+                  >
+                    7天
+                  </div>
+                  <div class="text-xs text-green-800 dark:text-green-200">
+                    歷史數據
+                  </div>
+                </div>
+              </div>
+              <button
+                id="testRichData"
+                class="w-full py-2 px-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+              >
+                測試豐富數據 API
+              </button>
+              <div
+                id="richDataResult"
+                class="text-xs text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-700 p-3 rounded-lg hidden"
+              >
+                等待測試...
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Device & Performance Info -->
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 mb-8"
+        >
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            📱 響應式設計 & 效能最佳化
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h4 class="font-medium text-gray-900 dark:text-white mb-2">
+                設備檢測
+              </h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400"
+                    >螢幕尺寸:</span
+                  >
+                  <span id="screenSize" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400"
+                    >設備類型:</span
+                  >
+                  <span id="deviceType" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400"
+                    >觸控支援:</span
+                  >
+                  <span id="touchSupport" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400"
+                    >PWA 模式:</span
+                  >
+                  <span id="pwaMode" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900 dark:text-white mb-2">
+                效能資訊
+              </h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400">記憶體:</span>
+                  <span id="memoryInfo" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400"
+                    >網路速度:</span
+                  >
+                  <span id="networkSpeed" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400"
+                    >低端設備:</span
+                  >
+                  <span id="lowEndDevice" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900 dark:text-white mb-2">
+                最佳化設定
+              </h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400">動畫:</span>
+                  <span
+                    id="animationSettings"
+                    class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400"
+                    >圖表更新:</span
+                  >
+                  <span id="chartSettings" class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 dark:text-gray-400">懶載入:</span>
+                  <span
+                    id="lazyLoadSettings"
+                    class="text-gray-900 dark:text-white"
+                    >-</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation to Main App -->
+        <div
+          class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border border-blue-200 dark:border-blue-800 p-6"
+        >
+          <div class="text-center">
+            <h3
+              class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+            >
+              🚀 開始體驗完整功能
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              所有 Phase 2 功能已實作完成，現在可以完整體驗所有新功能
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/login"
+                class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                  ></path>
+                </svg>
+                前往登入頁面
+              </a>
+              <a
+                href="/phase2-verification.html"
+                class="inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                功能驗證頁面
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // Theme Toggle
+      const themeToggle = document.getElementById("themeToggle");
+      const html = document.documentElement;
+
+      const toggleTheme = () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light"
+        );
+      };
+
+      themeToggle.addEventListener("click", toggleTheme);
+
+      // Initialize theme
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+        html.classList.add("dark");
+      }
+
+      // Check Auth Status
+      const checkAuthStatus = () => {
+        const token = localStorage.getItem("authToken");
+        const authStatus = document.getElementById("authStatus");
+        if (token) {
+          authStatus.textContent = "✅ 已登入";
+          authStatus.className =
+            "text-sm font-medium text-green-600 dark:text-green-400";
+        } else {
+          authStatus.textContent = "❌ 未登入";
+          authStatus.className =
+            "text-sm font-medium text-red-600 dark:text-red-400";
+        }
+      };
+
+      // Device Detection
+      const updateDeviceInfo = () => {
+        const screenSize = `${window.innerWidth}x${window.innerHeight}`;
+        const deviceType =
+          window.innerWidth < 768
+            ? "手機"
+            : window.innerWidth < 1024
+              ? "平板"
+              : "桌面";
+        const touchSupport = "ontouchstart" in window ? "支援" : "不支援";
+        const pwaMode = window.matchMedia("(display-mode: standalone)").matches
+          ? "是"
+          : "否";
+
+        document.getElementById("screenSize").textContent = screenSize;
+        document.getElementById("deviceType").textContent = deviceType;
+        document.getElementById("touchSupport").textContent = touchSupport;
+        document.getElementById("pwaMode").textContent = pwaMode;
+
+        // Performance Info
+        if ("memory" in performance) {
+          const memory = performance.memory;
+          const memoryMB = Math.round(memory.usedJSHeapSize / 1024 / 1024);
+          document.getElementById("memoryInfo").textContent = `${memoryMB}MB`;
+          document.getElementById("lowEndDevice").textContent =
+            memory.jsHeapSizeLimit < 2 * 1024 * 1024 * 1024 ? "是" : "否";
+        }
+
+        if ("connection" in navigator) {
+          const connection = navigator.connection;
+          document.getElementById("networkSpeed").textContent =
+            connection.effectiveType || "未知";
+        }
+
+        // Optimization Settings
+        const isLowEnd =
+          "memory" in performance &&
+          performance.memory.jsHeapSizeLimit < 2 * 1024 * 1024 * 1024;
+        document.getElementById("animationSettings").textContent = isLowEnd
+          ? "精簡"
+          : "完整";
+        document.getElementById("chartSettings").textContent = isLowEnd
+          ? "10秒"
+          : "5秒";
+        document.getElementById("lazyLoadSettings").textContent = isLowEnd
+          ? "啟用"
+          : "停用";
+      };
+
+      // Test WebSocket
+      document.getElementById("testWS").addEventListener("click", async () => {
+        try {
+          const response = await fetch("/api/websocket/status");
+          const data = await response.json();
+          if (data.success) {
+            document.getElementById("activeConnections").textContent =
+              `${data.data.activeConnections} 個連接`;
+            alert(
+              "WebSocket 測試成功！\n" +
+                `活躍連接: ${data.data.activeConnections}\n` +
+                `延遲: ${data.data.latency}ms\n` +
+                `訊息/秒: ${data.data.messagesPerSecond}`
+            );
+          }
+        } catch (error) {
+          alert("WebSocket 測試失敗: " + error.message);
+        }
+      });
+
+      // Test Rich Data
+      document
+        .getElementById("testRichData")
+        .addEventListener("click", async () => {
+          const resultDiv = document.getElementById("richDataResult");
+          resultDiv.classList.remove("hidden");
+          resultDiv.textContent = "測試中...";
+
+          try {
+            const endpoints = [
+              "/api/rich/collaboration",
+              "/api/rich/ai-insights",
+              "/api/rich/performance",
+              "/api/rich/trends",
+            ];
+
+            const results = await Promise.all(
+              endpoints.map((endpoint) => fetch(endpoint).then((r) => r.json()))
+            );
+
+            const summary = results
+              .map((result, index) => {
+                const endpointName = endpoints[index].split("/").pop();
+                return `${endpointName}: ${result.success ? "✅" : "❌"}`;
+              })
+              .join(", ");
+
+            resultDiv.textContent = `豐富數據 API 測試結果: ${summary}`;
+            resultDiv.className =
+              "text-xs text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-3 rounded-lg";
+          } catch (error) {
+            resultDiv.textContent = `測試失敗: ${error.message}`;
+            resultDiv.className =
+              "text-xs text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-3 rounded-lg";
+          }
+        });
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", () => {
+        checkAuthStatus();
+        updateDeviceInfo();
+
+        // Update device info on resize
+        window.addEventListener("resize", updateDeviceInfo);
+
+        // Check auth status periodically
+        setInterval(checkAuthStatus, 3000);
+      });
+    </script>
+  </body>
+</html>
