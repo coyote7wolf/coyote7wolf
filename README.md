@@ -149,6 +149,7 @@ flowchart TD
 
 ## Go
 
+- [Gin User Service](src/go/user-service/)
 - [gRPC Sync Service](src/go/sync-service/)
 - [gRPC Broker Service](src/go/broker-service/)
 - [gRPC Config Service](src/go/config-service/)
