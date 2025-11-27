@@ -141,6 +141,7 @@ flowchart TD
 - [React.js Tailwind CSS Web App](src/typescript/web-app/)
 - [Vue.js Tailwind CSS Design System](src/typescript/vue-tailwind_design-system/)
 - [Vue.js Tailwind CSS Dashboard App](src/typescript/dashboard-web-app/)
+- [Nest.js User Service](src/typescript/user-service/)
 - [Nest.js Vector Memory Service](src/typescript/vector-memory-service/)
 - [Nest.js AI Agent Service](src/typescript/ai-agent-service/)
 - [Nest.js AI Orchestrator Service](src/typescript/ai-orchestrator-service/)
