@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2022",
+    "sourceMap": true,
+    "outDir": "./dist",
+    // "baseUrl" 已移除，TypeScript 7.0 不再支援
+    "incremental": true,
+    "strict": true
+    // "ignoreDeprecations" 已移除，避免 TS5103 錯誤
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
