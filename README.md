@@ -1,6 +1,4 @@
-![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fcoyote7wolf&label=&icon=stickies-fill&color=%23052c65&message=&style=flat&tz=UTC)
-
-# Code Portfolio
+# Personal Projects
 
 - [Full-Stack Highlights](#full-stack-highlights)
 - [Backend Highlights](#backend-highlights)
