@@ -37,7 +37,7 @@
 <details>
 <summary>JWT Token Flow</summary>
 
-![JWT Token Flow](img/fullstack/JWT-Token-Flow.drawio.png)
+![JWT Token Flow](img/fullstack/JWT-Token-Flow-1.drawio.png)
 
 - State: Stateless
 - Token Type: JWT
