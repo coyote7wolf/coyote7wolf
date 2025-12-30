@@ -53,13 +53,19 @@
 
 ## Backend Highlights
 
-### Serverless Lambda API Architecture
+<details>
+<summary>Serverless Lambda API Architecture</summary>
 
 ![Serverless Lambda API Architecture](img/backend/Serverless-API.png)
 
-### ECS & EKS API with Redis Cache Architecture
+</details>
+
+<details>
+<summary>ECS & EKS API with Redis Cache Architecture</summary>
 
 ![ECS & EKS API with Redis Cache Architecture](img/backend/ECS-EKS-Redis-Cache.drawio.png)
+
+</details>
 
 ### EDA with Saga and CRDT on SQS
 
