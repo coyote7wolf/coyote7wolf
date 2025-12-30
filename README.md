@@ -44,9 +44,12 @@
 
 </details>
 
-### AI Productization Flow
+<details>
+<summary>AI Productization Flow</summary>
 
 ![AI Productization Flow](img/fullstack/AI-Productization-Flow.drawio.png)
+
+</details>
 
 ## Backend Highlights
 
