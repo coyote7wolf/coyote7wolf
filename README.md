@@ -63,7 +63,7 @@
 <details>
 <summary>ECS & EKS API with Redis Cache Architecture</summary>
 
-![ECS & EKS API with Redis Cache Architecture](img/backend/ECS-EKS-Redis-Cache-1.drawio.png)
+![ECS & EKS API with Redis Cache Architecture](img/backend/ECS-EKS-Redis-Cache-2.drawio.png)
 
 </details>
 
