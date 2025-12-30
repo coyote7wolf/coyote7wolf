@@ -47,7 +47,7 @@
 <details>
 <summary>AI Productization Flow</summary>
 
-![AI Productization Flow](img/fullstack/AI-Productization-Flow.drawio.png)
+![AI Productization Flow](img/fullstack/AI-Productization-Flow-1.drawio.png)
 
 </details>
 
