@@ -78,35 +78,50 @@
 
 ### Page Layouts
 
-#### Homepage
+<details>
+<summary>Homepage</summary>
 
 - Component: Header, Hero, Card, Footer
 - Features: LTR, English, Light Theme
   ![Homepage LTR](img/frontend/homepage-ltr.png)
 
-#### Homepage RTL i18n
+</details>
+
+<details>
+<summary>Homepage RTL i18n</summary>
 
 - Component: Header, Hero, Card, Footer
 - Features: RTL, Arabic, Light Theme
   ![Homepage RTL i18n](img/frontend/homepage-rtl-i18n.png)
 
-#### Signup Page
+</details>
+
+<details>
+<summary>Signup Page</summary>
 
 - Component: Header, Toolbar, Card, Footer
 - Features: LTR, Chinese, Dark Theme
   ![Signup Page Dark Theme](img/frontend/signup-page-dark-theme.png)
 
-#### Product Listing Page
+</details>
+
+<details>
+<summary>Product Listing Page</summary>
 
 - Component: Header, Toolbar, Sidebar, Product card, Pagination, Footer
 - Features: LTR, Japanese, High Contrast Theme
   ![Product Listing Page High Contrast Theme](img/frontend/product-listing-page-high-contrast-theme.png)
 
-#### 3D Product Showcase Page
+</details>
+
+<details>
+<summary>3D Product Showcase Page</summary>
 
 - Component: Header, Description, ThreeCanvas, Footer
 - Features: three.js 3D interactive scene
   ![3D Product Showcase Page](img/frontend/3d-product-showcase.png)
+
+</details>
 
 ### Design System
 
