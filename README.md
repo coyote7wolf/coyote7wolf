@@ -67,9 +67,12 @@
 
 </details>
 
-### EDA with Saga and CRDT on SQS
+<details>
+<summary>EDA with Saga and CRDT on SQS</summary>
 
 ![EDA with Saga and CRDT on SQS](img/backend/EDA-Saga-CRDT-SQS.drawio.png)
+
+</details>
 
 ## Frontend Highlights
 
