@@ -34,12 +34,15 @@
 
 </details>
 
-### JWT Token Flow
+<details>
+<summary>JWT Token Flow</summary>
 
 ![JWT Token Flow](img/fullstack/JWT-Token-Flow.drawio.png)
 
 - State: Stateless
 - Token Type: JWT
+
+</details>
 
 ### AI Productization Flow
 
