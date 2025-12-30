@@ -127,8 +127,12 @@
 
 #### Component
 
-- Button
+<details>
+<summary>Button</summary>
+  
   ![tailwind-design-button](img/frontend/tailwind-design-button.png)
+
+</details>
 
 - Alert
   ![tailwind-design-alert](img/frontend/tailwind-design-alert.png)
