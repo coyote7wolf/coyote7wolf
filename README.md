@@ -14,19 +14,25 @@
 
 ## Full-Stack Highlights
 
-### OAuth 2.0 Flow
+<details>
+<summary>OAuth 2.0 Flow</summary>
 
 ![OAuth 2.0 Flow](img/fullstack/OAuth2-Flow.drawio.png)
 
 - State: Stateless
 - Token Type: Access Token (JWT/Opaque/session ID)
 
-### Password Cookie Session Flow
+</details>
+
+<details>
+<summary>Password Cookie Session Flow</summary>
 
 ![Password Cookie Session Flow](img/fullstack/Password-Cookie-Session-Flow.drawio.png)
 
 - State: Stateful
 - Token Type: Session ID
+
+</details>
 
 ### JWT Token Flow
 
