@@ -17,7 +17,7 @@
 <details>
 <summary>OAuth 2.0 Flow</summary>
 
-![OAuth 2.0 Flow](img/fullstack/OAuth2-Flow.drawio.png)
+![OAuth 2.0 Flow](img/fullstack/OAuth2-Flow-1.drawio.png)
 
 - State: Stateless
 - Token Type: Access Token (JWT/Opaque/session ID)
