@@ -47,7 +47,7 @@
 <details>
 <summary>AI Productization Flow</summary>
 
-![AI Productization Flow](img/fullstack/AI-Productization-Flow-2.drawio.png)
+![Full-Stack AI Productization with RAG, LLM, and MCP](img/fullstack/Full-Stack-AI-Productization-with-RAG-LLM-MCP.drawio.png)
 
 </details>
 
