@@ -68,7 +68,7 @@
 </details>
 
 <details>
-<summary>EDA with Saga and CRDT on SQS</summary>
+<summary>EDA with Saga and CRDT OR-Set on SQS</summary>
 
 ![EDA with Saga and CRDT on SQS](img/backend/EDA-Saga-SQS-CRDT-OR-Set.drawio.png)
 
