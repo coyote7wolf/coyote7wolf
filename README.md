@@ -72,13 +72,13 @@
 
 ![EDA with Saga and CRDT on SQS](img/backend/EDA-Saga-SQS-CRDT-OR-Set.drawio.png)
 
-- Event-Driven Architecture (EDA): Services emit StepDone events asynchronously and the Saga Orchestrator subscribes
-- Simple Queue Service (SQS) Queues: Ensure at-least-once delivery and decouple services
-- Saga Pattern: Orchestrator enforces step order, triggers next step, and handles compensation
-- Conflict-Free Replicated Data Types (CRDT) Replicas: Services keep local OR-Set replicas and the orchestrator merges them
-- Observed-Remove Set (OR-Set): Tracks StepDone or StepFailed events and avoids duplicates
-- Single Saga Orchestrator: Central component that evaluates merged OR-Set and drives the workflow
-- Asynchronous Flow: Events flow through SQS to the orchestrator and then to the next service
+- **Event-Driven Architecture (EDA)**: Services emit StepDone events asynchronously and the Saga Orchestrator subscribes
+- **Simple Queue Service (SQS) Queues**: Ensure at-least-once delivery and decouple services
+- **Saga Pattern**: Orchestrator enforces step order, triggers next step, and handles compensation
+- **Conflict-Free Replicated Data Types (CRDT) Replicas**: Services keep local OR-Set replicas and the orchestrator merges them
+- **Observed-Remove Set (OR-Set)**: Tracks StepDone or StepFailed events and avoids duplicates
+- **Single Saga Orchestrator**: Central component that evaluates merged OR-Set and drives the workflow
+- **Asynchronous Flow**: Events flow through SQS to the orchestrator and then to the next service
 
 </details>
 
