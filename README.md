@@ -70,7 +70,7 @@
 <details>
 <summary>EDA with Saga and CRDT OR-Set on SQS</summary>
 
-![EDA with Saga and CRDT on SQS](img/backend/EDA-Saga-SQS-CRDT-OR-Set.drawio.png)
+![EDA with Saga and CRDT on SQS](img/backend/EDA-Saga-SQS-CRDT-OR-Set-1.drawio.png)
 
 - **Event-Driven Architecture (EDA)**: Services emit StepDone events asynchronously and the Saga Orchestrator subscribes
 - **Simple Queue Service (SQS) Queues**: Ensure at-least-once delivery and decouple services
