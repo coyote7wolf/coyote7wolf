@@ -58,6 +58,30 @@
     <summary>Traditional Chatbot</summary>
     </details>
 
+2.  <details>
+    <summary>LLM Response (No Action)</summary>
+    </details>
+
+3.  <details>
+    <summary>AI Agent (Pre-MCP)</summary>
+    </details>
+
+4.  <details>
+    <summary>Enhanced Backend Capabilities (Non-AI)</summary>
+    </details>
+
+5.  <details>
+    <summary>Introduce MCP Server</summary>
+    </details>
+
+6.  <details>
+    <summary>Intent Classification + Selective MCP</summary>
+    </details>
+
+7.  <details>
+    <summary>Model Evolution (Local LLM)</summary>
+    </details>
+
 </details>
 
 ## Backend Highlights
