@@ -51,6 +51,11 @@
 
 </details>
 
+<details>
+<summary>AI Evolution Architecture Stages</summary>
+
+</details>
+
 ## Backend Highlights
 
 <details>
@@ -137,37 +142,39 @@
 
 - <details>
   <summary>Button</summary>
-  
+
   ![tailwind-design-button](img/frontend/tailwind-design-button.png)
 
   </details>
 
 - <details>
   <summary>Alert</summary>
-  
+
   ![tailwind-design-alert](img/frontend/tailwind-design-alert.png)
 
   </details>
-  
+
 - <details>
   <summary>Breadcrumb</summary>
-  
+
   ![tailwind-design-breadcrumb](img/frontend/tailwind-design-breadcrumb.png)
 
   </details>
-  
+
 #### Token
+
 - <details>
   <summary>Color Design Token</summary>
-  
+
   ![tailwind-design-token](img/frontend/tailwind-design-token.png)
 
   </details>
-  
+
 ### Data Flow
+
 - <details>
   <summary>Frontend Data Flow</summary>
-  
+
   ```mermaid
   %%{init: {"theme":"neutral"}}%%
   flowchart TD
@@ -176,23 +183,23 @@
       A --> B[2 Server: Call API to get data]
       B --> C[3 Server: Render HTML]
     end
-  
+
     subgraph CSR[CSR]
       C --> D[4 Browser: Attach JS, enable interactivity]
       D --> E1[5 Browser: Render component in DOM]
     end
-  
+
     subgraph DataFetch[Data Fetch]
       D --> F[6 Browser: Fetch Data via axios/fetch/React Query/SWR]
       F --> G[7 Browser: Store fetched data in Cache]
     end
-  
+
     subgraph State[State Management]
       G --> H[8 Browser: Update Zustand/Redux Store]
       H --> E2[9 Browser: UI re-render - component in DOM]
     end
   ```
-  
+
   </details>
 
 ---
