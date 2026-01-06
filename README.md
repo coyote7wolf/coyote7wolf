@@ -56,6 +56,7 @@
 
 1.  <details>
     <summary>Traditional Chatbot</summary>
+      ![1 Traditional Chatbot](img/fullstack/ai-stage1.drawio.png)
     </details>
 
 2.  <details>
