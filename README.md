@@ -68,6 +68,8 @@
 
 3.  <details>
     <summary>AI Agent (Pre-MCP)</summary>
+
+    ![3 AI Agent](img/fullstack/ai-stage3.drawio.png)
     </details>
 
 4.  <details>
