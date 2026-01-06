@@ -54,6 +54,10 @@
 <details>
 <summary>AI Evolution Architecture Stages</summary>
 
+1.  <details>
+    <summary>Traditional Chatbot</summary>
+    </details>
+
 </details>
 
 ## Backend Highlights
