@@ -62,6 +62,8 @@
 
 2.  <details>
     <summary>LLM Response (No Action)</summary>
+
+    ![2 LLM Response](img/fullstack/ai-stage2.drawio.png)
     </details>
 
 3.  <details>
