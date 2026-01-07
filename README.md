@@ -80,9 +80,9 @@
 
 5.  <details>
     <summary>Introduce MCP Server - Tool Integration Layer</summary>
-    </details>
 
     ![5 MCP Server](img/fullstack/ai-stage5.drawio.png)
+    </details>
 
 6.  <details>
     <summary>Intent Classification & Selective MCP Usage</summary>
