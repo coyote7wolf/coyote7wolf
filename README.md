@@ -55,37 +55,37 @@
 <summary>AI Evolution Architecture Stages</summary>
 
 1.  <details>
-    <summary>Traditional Chatbot</summary>
+    <summary>Traditional Chatbot - Rule-Based Approach</summary>
 
     ![1 Traditional Chatbot](img/fullstack/ai-stage1.drawio.png)
     </details>
 
 2.  <details>
-    <summary>LLM Response (No Action)</summary>
+    <summary>LLM Response - No Action Capability</summary>
 
     ![2 LLM Response](img/fullstack/ai-stage2.drawio.png)
     </details>
 
 3.  <details>
-    <summary>AI Agent (Pre-MCP)</summary>
+    <summary>AI Agent - Pre-MCP Decision Making</summary>
 
     ![3 AI Agent](img/fullstack/ai-stage3.drawio.png)
     </details>
 
 4.  <details>
-    <summary>Enhanced Backend Capabilities (Non-AI)</summary>
+    <summary>Build Solid Backend Foundations - Core Capability Layer</summary>
     </details>
 
 5.  <details>
-    <summary>Introduce MCP Server</summary>
+    <summary>Introduce MCP Server - Tool Integration Layer</summary>
     </details>
 
 6.  <details>
-    <summary>Intent Classification + Selective MCP</summary>
+    <summary>Intent Classification & Selective MCP Usage</summary>
     </details>
 
 7.  <details>
-    <summary>Model Evolution (Local LLM)</summary>
+    <summary>Model Evolution - Deploying Local LLM</summary>
     </details>
 
 </details>
