@@ -74,6 +74,8 @@
 
 4.  <details>
     <summary>Build Solid Backend Foundations - Core Capability Layer</summary>
+
+    ![4 Solid Backend](img/fullstack/ai-stage4.drawio.png)
     </details>
 
 5.  <details>
