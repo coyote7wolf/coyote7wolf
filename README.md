@@ -81,15 +81,19 @@
 5.  <details>
     <summary>Introduce MCP Server - Tool Integration Layer</summary>
 
-    ![5 MCP Server](img/fullstack/ai-stage5.drawio.png)
+    ![5 MCP Server](img/fullstack/ai-stage5-1.drawio.png)
     </details>
 
 6.  <details>
     <summary>Intent Classification & Selective MCP Usage</summary>
+
+    ![6 MCP Intent Classification](img/fullstack/ai-stage6.drawio.png)
     </details>
 
 7.  <details>
     <summary>Model Evolution - Deploying Local LLM</summary>
+
+    ![7 Local LLM](img/fullstack/ai-stage7.drawio.png)
     </details>
 
 </details>
