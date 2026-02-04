@@ -1,0 +1,146 @@
+<app-navbar>
+  <button
+    slot="actions"
+    (click)="logout()"
+    class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition hover:shadow-lg"
+  >
+    {{ "navigation.logout" | translate }}
+  </button>
+</app-navbar>
+
+<div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <!-- Header -->
+      <div
+        class="bg-gradient-to-r from-blue-600 to-purple-600 px-6 sm:px-8 py-12 sm:py-16"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            *ngIf="currentUser?.avatar"
+            [src]="currentUser.avatar"
+            alt="Avatar"
+            class="w-20 h-20 rounded-full border-4 border-white"
+          />
+          <div>
+            <h2 class="text-3xl font-bold text-white">
+              {{ "dashboard.welcome" | translate: { name: currentUser?.name } }}
+            </h2>
+            <p class="text-blue-100 mt-2">
+              {{
+                "dashboard.loggedInWith"
+                  | translate
+                    : { provider: getProviderLabel(currentUser?.provider) }
+              }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Info -->
+      <div class="px-6 sm:px-8 py-10 sm:py-12 lg:py-16">
+        <h3 class="text-xl font-bold text-gray-900 mb-6">
+          {{ "dashboard.accountInfo" | translate }}
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Email Card -->
+          <div class="border border-gray-200 rounded-lg p-6 sm:p-8">
+            <p class="text-sm text-gray-600 mb-3">
+              {{ "dashboard.email" | translate }}
+            </p>
+            <p class="text-lg font-semibold text-gray-900">
+              {{ currentUser?.email }}
+            </p>
+          </div>
+
+          <!-- User ID Card -->
+          <div class="border border-gray-200 rounded-lg p-6 sm:p-8">
+            <p class="text-sm text-gray-600 mb-3">
+              {{ "dashboard.userId" | translate }}
+            </p>
+            <p class="text-lg font-semibold text-gray-900 break-all">
+              {{ currentUser?.id }}
+            </p>
+          </div>
+
+          <!-- Provider Card -->
+          <div class="border border-gray-200 rounded-lg p-6 sm:p-8">
+            <p class="text-sm text-gray-600 mb-3">
+              {{ "dashboard.provider" | translate }}
+            </p>
+            <div class="flex items-center gap-2">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+              >
+                {{ getProviderLabel(currentUser?.provider) }}
+              </span>
+            </div>
+          </div>
+
+          <!-- Name Card -->
+          <div class="border border-gray-200 rounded-lg p-6 sm:p-8">
+            <p class="text-sm text-gray-600 mb-3">
+              {{ "dashboard.displayName" | translate }}
+            </p>
+            <p class="text-lg font-semibold text-gray-900">
+              {{ currentUser?.name }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Status Message -->
+        <div
+          class="mt-8 p-6 sm:p-8 bg-green-50 border border-green-200 rounded-lg"
+        >
+          <p class="text-green-700">
+            {{ "dashboard.loginStatus" | translate }}
+          </p>
+        </div>
+
+        <!-- Features -->
+        <div class="mt-8 sm:mt-12">
+          <h3 class="text-xl font-bold text-gray-900 mb-6">
+            {{ "dashboard.features" | translate }}
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="border border-gray-200 rounded-lg p-6 sm:p-8">
+              <h4 class="font-semibold text-gray-900 mb-3">
+                {{ "dashboard.emailPasswordLogin" | translate }}
+              </h4>
+              <p class="text-sm text-gray-600">
+                {{ "dashboard.emailPasswordDesc" | translate }}
+              </p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-6 sm:p-8">
+              <h4 class="font-semibold text-gray-900 mb-3">
+                {{ "dashboard.oauthSimulation" | translate }}
+              </h4>
+              <p class="text-sm text-gray-600">
+                {{ "dashboard.oauthDesc" | translate }}
+              </p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-6 sm:p-8">
+              <h4 class="font-semibold text-gray-900 mb-3">
+                {{ "dashboard.sessionManagement" | translate }}
+              </h4>
+              <p class="text-sm text-gray-600">
+                {{ "dashboard.sessionDesc" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-8">
+      <p class="text-gray-600">
+        {{ "dashboard.footer" | translate }}
+        <a routerLink="/" class="text-blue-600 hover:text-blue-700 ml-2">{{
+          "login.backToHome" | translate
+        }}</a>
+      </p>
+    </div>
+  </div>
+</div>

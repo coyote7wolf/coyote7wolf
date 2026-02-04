@@ -1,0 +1,198 @@
+<div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+  <!-- Navigation -->
+  <nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <h1 class="text-2xl font-bold text-blue-600">
+            {{ "app.title" | translate }}
+          </h1>
+        </div>
+        <div class="flex items-center gap-6">
+          <!-- Language Switcher -->
+          <select
+            [(ngModel)]="currentLanguage"
+            (change)="onLanguageChange($event)"
+            class="px-3 py-2 bg-blue-50 text-gray-700 rounded-lg border border-blue-200 hover:border-blue-400 cursor-pointer transition"
+          >
+            <option value="en">🇬🇧 English</option>
+            <option value="zh-CN">🇨🇳 中文 (简)</option>
+            <option value="zh-TW">🇹🇼 中文 (繁)</option>
+            <option value="ar">🇸🇦 العربية</option>
+          </select>
+
+          <!-- Auth Buttons -->
+          <div class="space-x-4">
+            <button
+              *ngIf="!(isAuthenticated$ | async); else loggedIn"
+              routerLink="/login"
+              class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              {{ "navigation.signIn" | translate }}
+            </button>
+            <ng-template #loggedIn>
+              <a
+                routerLink="/dashboard"
+                class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              >
+                {{ "navigation.dashboard" | translate }}
+              </a>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <div class="text-center mb-12">
+      <h2 class="text-5xl font-bold text-gray-900 mb-4">
+        {{ "home.title" | translate }}
+      </h2>
+      <p class="text-xl text-gray-600 mb-8">
+        {{ "home.subtitle" | translate }}
+      </p>
+      <button
+        routerLink="/login"
+        class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-lg font-medium"
+      >
+        {{ "home.getStarted" | translate }}
+      </button>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+      <!-- Feature 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+        <div
+          class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+            />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          {{ "home.features.emailAuth.title" | translate }}
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          {{ "home.features.emailAuth.description" | translate }}
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+        <div
+          class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6 text-purple-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+            />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          {{ "home.features.oauth.title" | translate }}
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          {{ "home.features.oauth.description" | translate }}
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+        <div
+          class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6 text-green-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+            />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          {{ "home.features.session.title" | translate }}
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          {{ "home.features.session.description" | translate }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="mt-20 bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:p-10">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">
+        {{ "home.techStack" | translate }}
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="text-center">
+          <p class="font-semibold text-gray-900">
+            {{ "home.techStackItems.angular.name" | translate }}
+          </p>
+          <p class="text-gray-600">
+            {{ "home.techStackItems.angular.version" | translate }}
+          </p>
+        </div>
+        <div class="text-center">
+          <p class="font-semibold text-gray-900">
+            {{ "home.techStackItems.typescript.name" | translate }}
+          </p>
+          <p class="text-gray-600">
+            {{ "home.techStackItems.typescript.version" | translate }}
+          </p>
+        </div>
+        <div class="text-center">
+          <p class="font-semibold text-gray-900">
+            {{ "home.techStackItems.forms.name" | translate }}
+          </p>
+          <p class="text-gray-600">
+            {{ "home.techStackItems.forms.version" | translate }}
+          </p>
+        </div>
+        <div class="text-center">
+          <p class="font-semibold text-gray-900">
+            {{ "home.techStackItems.rxjs.name" | translate }}
+          </p>
+          <p class="text-gray-600">
+            {{ "home.techStackItems.rxjs.version" | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-20 py-8 sm:py-12">
+    <div class="flex items-center justify-center">
+      <p class="text-gray-400 text-center">
+        {{ "home.footer" | translate }}
+      </p>
+    </div>
+  </footer>
+</div>
