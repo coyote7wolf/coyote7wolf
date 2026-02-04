@@ -1,16 +1,25 @@
 # Personal Projects
 
-- [Full-Stack Highlights](#full-stack-highlights)
-- [Backend Highlights](#backend-highlights)
-- [Frontend Highlights](#frontend-highlights)
-- [Typescript](#typescript)
-- [Go](#go)
-- [Python](#python)
-- [C#](#c)
-- [Kotlin](#kotlin)
-- [Java](#java)
-- [JavaScript](#javascript)
-- [React Native](#react-native)
+- [Personal Projects](#personal-projects)
+  - [Full-Stack Highlights](#full-stack-highlights)
+  - [Backend Highlights](#backend-highlights)
+  - [Frontend Highlights](#frontend-highlights)
+    - [Page Layouts](#page-layouts)
+    - [Design System](#design-system)
+      - [Component](#component)
+      - [Token](#token)
+    - [Data Flow](#data-flow)
+  - [Typescript](#typescript)
+    - [Design Systems](#design-systems)
+    - [Frontend Applications](#frontend-applications)
+    - [Backend Services](#backend-services)
+  - [Go](#go)
+  - [Python](#python)
+  - [C#](#c)
+  - [Kotlin](#kotlin)
+  - [Java](#java)
+  - [JavaScript](#javascript)
+  - [React Native](#react-native)
 
 ## Full-Stack Highlights
 
@@ -248,10 +257,19 @@
 
 ## Typescript
 
+### Design Systems
+
 - [React.js Tailwind CSS Design System](src/typescript/react-tailwind_design-system/)
-- [React.js Tailwind CSS Web App](src/typescript/web-app/)
 - [Vue.js Tailwind CSS Design System](src/typescript/vue-tailwind_design-system/)
+
+### Frontend Applications
+
+- [Angular Tailwind CSS Web App](src/typescript/angular-web-app/)
+- [React.js Tailwind CSS Web App](src/typescript/web-app/)
 - [Vue.js Tailwind CSS Dashboard App](src/typescript/dashboard-web-app/)
+
+### Backend Services
+
 - [Nest.js User Service](src/typescript/user-service/)
 - [Nest.js Vector Memory Service](src/typescript/vector-memory-service/)
 - [Nest.js AI Agent Service](src/typescript/ai-agent-service/)
