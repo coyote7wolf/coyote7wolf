@@ -1,0 +1,116 @@
+{
+  "app": {
+    "title": "SyncCoreAI",
+    "description": "عرض محاكاة OAuth الزاوي"
+  },
+  "navigation": {
+    "signIn": "تسجيل الدخول",
+    "dashboard": "لوحة التحكم",
+    "logout": "تسجيل الخروج"
+  },
+  "home": {
+    "title": "محاكاة Angular OAuth",
+    "subtitle": "نظام مصادقة كامل مع محاكاة موفر OAuth",
+    "getStarted": "ابدأ",
+    "features": {
+      "emailAuth": {
+        "title": "مصادقة البريد الإلكتروني/كلمة المرور",
+        "description": "تسجيل دخول تقليدي باستخدام البريد الإلكتروني وكلمة المرور مع التحقق من النموذج"
+      },
+      "oauth": {
+        "title": "محاكاة OAuth",
+        "description": "محاكاة تدفق OAuth لموفري Google و GitHub و Microsoft"
+      },
+      "session": {
+        "title": "إدارة الجلسة",
+        "description": "تسجيل دخول دائم مع دعم localStorage وحماية المسار"
+      }
+    },
+    "techStack": "مكدس التكنولوجيا",
+    "techStackItems": {
+      "angular": {
+        "name": "Angular",
+        "version": "v19+"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "version": "الوضع الصارم"
+      },
+      "forms": {
+        "name": "النماذج التفاعلية",
+        "version": "التحقق من النموذج"
+      },
+      "rxjs": {
+        "name": "RxJS",
+        "version": "إدارة الحالة"
+      }
+    },
+    "footer": "© 2024 SyncCoreAI. عرض محاكاة OAuth الزاوي."
+  },
+  "login": {
+    "welcome": "مرحبا بعودتك",
+    "subtitle": "قم بتسجيل الدخول إلى حسابك للمتابعة",
+    "email": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    "rememberMe": "تذكرني",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جاري تسجيل الدخول...",
+    "orContinueWith": "أو متابعة باستخدام",
+    "continueGoogle": "متابعة مع Google",
+    "continueGithub": "متابعة مع GitHub",
+    "continueMicrosoft": "متابعة مع Microsoft",
+    "noAccount": "ليس لديك حساب؟",
+    "signUp": "اشترك مجانا",
+    "backToHome": "← العودة إلى الصفحة الرئيسية"
+  },
+  "register": {
+    "title": "إنشاء حساب",
+    "subtitle": "انضم إلينا اليوم وابدأ",
+    "fullName": "الاسم الكامل",
+    "fullNameRequired": "الاسم الكامل مطلوب",
+    "email": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "confirmPasswordPlaceholder": "أكد كلمة المرور",
+    "confirmPasswordRequired": "يرجى تأكيد كلمة المرور",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "agreeTerms": "أوافق على شروط الخدمة وسياسة الخصوصية",
+    "agreeTermsRequired": "يجب أن توافق على الشروط للمتابعة",
+    "registerButton": "إنشاء حساب",
+    "registering": "جاري إنشاء الحساب...",
+    "haveAccount": "هل لديك حساب بالفعل؟",
+    "loginLink": "تسجيل الدخول",
+    "orRegisterWith": "أو التسجيل باستخدام",
+    "success": "تم التسجيل بنجاح! جاري إعادة التوجيه إلى تسجيل الدخول..."
+  },
+  "dashboard": {
+    "welcome": "مرحبا، {{name}}!",
+    "loggedInWith": "أنت قد سجلت الدخول باستخدام {{provider}}",
+    "accountInfo": "معلومات الحساب",
+    "email": "عنوان البريد الإلكتروني",
+    "userId": "معرف المستخدم",
+    "provider": "موفر تسجيل الدخول",
+    "displayName": "الاسم الكامل",
+    "loginStatus": "✓ لقد قمت بتسجيل الدخول بنجاح! هذا عرض توضيحي لتدفق OAuth المحاكى.",
+    "features": "الميزات",
+    "emailPasswordLogin": "تسجيل الدخول عبر البريد الإلكتروني/كلمة المرور",
+    "emailPasswordDesc": "مصادقة اسم المستخدم وكلمة المرور التقليدية",
+    "oauthSimulation": "محاكاة OAuth",
+    "oauthDesc": "محاكاة تدفق OAuth لموفري Google و GitHub و Microsoft",
+    "sessionManagement": "إدارة الجلسة",
+    "sessionDesc": "تسجيل دخول دائم مع دعم localStorage"
+  }
+}

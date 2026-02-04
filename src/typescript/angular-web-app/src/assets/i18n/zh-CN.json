@@ -1,0 +1,116 @@
+{
+  "app": {
+    "title": "SyncCoreAI",
+    "description": "Angular OAuth 模拟演示"
+  },
+  "navigation": {
+    "signIn": "登入",
+    "dashboard": "仪表板",
+    "logout": "登出"
+  },
+  "home": {
+    "title": "Angular OAuth 模拟",
+    "subtitle": "一个完整的身份验证系统，带有 OAuth 提供者模拟",
+    "getStarted": "开始使用",
+    "features": {
+      "emailAuth": {
+        "title": "邮件/密码认证",
+        "description": "使用邮件和密码进行传统登录，带有表单验证"
+      },
+      "oauth": {
+        "title": "OAuth 模拟",
+        "description": "Google、GitHub 和 Microsoft 提供者的模拟 OAuth 流程"
+      },
+      "session": {
+        "title": "会话管理",
+        "description": "使用 localStorage 支持的持久登录和路由保护"
+      }
+    },
+    "techStack": "技术栈",
+    "techStackItems": {
+      "angular": {
+        "name": "Angular",
+        "version": "v19+"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "version": "严格模式"
+      },
+      "forms": {
+        "name": "响应式表单",
+        "version": "表单验证"
+      },
+      "rxjs": {
+        "name": "RxJS",
+        "version": "状态管理"
+      }
+    },
+    "footer": "© 2024 SyncCoreAI。Angular OAuth 模拟演示。"
+  },
+  "login": {
+    "welcome": "欢迎回来",
+    "subtitle": "登入你的账户继续",
+    "email": "邮箱地址",
+    "emailPlaceholder": "输入你的邮箱",
+    "emailRequired": "邮箱是必需的",
+    "emailInvalid": "请输入有效的邮箱地址",
+    "password": "密码",
+    "passwordPlaceholder": "输入你的密码",
+    "passwordRequired": "密码是必需的",
+    "passwordMinLength": "密码至少需要 6 个字符",
+    "rememberMe": "记住我",
+    "forgotPassword": "忘记密码？",
+    "signIn": "登入",
+    "signingIn": "登入中...",
+    "orContinueWith": "或使用以下方式继续",
+    "continueGoogle": "使用 Google 继续",
+    "continueGithub": "使用 GitHub 继续",
+    "continueMicrosoft": "使用 Microsoft 继续",
+    "noAccount": "没有账户？",
+    "signUp": "免费注册",
+    "backToHome": "← 返回首页"
+  },
+  "register": {
+    "title": "创建账户",
+    "subtitle": "加入我们，立即开始",
+    "fullName": "全名",
+    "fullNameRequired": "全名是必需的",
+    "email": "邮箱地址",
+    "emailPlaceholder": "输入你的邮箱",
+    "emailRequired": "邮箱是必需的",
+    "emailInvalid": "请输入有效的邮箱地址",
+    "password": "密码",
+    "passwordPlaceholder": "输入你的密码",
+    "passwordRequired": "密码是必需的",
+    "passwordMinLength": "密码至少需要 6 个字符",
+    "confirmPassword": "确认密码",
+    "confirmPasswordPlaceholder": "确认你的密码",
+    "confirmPasswordRequired": "请确认你的密码",
+    "passwordMismatch": "密码不匹配",
+    "agreeTerms": "我同意服务条款和隐私政策",
+    "agreeTermsRequired": "你必须同意条款才能继续",
+    "registerButton": "创建账户",
+    "registering": "创建账户中...",
+    "haveAccount": "已有账户？",
+    "loginLink": "登入",
+    "orRegisterWith": "或使用以下方式注册",
+    "success": "注册成功！正在重定向到登入..."
+  },
+  "dashboard": {
+    "welcome": "欢迎，{{name}}!",
+    "loggedInWith": "你已使用 {{provider}} 登入",
+    "accountInfo": "账户信息",
+    "email": "邮箱地址",
+    "userId": "用户 ID",
+    "provider": "登入提供者",
+    "displayName": "全名",
+    "loginStatus": "✓ 你已成功登入！这是 OAuth 模拟流程的演示。",
+    "features": "功能",
+    "emailPasswordLogin": "邮件/密码登入",
+    "emailPasswordDesc": "传统的用户名和密码认证",
+    "oauthSimulation": "OAuth 模拟",
+    "oauthDesc": "Google、GitHub 和 Microsoft 的模拟 OAuth 流程",
+    "sessionManagement": "会话管理",
+    "sessionDesc": "使用 localStorage 支持的持久登录"
+  }
+}
