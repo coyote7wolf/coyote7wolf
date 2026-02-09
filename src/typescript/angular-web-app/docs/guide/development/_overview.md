@@ -1,38 +1,35 @@
-# 🛠️ Development Guide
+# 📚 Development Guide
 
-Set up your development environment and learn the development workflow.
+Local development environment setup, project structure, and development workflow.
 
-## 📋 This Section's Content
+## 📋 This Section Contains
 
-This section contains:
-
-- [Environment Setup](./environment-setup.md) - Local development configuration
-- [Project Structure](./project-structure.md) - Code organization
+- [Environment Setup](./environment-setup.md) - Development environment configuration
+- [Project Structure](./project-structure.md) - Code organization and naming conventions
 - [Development Workflow](./workflow.md) - Daily development process
 - [Testing Guide](./testing.md) - Writing and running tests
 
 ## 🎯 Quick Navigation
 
-| I want to...                      | Go to this guide                            |
-| --------------------------------- | ------------------------------------------- |
-| **Setup development environment** | [Environment Setup](./environment-setup.md) |
-| **Learn about project structure** | [Project Structure](./project-structure.md) |
-| **Start development**             | [Development Workflow](./workflow.md)       |
-| **Write tests**                   | [Testing Guide](./testing.md)               |
+| I want to...                  | See this guide                              |
+| ----------------------------- | ------------------------------------------- |
+| Setup development environment | [Environment Setup](./environment-setup.md) |
+| Understand code organization  | [Project Structure](./project-structure.md) |
+| Start coding                  | [Development Workflow](./workflow.md)       |
+| Write tests                   | [Testing Guide](./testing.md)               |
 
 ## ⏱️ Time Investment
 
-- Environment setup: 15-30 minutes
-- Learn project structure: 20 minutes
-- First feature development: 60 minutes
+- Setup development environment: 15 minutes
+- Understand project structure: 20 minutes
+- Develop first feature: 1-2 hours
 
-## 📋 Prerequisites
+## 👥 This Section is For
 
-- Node.js 18+
-- npm 9+
-- Angular CLI 19+
-- Git
+- New developers joining the project
+- Anyone wanting to contribute code
+- Those learning Angular best practices
 
 ---
 
-**Start**: From [Environment Setup](./environment-setup.md) now!
+**Start here**: [Environment Setup](./environment-setup.md)
