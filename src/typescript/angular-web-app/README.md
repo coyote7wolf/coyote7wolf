@@ -49,17 +49,17 @@ This project includes **enterprise-grade documentation** following industry-stan
 
 ### 🎯 Quick Navigation
 
-| I want to... | Go to... | Time |
-| --- | --- | --- |
-| **Learn about the project quickly** | [Quick Start](./docs/getting-started/quickstart.md) | 5 min |
-| **Step-by-step installation** | [Installation Guide](./docs/getting-started/installation.md) | 10 min |
-| **Implement i18n (4 languages)** | [i18n Complete Guide](./docs/guide/i18n/implementation.md) | 4,000+ lines |
-| **Implement OAuth authentication** | [OAuth Implementation](./docs/guide/oauth/implementation.md) | Complete |
-| **Setup development environment** | [Development Setup](./docs/guide/development/environment-setup.md) | Complete |
-| **Deploy to production** | [Production Deployment](./docs/guide/deployment/production.md) | Complete |
-| **Understand architecture** | [System Design](./docs/architecture/system-design.md) | Complete |
-| **Query API reference** | [API Reference](./docs/reference/api/services.md) | Complete |
-| **Troubleshoot issues** | [Troubleshooting](./docs/troubleshooting/common-issues.md) | Complete |
+| I want to...                        | Go to...                                                           | Time         |
+| ----------------------------------- | ------------------------------------------------------------------ | ------------ |
+| **Learn about the project quickly** | [Quick Start](./docs/getting-started/quickstart.md)                | 5 min        |
+| **Step-by-step installation**       | [Installation Guide](./docs/getting-started/installation.md)       | 10 min       |
+| **Implement i18n (4 languages)**    | [i18n Complete Guide](./docs/guide/i18n/implementation.md)         | 4,000+ lines |
+| **Implement OAuth authentication**  | [OAuth Implementation](./docs/guide/oauth/implementation.md)       | Complete     |
+| **Setup development environment**   | [Development Setup](./docs/guide/development/environment-setup.md) | Complete     |
+| **Deploy to production**            | [Production Deployment](./docs/guide/deployment/production.md)     | Complete     |
+| **Understand architecture**         | [System Design](./docs/architecture/system-design.md)              | Complete     |
+| **Query API reference**             | [API Reference](./docs/reference/api/services.md)                  | Complete     |
+| **Troubleshoot issues**             | [Troubleshooting](./docs/troubleshooting/common-issues.md)         | Complete     |
 
 **👉 [📚 Documentation Homepage](./docs/_index.md)** - Full documentation index
 
@@ -194,15 +194,15 @@ npm run build
 
 ## 📊 Project Statistics
 
-| Metric | Value |
-| --- | --- |
-| **Angular Version** | 19.2.19 |
-| **TypeScript Version** | 5.6.2 |
-| **Supported Languages** | 4 |
-| **Total Features** | 7 complete features |
-| **Documentation** | 10,000+ lines |
-| **Test Coverage** | 80%+ |
-| **Documentation Quality** | ⭐⭐⭐⭐⭐ (5/5) |
+| Metric                    | Value               |
+| ------------------------- | ------------------- |
+| **Angular Version**       | 19.2.19             |
+| **TypeScript Version**    | 5.6.2               |
+| **Supported Languages**   | 4                   |
+| **Total Features**        | 7 complete features |
+| **Documentation**         | 10,000+ lines       |
+| **Test Coverage**         | 80%+                |
+| **Documentation Quality** | ⭐⭐⭐⭐⭐ (5/5)    |
 
 ---
 
@@ -221,17 +221,17 @@ This project follows industry best practices:
 
 ## 📖 Key Documentation
 
-| Documentation | Purpose |
-| --- | --- |
-| [📚 Documentation Homepage](./docs/_index.md) | Navigation hub for all documentation |
-| [🚀 Quick Start](./docs/getting-started/quickstart.md) | Get started in 5 minutes |
-| [🌍 i18n Guide](./docs/guide/i18n/_overview.md) | Multi-language implementation guide |
-| [🔐 OAuth Guide](./docs/guide/oauth/_overview.md) | OAuth authentication implementation |
-| [📋 Feature Inventory](./docs/process/feature-inventory.md) | View all features and status |
-| [🚀 Development Process](./docs/process/feature-development.md) | How to develop new features |
-| [🔄 GitHub Workflow](./docs/process/github-workflow.md) | Issue/PR/version management |
-| [🏗️ System Architecture](./docs/architecture/system-design.md) | Understand application design |
-| [📋 Troubleshooting](./docs/troubleshooting/common-issues.md) | Solve common issues |
+| Documentation                                                   | Purpose                              |
+| --------------------------------------------------------------- | ------------------------------------ |
+| [📚 Documentation Homepage](./docs/_index.md)                   | Navigation hub for all documentation |
+| [🚀 Quick Start](./docs/getting-started/quickstart.md)          | Get started in 5 minutes             |
+| [🌍 i18n Guide](./docs/guide/i18n/_overview.md)                 | Multi-language implementation guide  |
+| [🔐 OAuth Guide](./docs/guide/oauth/_overview.md)               | OAuth authentication implementation  |
+| [📋 Feature Inventory](./docs/process/feature-inventory.md)     | View all features and status         |
+| [🚀 Development Process](./docs/process/feature-development.md) | How to develop new features          |
+| [🔄 GitHub Workflow](./docs/process/github-workflow.md)         | Issue/PR/version management          |
+| [🏗️ System Architecture](./docs/architecture/system-design.md)  | Understand application design        |
+| [📋 Troubleshooting](./docs/troubleshooting/common-issues.md)   | Solve common issues                  |
 
 ---
 
@@ -262,12 +262,12 @@ This project is licensed under the [MIT License](./LICENSE)
 
 ## 📋 Project Info
 
-| Property | Value |
-| --- | --- |
-| **Last Updated** | February 4, 2026 |
-| **Version** | 1.0.0 |
-| **Maintained By** | Development Team |
-| **Status** | ✅ Production Ready |
+| Property          | Value               |
+| ----------------- | ------------------- |
+| **Last Updated**  | February 4, 2026    |
+| **Version**       | 1.0.0               |
+| **Maintained By** | Development Team    |
+| **Status**        | ✅ Production Ready |
 
 ---
 
@@ -278,6 +278,52 @@ For questions or issues:
 - 📚 Check [Complete Documentation](./docs/_index.md)
 - 🐛 Open a [GitHub Issue](../../issues)
 - 💬 Check [Troubleshooting Guide](./docs/troubleshooting/common-issues.md)
+
+---
+
+## 🏁 How to Use This Repository
+
+This section provides a quick guide to help you get started with this repository and navigate its documentation effectively.
+
+### 🚀 Quick Steps to Get Started
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone <repository-url>
+   cd angular-web-app-template
+   ```
+
+2. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Development Server**:
+
+   ```bash
+   npm start
+   ```
+
+   The application will be available at `http://localhost:4200/`.
+
+4. **Explore the Documentation**:
+   - Navigate to the [Documentation Homepage](./docs/_index.md) for a complete index.
+   - Use the [Quick Navigation Table](#quick-navigation) to find specific guides.
+
+### 📚 Key Documentation
+
+| Topic                    | Description                             | Link                                                             |
+| ------------------------ | --------------------------------------- | ---------------------------------------------------------------- |
+| **Quick Start**          | Learn how to set up and run the project | [Quick Start Guide](./docs/getting-started/quickstart.md)        |
+| **Development Workflow** | Understand the development process      | [Development Workflow](./docs/guide/development/workflow.md)     |
+| **Testing**              | Learn how to write and run tests        | [Testing Guide](./docs/guide/development/testing.md)             |
+| **Security**             | Best practices for secure development   | [Security Guide](./docs/guide/security.md)                       |
+| **Performance**          | Optimize application performance        | [Performance Guide](./docs/guide/performance.md)                 |
+| **Troubleshooting**      | Solve common issues                     | [Troubleshooting Guide](./docs/troubleshooting/common-issues.md) |
+
+For more details, visit the [Documentation Homepage](./docs/_index.md).
 
 ---
 
