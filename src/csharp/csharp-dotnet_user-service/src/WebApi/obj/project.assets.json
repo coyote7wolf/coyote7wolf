@@ -452,11 +452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jackallin/Documents/self/repo/github/background-portforlio/coyote7wolf/src/csharp/csharp-dotnet_user-service/src/WebApi/WebApi.csproj",
+      "projectUniqueName": "/Users/jackallin/Documents/self/repo/github/coyote7wolf/src/csharp/csharp-dotnet_user-service/src/WebApi/WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "/Users/jackallin/Documents/self/repo/github/background-portforlio/coyote7wolf/src/csharp/csharp-dotnet_user-service/src/WebApi/WebApi.csproj",
+      "projectPath": "/Users/jackallin/Documents/self/repo/github/coyote7wolf/src/csharp/csharp-dotnet_user-service/src/WebApi/WebApi.csproj",
       "packagesPath": "/Users/jackallin/.nuget/packages/",
-      "outputPath": "/Users/jackallin/Documents/self/repo/github/background-portforlio/coyote7wolf/src/csharp/csharp-dotnet_user-service/src/WebApi/obj/",
+      "outputPath": "/Users/jackallin/Documents/self/repo/github/coyote7wolf/src/csharp/csharp-dotnet_user-service/src/WebApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jackallin/.nuget/NuGet/NuGet.Config"
