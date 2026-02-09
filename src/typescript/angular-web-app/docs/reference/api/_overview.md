@@ -5,6 +5,7 @@ Complete API documentation and service reference.
 ## 📋 This Section's Content
 
 - [Service List](./services.md) - All available services and their APIs
+- [Components](../components.md) - Component reference and usage
 
 ## 🎯 How to Use This Section
 
