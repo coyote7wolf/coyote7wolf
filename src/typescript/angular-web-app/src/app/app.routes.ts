@@ -1,8 +1,5 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthCallbackComponent } from './components/auth-callback/auth-callback.component';
 import { MockOAuthComponent } from './components/mock-oauth/mock-oauth.component';
 import { authGuard } from './services/auth.guard';
@@ -14,11 +11,17 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent,
+    loadComponent: () =>
+      import('./components/login/login-container.component').then(
+        (m) => m.LoginContainerComponent,
+      ),
   },
   {
     path: 'register',
-    component: RegisterComponent,
+    loadComponent: () =>
+      import('./components/register/register-container.component').then(
+        (m) => m.RegisterContainerComponent,
+      ),
   },
   {
     path: 'auth/callback',
@@ -30,7 +33,10 @@ export const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
+    loadComponent: () =>
+      import('./components/dashboard/dashboard-container.component').then(
+        (m) => m.DashboardContainerComponent,
+      ),
     canActivate: [authGuard],
   },
   {
