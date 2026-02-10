@@ -7,10 +7,174 @@ Performance optimization guide for this application.
 ## 📚 Table of Contents
 
 - [Build Optimization](#build-optimization)
+- [Lazy Loading Implementation](#lazy-loading-implementation)
+- [Code Splitting](#code-splitting)
+- [Container/Presentational Components](#containerpresentational-components)
 - [Runtime Performance](#runtime-performance)
-- [Lazy Loading](#lazy-loading)
 - [Change Detection](#change-detection)
 - [Performance Monitoring](#performance-monitoring)
+
+---
+
+## Lazy Loading Implementation
+
+### Overview
+
+Lazy loading defers the loading of route components until they are needed, reducing initial bundle size and improving page load performance.
+
+### Current Implementation
+
+All major routes are lazy-loaded in the application:
+
+```typescript
+// src/app/app.routes.ts
+export const routes: Routes = [
+  {
+    path: "",
+    component: HomeComponent, // Eagerly loaded (small component)
+  },
+  {
+    path: "login",
+    loadComponent: () => import("./components/login/login-container.component").then((m) => m.LoginContainerComponent),
+  },
+  {
+    path: "register",
+    loadComponent: () => import("./components/register/register-container.component").then((m) => m.RegisterContainerComponent),
+  },
+  {
+    path: "dashboard",
+    loadComponent: () => import("./components/dashboard/dashboard-container.component").then((m) => m.DashboardContainerComponent),
+    canActivate: [authGuard],
+  },
+];
+```
+
+### Bundle Metrics
+
+✅ **Initial Bundle:** 82.78 kB
+
+- main.js: 52.58 kB
+- styles.css: 15.66 kB
+- Utilities: ~14.54 kB
+
+✅ **Lazy Chunks (Loaded on Demand):**
+
+| Route      | Component                   | Size     |
+| ---------- | --------------------------- | -------- |
+| /login     | LoginContainerComponent     | 44.82 kB |
+| /register  | RegisterContainerComponent  | 38.47 kB |
+| /dashboard | DashboardContainerComponent | 22.35 kB |
+
+### Benefits
+
+- ✅ Reduced initial page load time
+- ✅ Only load code users actually need
+- ✅ Better performance on slow networks
+- ✅ Improved FCP (First Contentful Paint)
+- ✅ Improved TTI (Time to Interactive)
+
+---
+
+## Container/Presentational Components
+
+### Pattern Overview
+
+The Container/Presentational (Smart/Dumb) component pattern separates business logic from UI rendering for better maintainability and testability.
+
+### Components in This Project
+
+#### Login Feature
+
+- **login-container.component.ts** (Smart/Container)
+  - Manages form state and validation
+  - Handles login API calls
+  - Manages navigation
+  - No template HTML
+- **login-form.component.ts** (Dumb/Presentational)
+  - Pure UI rendering
+  - Receives form via @Input
+  - Emits events via @Output
+  - Reusable in other contexts
+
+#### Register Feature
+
+- **register-container.component.ts** (Smart)
+  - Form validation logic
+  - Registration API calls
+  - State management
+- **register-form.component.ts** (Dumb)
+  - Pure form UI
+  - Input/Output bindings
+  - Reusable component
+
+#### Dashboard Feature
+
+- **dashboard-container.component.ts** (Smart)
+  - Fetch user data
+  - Handle logout
+  - Manage navigation
+- **dashboard-view.component.ts** (Dumb)
+  - Display user information
+  - UI rendering only
+  - Pure presentation
+
+### Container vs Presentational
+
+| Aspect       | Container             | Presentational          |
+| ------------ | --------------------- | ----------------------- |
+| Purpose      | Business logic & data | UI rendering            |
+| State        | Manages               | Receives via @Input     |
+| Side Effects | Handles               | None                    |
+| Services     | Injects               | May use TranslateModule |
+| Testability  | Unit tests            | Visual/snapshot tests   |
+| Reusability  | Not reusable          | Highly reusable         |
+
+### Example: Login Feature
+
+**Container Component:**
+
+```typescript
+export class LoginContainerComponent implements OnInit {
+  loginForm!: FormGroup;
+  isLoading = false;
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthService,
+    private router: Router,
+  ) {}
+
+  async handleLogin(): Promise<void> {
+    // Business logic
+    const formData = this.loginForm.value;
+    await this.authService.login(formData);
+    this.router.navigate(["/dashboard"]);
+  }
+}
+```
+
+**Presentational Component:**
+
+```typescript
+export class LoginFormComponent {
+  @Input() loginForm!: FormGroup;
+  @Input() isLoading = false;
+  @Output() loginSubmit = new EventEmitter<void>();
+
+  handleLogin(): void {
+    if (this.loginForm.invalid) return;
+    this.loginSubmit.emit();
+  }
+}
+```
+
+### Benefits
+
+- ✅ Separation of concerns
+- ✅ Reusable UI components
+- ✅ Easier unit testing
+- ✅ Better code organization
+- ✅ Clearer responsibility
 
 ---
 
