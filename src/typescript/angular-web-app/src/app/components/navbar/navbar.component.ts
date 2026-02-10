@@ -14,26 +14,24 @@ import { TranslationService } from '../../services/translation.service';
         <div class="flex justify-between items-center h-16">
           <!-- Logo/Title -->
           <div class="flex-shrink-0">
-            <h1 class="text-2xl font-bold text-blue-600">
+            <a routerLink="/" class="text-2xl font-bold text-blue-600">
               {{ 'app.title' | translate }}
-            </h1>
+            </a>
           </div>
 
           <!-- Navigation Links and Language Switcher -->
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-6">
             <!-- Language Switcher -->
-            <div class="flex items-center gap-2">
-              <select
-                [value]="currentLanguage"
-                (change)="onLanguageChange($event)"
-                class="px-3 py-2 bg-blue-50 text-gray-700 rounded-lg border border-blue-200 hover:border-blue-400 cursor-pointer transition"
-              >
-                <option value="en">🇬🇧 English</option>
-                <option value="zh-CN">🇨🇳 中文 (简)</option>
-                <option value="zh-TW">🇹🇼 中文 (繁)</option>
-                <option value="ar">🇸🇦 العربية</option>
-              </select>
-            </div>
+            <select
+              [value]="currentLanguage"
+              (change)="onLanguageChange($event)"
+              class="px-3 py-2 bg-blue-50 text-gray-700 rounded-lg border border-blue-200 hover:border-blue-400 cursor-pointer transition"
+            >
+              <option value="en">🇬🇧 English</option>
+              <option value="zh-CN">🇨🇳 中文 (简)</option>
+              <option value="zh-TW">🇹🇼 中文 (繁)</option>
+              <option value="ar">🇸🇦 العربية</option>
+            </select>
 
             <!-- Action Slot (e.g., Logout button) -->
             <ng-content select="[slot='actions']"></ng-content>
@@ -46,6 +44,10 @@ import { TranslationService } from '../../services/translation.service';
     `
       :host {
         display: block;
+      }
+      a {
+        text-decoration: none;
+        color: #2563eb !important;
       }
     `,
   ],
