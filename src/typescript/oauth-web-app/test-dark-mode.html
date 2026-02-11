@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Button Test</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 2rem;
+        background-color: #ffffff;
+        color: #000;
+        transition: background-color 0.2s ease;
+      }
+
+      html.dark body {
+        background-color: #0f172a;
+        color: #ffffff;
+      }
+
+      .button-demo {
+        display: flex;
+        gap: 1rem;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+      }
+
+      /* Simulating navbar button styles */
+      a[href="/login"] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        border-radius: 0.375rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border: 1.5px solid #d1d5db;
+        background-color: transparent;
+        color: #4b5563;
+      }
+
+      a[href="/login"]:hover {
+        background-color: #f9fafb;
+        border-color: #9ca3af;
+        color: #111827;
+      }
+
+      /* Dark mode styles - moved to global scope */
+      html.dark a[href="/login"] {
+        color: #000000 !important;
+        border-color: #60a5fa !important;
+        background-color: transparent !important;
+      }
+
+      html.dark a[href="/login"]:hover {
+        background-color: #1e3a5f !important;
+        border-color: #93c5fd !important;
+        color: #000000 !important;
+      }
+
+      .info {
+        padding: 1rem;
+        margin: 2rem 0;
+        background-color: #f3f4f6;
+        border-left: 4px solid #3b82f6;
+        border-radius: 0.375rem;
+      }
+
+      html.dark .info {
+        background-color: #1e293b;
+        border-left-color: #60a5fa;
+      }
+
+      button.toggle {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      button.toggle:hover {
+        background-color: #2563eb;
+      }
+
+      .color-display {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .color-box {
+        padding: 1rem;
+        border-radius: 0.375rem;
+        text-align: center;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dark Mode Login Button Test</h1>
+
+    <div class="info">
+      <p><strong>Instructions:</strong></p>
+      <ol>
+        <li>Click "Toggle Dark Mode" button below</li>
+        <li>Check if Login button text color changes to BLACK (#000000)</li>
+        <li>Check if Login button border color changes to BLUE (#60a5fa)</li>
+        <li>Background should be transparent</li>
+      </ol>
+    </div>
+
+    <button class="toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <h2>Light Mode (Default)</h2>
+    <div class="button-demo">
+      <a href="/login">Login</a>
+      <a
+        href="/register"
+        style="
+          background-color: #3b82f6;
+          color: white;
+          border: none;
+          padding: 0.625rem 1.25rem;
+        "
+        >Register</a
+      >
+    </div>
+
+    <div class="color-display">
+      <div class="color-box" style="background-color: #4b5563; color: white">
+        Light Text: #4b5563
+      </div>
+      <div class="color-box" style="background-color: #d1d5db; color: #111827">
+        Light Border: #d1d5db
+      </div>
+    </div>
+
+    <h2>Dark Mode (after toggle)</h2>
+    <div
+      class="info"
+      style="
+        background-color: #0f172a;
+        color: #ffffff;
+        border-left-color: #60a5fa;
+        margin-top: 2rem;
+      "
+    >
+      <p><strong>Expected in Dark Mode:</strong></p>
+      <ul>
+        <li>Login button text should be BLACK (#000000)</li>
+        <li>Login button border should be BLUE (#60a5fa)</li>
+        <li>Button background should remain TRANSPARENT</li>
+      </ul>
+    </div>
+
+    <div class="button-demo" style="margin-top: 2rem">
+      <a href="/login">Login</a>
+      <a
+        href="/register"
+        style="
+          background-color: #3b82f6;
+          color: white;
+          border: none;
+          padding: 0.625rem 1.25rem;
+        "
+        >Register</a
+      >
+    </div>
+
+    <div class="color-display" style="margin-top: 2rem">
+      <div class="color-box" style="background-color: #000000; color: #ffffff">
+        Dark Text: #000000
+      </div>
+      <div class="color-box" style="background-color: #60a5fa; color: #ffffff">
+        Dark Border: #60a5fa
+      </div>
+    </div>
+
+    <script>
+      function toggleDarkMode() {
+        const html = document.documentElement;
+        if (html.classList.contains("dark")) {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      }
+
+      // Initialize from localStorage
+      const stored = localStorage.getItem("theme");
+      if (
+        stored === "dark" ||
+        (stored === null &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+  </body>
+</html>
