@@ -1,0 +1,39 @@
+<!-- Debug page to verify translations are loading -->
+<div style="padding: 20px; font-family: monospace; background: #f5f5f5">
+  <h2>i18n Debug Information</h2>
+
+  <h3>Current Status:</h3>
+  <ul>
+    <li>app.config.ts: TranslateModule configured with HTTP loader ✓</li>
+    <li>Translation files location: src/assets/i18n/ ✓</li>
+    <li>Files present: en.json, zh-CN.json, zh-TW.json, ar.json ✓</li>
+    <li>LoginComponent: TranslateModule imported ✓</li>
+    <li>HTML: Using {{ "app.title" | translate }} pipe ✓</li>
+  </ul>
+
+  <h3>Troubleshooting Steps:</h3>
+  <ol>
+    <li>✓ Fixed: Added HTTP loader to app.config.ts</li>
+    <li>✓ Fixed: app.title should now display "SyncCoreAI" (English)</li>
+    <li>Next: Verify assets/i18n files are copied to dist/</li>
+    <li>Next: Check browser console for HTTP errors loading JSON files</li>
+  </ol>
+
+  <h3>If still showing "app.title":</h3>
+  <p style="color: red">
+    The translate pipe is not working. Check: 1. Browser console for 404 errors
+    on /assets/i18n/*.json 2. That assets folder exists in dist/ 3. That ng
+    serve is serving the dist folder correctly
+  </p>
+
+  <h3>Expected Behavior:</h3>
+  <ul>
+    <li style="color: green">✓ app.title should display: "SyncCoreAI"</li>
+    <li style="color: green">
+      ✓ login.welcome should display translated welcome message
+    </li>
+    <li style="color: green">
+      ✓ All UI text should be in the selected language
+    </li>
+  </ul>
+</div>

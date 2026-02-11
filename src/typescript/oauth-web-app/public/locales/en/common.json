@@ -1,0 +1,62 @@
+{
+  "common": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "language": "Language",
+    "english": "English",
+    "simpleChinese": "简体中文",
+    "traditionalChinese": "繁體中文",
+    "arabic": "العربية",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "home": {
+    "welcome": "Welcome to Our App",
+    "description": "A modern React + Next.js application with SSR and i18n support"
+  },
+  "login": {
+    "title": "Login",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "loginButton": "Sign In",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register here",
+    "invalidEmail": "Please enter a valid email",
+    "passwordTooShort": "Password must be at least 6 characters"
+  },
+  "register": {
+    "title": "Register",
+    "subtitle": "Create your account to get started",
+    "registerButton": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginLink": "Login here"
+  },
+  "oauth": {
+    "loginWithGoogle": "Login with Google",
+    "loginWithGithub": "Login with GitHub",
+    "loginWithMicrosoft": "Login with Microsoft",
+    "signupWithGoogle": "Sign up with Google",
+    "signupWithGithub": "Sign up with GitHub",
+    "signupWithMicrosoft": "Sign up with Microsoft",
+    "callbackSuccess": "Authentication successful"
+  },
+  "navbar": {
+    "navigation": "Navigation"
+  },
+  "dashboard": {
+    "welcome": "Welcome to Dashboard",
+    "userInfo": "User Information",
+    "logoutButton": "Logout"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "common": {
+    "home": "الصفحة الرئيسية",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "logout": "تسجيل الخروج",
+    "dashboard": "لوحة التحكم",
+    "language": "اللغة",
+    "english": "English",
+    "simpleChinese": "简体中文",
+    "traditionalChinese": "繁體中文",
+    "arabic": "العربية",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "rememberMe": "تذكرني",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات"
+  },
+  "home": {
+    "welcome": "مرحبا بك في تطبيقنا",
+    "description": "تطبيق React + Next.js حديث مع دعم SSR والترجمة"
+  },
+  "login": {
+    "title": "تسجيل الدخول",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "loginButton": "تسجيل الدخول",
+    "noAccount": "ليس لديك حساب؟",
+    "registerLink": "سجل هنا",
+    "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+    "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل"
+  },
+  "register": {
+    "title": "التسجيل",
+    "subtitle": "أنشئ حسابك للبدء",
+    "registerButton": "إنشاء حساب",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "loginLink": "سجل الدخول هنا"
+  },
+  "oauth": {
+    "loginWithGoogle": "تسجيل الدخول باستخدام Google",
+    "loginWithGithub": "تسجيل الدخول باستخدام GitHub",
+    "loginWithMicrosoft": "تسجيل الدخول باستخدام Microsoft",
+    "signupWithGoogle": "التسجيل باستخدام Google",
+    "signupWithGithub": "التسجيل باستخدام GitHub",
+    "signupWithMicrosoft": "التسجيل باستخدام Microsoft",
+    "callbackSuccess": "تم التحقق بنجاح"
+  },
+  "navbar": {
+    "navigation": "التنقل"
+  },
+  "dashboard": {
+    "welcome": "مرحبا بك في لوحة التحكم",
+    "userInfo": "معلومات المستخدم",
+    "logoutButton": "تسجيل الخروج"
+  }
+}
