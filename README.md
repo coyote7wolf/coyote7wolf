@@ -265,6 +265,7 @@
 ### Frontend Applications
 
 - [Angular Tailwind CSS Web App](src/typescript/angular-web-app/)
+- [React.js Tailwind CSS OAuth Web App](src/typescript/oauth-web-app/)
 - [React.js Tailwind CSS Web App](src/typescript/web-app/)
 - [Vue.js Tailwind CSS Dashboard App](src/typescript/dashboard-web-app/)
 
