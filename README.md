@@ -1,6 +1,21 @@
-# Personal Projects
+# Cross-Platform Engineering Portfolio
 
-- [Personal Projects](#personal-projects)
+> A hands-on capability map spanning product UI, design systems, identity, AI orchestration, distributed backends, and mobile delivery. Each area is backed by runnable code, diagrams, or captured product evidence.
+
+<a href="./docs/media/frontend-capabilities.mp4"><img src="./docs/media/frontend-capabilities.gif" width="760" alt="Cross-platform frontend capabilities: localization, accessibility, and 3D product experiences" /></a>
+
+## Executive snapshot
+
+| Lens | Evidence in this repository |
+|---|---|
+| Product delivery | Responsive web surfaces, localization and RTL, accessibility themes, 3D experiences, and mobile apps |
+| Architecture | OAuth/session/JWT trade-offs, event-driven workflows, Saga + CRDT, RAG/LLM/MCP productization |
+| Platform breadth | TypeScript, Go, Python, C#, Kotlin, Java, JavaScript, and React Native implementations |
+| Engineering maturity | Reusable design systems, explicit data flows, service boundaries, tests, and architecture diagrams |
+
+**Recommended review path:** watch the 8-second overview, scan [Full-Stack Highlights](#full-stack-highlights), then open the implementation that matches the role. This is a portfolio of focused reference implementations rather than a single production deployment.
+
+- [Portfolio Overview](#cross-platform-engineering-portfolio)
   - [Full-Stack Highlights](#full-stack-highlights)
   - [Backend Highlights](#backend-highlights)
   - [Frontend Highlights](#frontend-highlights)
